@@ -1,77 +1,154 @@
 uk:
   market: UK
-  name: Sopra Steria UK
   domain: soprasteria.co.uk
+  language: en
   listing_urls:
   - https://www.soprasteria.co.uk/insights/client-success-stories
-  language: en
+  allowed_path_prefixes:
+  - /insights/client-success-stories
+  blocked_path_fragments:
+  - /contact
+  - /careers
+  - /privacy
+  - /terms
+  - /sitemap
 germany:
   market: Germany
-  name: Sopra Steria Germany
   domain: soprasteria.de
+  language: de
   listing_urls:
   - https://www.soprasteria.de/newsroom/success-stories
-  language: de
+  allowed_path_prefixes:
+  - /newsroom/success-stories
+  blocked_path_fragments:
+  - /contact
+  - /careers
+  - /privacy
+  - /terms
+  - /sitemap
 belgium:
   market: Belgium
-  name: Sopra Steria Belgium
   domain: soprasteria.be
+  language: nl/fr
   listing_urls:
   - https://www.soprasteria.be/newsroom/success-stories
-  language: nl/fr
+  allowed_path_prefixes:
+  - /newsroom/success-stories
+  blocked_path_fragments:
+  - /contact
+  - /careers
+  - /privacy
+  - /terms
+  - /sitemap
 denmark:
   market: Denmark
-  name: Sopra Steria Denmark
   domain: soprasteria.dk
+  language: da
   listing_urls:
   - https://www.soprasteria.dk/Referencer
-  language: da
+  allowed_path_prefixes:
+  - /Referencer
+  blocked_path_fragments:
+  - /contact
+  - /karriere
+  - /privacy
+  - /terms
+  - /sitemap
 italy:
   market: Italy
-  name: Sopra Steria Italy
   domain: soprasteria.it
+  language: it
   listing_urls:
   - https://www.soprasteria.it/chi-siamo/storie-di-successo
-  language: it
+  allowed_path_prefixes:
+  - /chi-siamo/storie-di-successo
+  blocked_path_fragments:
+  - /contact
+  - /lavora
+  - /privacy
+  - /terms
+  - /sitemap
 luxembourg:
   market: Luxembourg
-  name: Sopra Steria Luxembourg
   domain: soprasteria.lu
+  language: fr
   listing_urls:
   - https://www.soprasteria.lu/newsroom/success-stories
-  language: fr
+  allowed_path_prefixes:
+  - /newsroom/success-stories
+  blocked_path_fragments:
+  - /contact
+  - /careers
+  - /privacy
+  - /terms
+  - /sitemap
 netherlands:
   market: Netherlands
-  name: Sopra Steria Netherlands
   domain: soprasteria.nl
+  language: nl
   listing_urls:
   - https://www.soprasteria.nl/newsroom/success-stories
-  language: nl
+  allowed_path_prefixes:
+  - /newsroom/success-stories
+  blocked_path_fragments:
+  - /contact
+  - /careers
+  - /privacy
+  - /terms
+  - /sitemap
 france:
   market: France
-  name: Sopra Steria France
   domain: soprasteria.fr
+  language: fr
   listing_urls:
   - https://www.soprasteria.fr/espace-media/cas-client
-  language: fr
+  allowed_path_prefixes:
+  - /espace-media/cas-client
+  blocked_path_fragments:
+  - /contact
+  - /carrieres
+  - /privacy
+  - /mentions-legales
+  - /sitemap
 sweden:
   market: Sweden
-  name: Sopra Steria Sweden
   domain: soprasteria.se
+  language: sv
   listing_urls:
   - https://www.soprasteria.se/kundreferenser/
-  language: sv
+  allowed_path_prefixes:
+  - /kundreferenser
+  blocked_path_fragments:
+  - /kontakt
+  - /karriar
+  - /privacy
+  - /terms
+  - /sitemap
 india:
   market: India
-  name: Sopra Steria India
   domain: soprasteria.in
+  language: en
   listing_urls:
   - https://www.soprasteria.in/insights#clientstories
-  language: en
+  allowed_path_prefixes:
+  - /insights
+  blocked_path_fragments:
+  - /contact
+  - /careers
+  - /privacy
+  - /terms
+  - /sitemap
 norway:
   market: Norway
-  name: Sopra Steria Norway
   domain: soprasteria.no
+  language: 'no'
   listing_urls:
   - https://www.soprasteria.no/prosjekter
-  language: 'no'
+  allowed_path_prefixes:
+  - /prosjekter
+  blocked_path_fragments:
+  - /kontakt
+  - /karriere
+  - /privacy
+  - /terms
+  - /sitemap
