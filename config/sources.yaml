@@ -1,0 +1,77 @@
+uk:
+  market: UK
+  name: Sopra Steria UK
+  domain: soprasteria.co.uk
+  listing_urls:
+  - https://www.soprasteria.co.uk/insights/client-success-stories
+  language: en
+germany:
+  market: Germany
+  name: Sopra Steria Germany
+  domain: soprasteria.de
+  listing_urls:
+  - https://www.soprasteria.de/newsroom/success-stories
+  language: de
+belgium:
+  market: Belgium
+  name: Sopra Steria Belgium
+  domain: soprasteria.be
+  listing_urls:
+  - https://www.soprasteria.be/newsroom/success-stories
+  language: nl/fr
+denmark:
+  market: Denmark
+  name: Sopra Steria Denmark
+  domain: soprasteria.dk
+  listing_urls:
+  - https://www.soprasteria.dk/Referencer
+  language: da
+italy:
+  market: Italy
+  name: Sopra Steria Italy
+  domain: soprasteria.it
+  listing_urls:
+  - https://www.soprasteria.it/chi-siamo/storie-di-successo
+  language: it
+luxembourg:
+  market: Luxembourg
+  name: Sopra Steria Luxembourg
+  domain: soprasteria.lu
+  listing_urls:
+  - https://www.soprasteria.lu/newsroom/success-stories
+  language: fr
+netherlands:
+  market: Netherlands
+  name: Sopra Steria Netherlands
+  domain: soprasteria.nl
+  listing_urls:
+  - https://www.soprasteria.nl/newsroom/success-stories
+  language: nl
+france:
+  market: France
+  name: Sopra Steria France
+  domain: soprasteria.fr
+  listing_urls:
+  - https://www.soprasteria.fr/espace-media/cas-client
+  language: fr
+sweden:
+  market: Sweden
+  name: Sopra Steria Sweden
+  domain: soprasteria.se
+  listing_urls:
+  - https://www.soprasteria.se/kundreferenser/
+  language: sv
+india:
+  market: India
+  name: Sopra Steria India
+  domain: soprasteria.in
+  listing_urls:
+  - https://www.soprasteria.in/insights#clientstories
+  language: en
+norway:
+  market: Norway
+  name: Sopra Steria Norway
+  domain: soprasteria.no
+  listing_urls:
+  - https://www.soprasteria.no/prosjekter
+  language: 'no'
