@@ -1,1 +1,74 @@
-{}
+{
+  "run_at": "2026-09-22T06:32:34.776388+00:00",
+  "summary": {
+    "run_at": "2026-09-22T06:32:34.776388+00:00",
+    "sources": 11,
+    "discovered": 569,
+    "new": 569,
+    "updated": 0,
+    "existing": 0,
+    "errors": 0
+  },
+  "by_market": {
+    "UK": {
+      "records": 89,
+      "new": 89,
+      "updated": 0,
+      "existing": 0
+    },
+    "Germany": {
+      "records": 27,
+      "new": 27,
+      "updated": 0,
+      "existing": 0
+    },
+    "Belgium": {
+      "records": 85,
+      "new": 85,
+      "updated": 0,
+      "existing": 0
+    },
+    "Italy": {
+      "records": 3,
+      "new": 3,
+      "updated": 0,
+      "existing": 0
+    },
+    "Luxembourg": {
+      "records": 85,
+      "new": 85,
+      "updated": 0,
+      "existing": 0
+    },
+    "Netherlands": {
+      "records": 85,
+      "new": 85,
+      "updated": 0,
+      "existing": 0
+    },
+    "France": {
+      "records": 20,
+      "new": 20,
+      "updated": 0,
+      "existing": 0
+    },
+    "Sweden": {
+      "records": 13,
+      "new": 13,
+      "updated": 0,
+      "existing": 0
+    },
+    "India": {
+      "records": 3,
+      "new": 3,
+      "updated": 0,
+      "existing": 0
+    },
+    "Norway": {
+      "records": 159,
+      "new": 159,
+      "updated": 0,
+      "existing": 0
+    }
+  }
+}
