@@ -1,30 +1,24 @@
 name: Case Study Radar
-
 on:
   workflow_dispatch:
   schedule:
     - cron: "17 6 * * *"
-
 permissions:
   contents: write
-
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
+    env:
+      PYTHONUNBUFFERED: "1"
     steps:
       - uses: actions/checkout@v5
-
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-
       - name: Install dependencies
         run: pip install -r requirements.txt
-
       - name: Run radar
-        run: python run.py
-
+        run: python -u run.py
       - name: Commit data
         run: |
           git config user.name "Case Study Radar"
