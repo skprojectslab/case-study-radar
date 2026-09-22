@@ -3631,9 +3631,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "12d6ce2174fe7ced0e97e42509dab42b8392969a9f342042f5929d716c9489dd",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.it/chi-siamo/storie-di-successo/unieuro": {
     "market": "Italy",
@@ -3667,9 +3667,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "e05e4341fa49d058a2aa2f1b1a9c43cfdb9144396bf081e608a2475df4c13647",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.lu/newsroom/success-stories/details/free-to-get-lost-in-the-moment": {
     "market": "Luxembourg",
@@ -6871,9 +6871,9 @@
     "published_date": "2025-01-31",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "9769a87f7c27d156e701bb5e31519b988002e776a858e31ebb5647145c945fe6",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/ssh-la-solution-cloud-de-maintenance-a-distance-de-symmedia": {
     "market": "France",
@@ -7105,9 +7105,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "0aa61a7dd58ed353a90cb2c11548cc22ec124c3872df35b4175ea56624a3c531",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/digitalisering-som-skapar-affarsvarde-i-en-reglerad-verksamhet": {
     "market": "Sweden",
@@ -7123,9 +7123,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "2feaf9bc1a069f618336edc6e552d7f21ae070cd01d877ece36c5a5136ae01ad",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/gassco": {
     "market": "Sweden",
@@ -7141,9 +7141,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "68a5662565f61116469e5c085a8a9c22cdae860f561bed3d242ceb92c11b7e50",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/tranformationspartner-och-ledningsstod-for-goteborg-energi": {
     "market": "Sweden",
@@ -7159,9 +7159,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "5c03b9f7b134c2a7aae21068142cc7b7f409aa5933208c53c71fb2213a761ab9",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/telenor-iot---sales-service--experience-cloud": {
     "market": "Sweden",
@@ -7177,9 +7177,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "c825c90f8a0b96c907c9993f06915e6fcf29f44de1f7a748456799411c1938ea",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/vasttrafik-banar-vag-for-framtidens-kollektivtrafik-med-molnbaserad-crm-losning": {
     "market": "Sweden",
@@ -7195,9 +7195,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "cd09d0ea0c442f308f13044b38ed31961dcb8981cc71d67adcdabbf6c7d7d7ad",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/telianow": {
     "market": "Sweden",
@@ -7213,9 +7213,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "1e0861ad583b2f181b27b56b23b619c62267412cf4cd7accae9d6bb606b21f09",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/archer": {
     "market": "Sweden",
@@ -7231,9 +7231,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "f69fb6f015d4fadc61c774031590021753f82252db48b99c648c4fa20744eae7",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/en-gemensam-ai-resa": {
     "market": "Sweden",
@@ -7249,9 +7249,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "7f6a5d927ccbc4e4cab75472f69d8d3a8a49059c5ab46106b7064dfb8036090a",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/unionen-molnresa": {
     "market": "Sweden",
@@ -7267,9 +7267,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "78953a8d484f98e7a91943fe2de0d8ec3c408a35469a1c772255355924ce7763",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/unionen-arendehanteringssystem": {
     "market": "Sweden",
@@ -7285,9 +7285,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "fd2eb8b4cfb254748bb4e8208651d2b48db102d15a4ef6f043569bb1a18c0079",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/region-stockholm-kundcase": {
     "market": "Sweden",
@@ -7303,9 +7303,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "856d06e540aa2c0a048cb3b73a9dc01bbf3ce7e1d46b888e2d8b2e24c9873005",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.se/kundreferenser/goteborg-energi-energieffektiviseringstjanster": {
     "market": "Sweden",
@@ -7321,9 +7321,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "667d9e3d3426c1aceb0c1b1ea382f364158f60346ac92670c6d0242f21483f79",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.in/insights/case-studies/details/mastering-the-multi-cloud-the-focas-observability-transformation": {
     "market": "India",
@@ -7339,9 +7339,9 @@
     "published_date": "2026-04-15",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "2ba01991fd4ff95a86cb7103212a729c3a2e8848e083988d1226b26d62eedba7",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.in/insights/case-studies/details/complexity-of-database-modernization": {
     "market": "India",
@@ -7357,9 +7357,9 @@
     "published_date": "2026-02-17",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-22T10:15:23.839737+00:00",
     "content_hash": "7c9b5184c6bef38dd6b1e34d9c728d6885451531f69718156e2066ec73adac2b",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.in/insights/case-studies/details/application-modernization-database-migration": {
     "market": "India",
