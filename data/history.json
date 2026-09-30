@@ -1633,9 +1633,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "ed7380e8af2f0f6176022e17475b05764eb5fcc547cb1e9d6a34293b9eab05e4",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.de/newsroom/success-stories/details/mission-accomplished-die-vng-handel-vertrieb-kommt-mit-ihren-prozessen-auf-die-plattform": {
     "market": "Germany",
@@ -2119,7 +2119,7 @@
     "published_date": "2026-09-03",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-27T06:32:49.229246+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "d2f8fb8c19c2f12b45df70318fa629fae0853b5054385c92a1293f2a800fcc50",
     "status": "EXISTING"
   },
@@ -2191,7 +2191,7 @@
     "published_date": "2025-11-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-24T06:33:06.828111+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "0e84381f2ae242b4af9272d0c5df3840b6ebef0955fe1edd93c00b6c032d420a",
     "status": "EXISTING"
   },
@@ -2299,9 +2299,9 @@
     "published_date": "2025-05-04",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "21372ca851131add24a0468a4317fb42720f3c4a05e10cba234c1152bb959d5a",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.be/newsroom/success-stories/details/cz-zorgverzekeringen-transforming-customer-experience-with-flutter": {
     "market": "Belgium",
@@ -3631,7 +3631,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "12d6ce2174fe7ced0e97e42509dab42b8392969a9f342042f5929d716c9489dd",
     "status": "EXISTING"
   },
@@ -3649,7 +3649,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "fa321e39654eca4f3068bca6524fe25f04b3359211f5fc210e6bf3d45d3252f9",
     "status": "EXISTING"
   },
@@ -3667,7 +3667,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "e05e4341fa49d058a2aa2f1b1a9c43cfdb9144396bf081e608a2475df4c13647",
     "status": "EXISTING"
   },
@@ -3685,7 +3685,7 @@
     "published_date": "2026-09-03",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "fdf97556049516316b6ee30ccd468bfdc01be8eff6505f46eeacc6a7efc2f8b5",
     "status": "EXISTING"
   },
@@ -5215,7 +5215,7 @@
     "published_date": "2026-09-03",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "9c13e68b15a0c30ef9aaa395cb198337cae18669180590db3d3c8fc6a4db257d",
     "status": "EXISTING"
   },
@@ -5305,7 +5305,7 @@
     "published_date": "2025-11-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "0e84381f2ae242b4af9272d0c5df3840b6ebef0955fe1edd93c00b6c032d420a",
     "status": "EXISTING"
   },
@@ -7105,7 +7105,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "0aa61a7dd58ed353a90cb2c11548cc22ec124c3872df35b4175ea56624a3c531",
     "status": "EXISTING"
   },
@@ -7123,7 +7123,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "2feaf9bc1a069f618336edc6e552d7f21ae070cd01d877ece36c5a5136ae01ad",
     "status": "EXISTING"
   },
@@ -7141,7 +7141,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "68a5662565f61116469e5c085a8a9c22cdae860f561bed3d242ceb92c11b7e50",
     "status": "EXISTING"
   },
@@ -7159,7 +7159,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "5c03b9f7b134c2a7aae21068142cc7b7f409aa5933208c53c71fb2213a761ab9",
     "status": "EXISTING"
   },
@@ -7177,7 +7177,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "c825c90f8a0b96c907c9993f06915e6fcf29f44de1f7a748456799411c1938ea",
     "status": "EXISTING"
   },
@@ -7195,7 +7195,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "cd09d0ea0c442f308f13044b38ed31961dcb8981cc71d67adcdabbf6c7d7d7ad",
     "status": "EXISTING"
   },
@@ -7213,7 +7213,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "1e0861ad583b2f181b27b56b23b619c62267412cf4cd7accae9d6bb606b21f09",
     "status": "EXISTING"
   },
@@ -7231,7 +7231,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "f69fb6f015d4fadc61c774031590021753f82252db48b99c648c4fa20744eae7",
     "status": "EXISTING"
   },
@@ -7249,7 +7249,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "7f6a5d927ccbc4e4cab75472f69d8d3a8a49059c5ab46106b7064dfb8036090a",
     "status": "EXISTING"
   },
@@ -7267,7 +7267,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "78953a8d484f98e7a91943fe2de0d8ec3c408a35469a1c772255355924ce7763",
     "status": "EXISTING"
   },
@@ -7285,7 +7285,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "fd2eb8b4cfb254748bb4e8208651d2b48db102d15a4ef6f043569bb1a18c0079",
     "status": "EXISTING"
   },
@@ -7303,7 +7303,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "856d06e540aa2c0a048cb3b73a9dc01bbf3ce7e1d46b888e2d8b2e24c9873005",
     "status": "EXISTING"
   },
@@ -7321,7 +7321,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "667d9e3d3426c1aceb0c1b1ea382f364158f60346ac92670c6d0242f21483f79",
     "status": "EXISTING"
   },
@@ -7375,7 +7375,7 @@
     "published_date": "2026-02-17",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-29T12:53:57.742325+00:00",
+    "last_seen": "2026-09-30T12:35:33.876822+00:00",
     "content_hash": "231c42c6e0780c75553ab53cc8eb63aa5fb65353f3b2086c8e67d8829c04786e",
     "status": "EXISTING"
   },
