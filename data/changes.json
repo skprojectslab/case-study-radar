@@ -1,49 +1,19 @@
 {
   "summary": {
-    "run_at": "2026-10-02T12:35:56.065430+00:00",
+    "run_at": "2026-10-03T11:40:09.480920+00:00",
     "sources": 11,
-    "discovered": 30,
+    "discovered": 21,
     "new": 0,
     "updated": 0,
-    "existing": 30,
-    "errors": 92
+    "existing": 21,
+    "errors": 89
   },
   "changes": [],
   "errors": [
     {
       "source": "uk",
       "stage": "detail",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/yara--developing-the-digital-workplace-of-the-future",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "uk",
-      "stage": "detail",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/providing-enterprise-wide-inventory-management-services-to-support-challenging-military-needs",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "uk",
-      "stage": "detail",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/building-the-foundations-for-ai-at-ab-dynamics",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "uk",
-      "stage": "detail",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/the-research-council-of-norway-modern-data-driven-servicenow-case-management-solution-delivered-by-sopra-steria",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "uk",
-      "stage": "detail",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/working-with-the-home-office-to-measure-innovation-readiness-and-inform-strategy",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "uk",
-      "stage": "detail",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/transforming-street-works-operations-for-m-group-services",
+      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/delivering-ai-powered-customer-service",
       "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -61,7 +31,13 @@
     {
       "source": "uk",
       "stage": "detail",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/delivering-ai-powered-customer-service",
+      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/working-with-the-home-office-to-measure-innovation-readiness-and-inform-strategy",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "uk",
+      "stage": "detail",
+      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/the-research-council-of-norway-modern-data-driven-servicenow-case-management-solution-delivered-by-sopra-steria",
       "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -79,7 +55,31 @@
     {
       "source": "uk",
       "stage": "detail",
+      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/building-the-foundations-for-ai-at-ab-dynamics",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "uk",
+      "stage": "detail",
       "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/equinor-giving-new-life-to-20-000-machines",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "uk",
+      "stage": "detail",
+      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/providing-enterprise-wide-inventory-management-services-to-support-challenging-military-needs",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "uk",
+      "stage": "detail",
+      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/yara--developing-the-digital-workplace-of-the-future",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "uk",
+      "stage": "detail",
+      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/transforming-street-works-operations-for-m-group-services",
       "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -91,19 +91,19 @@
     {
       "source": "uk",
       "stage": "detail",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/sopra-steria-and-idemia-strengthening-border-security-in-the-schengen-area",
+      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/enhancing-officer-visibility-and-operational-efficiency-for-humberside-police",
       "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "uk",
       "stage": "detail",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/enhancing-officer-visibility-and-operational-efficiency-for-humberside-police",
+      "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/sopra-steria-and-idemia-strengthening-border-security-in-the-schengen-area",
       "error": "HTTPSConnectionPool(host='www.soprasteria.co.uk', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "germany",
       "stage": "detail",
-      "url": "https://www.soprasteria.de/newsroom/success-stories/details/wie-eine-cloudbasierte-losung-das-servicegeschaft-von-symmedia-beschleunigt",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/banken-application-management-fur-eine-bessere-skalierbarkeit",
       "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -115,25 +115,7 @@
     {
       "source": "germany",
       "stage": "detail",
-      "url": "https://www.soprasteria.de/newsroom/success-stories/details/ksb-sap-subscription-billing",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "germany",
-      "stage": "detail",
-      "url": "https://www.soprasteria.de/newsroom/success-stories/details/banken-application-management-fur-eine-bessere-skalierbarkeit",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "germany",
-      "stage": "detail",
-      "url": "https://www.soprasteria.de/newsroom/success-stories/details/einsatz-am-limit-herausforderung-fuer-feuerwehren-und-rettungsdienste",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "germany",
-      "stage": "detail",
-      "url": "https://www.soprasteria.de/newsroom/success-stories/details/mydigitalcar-sopra-steria-und-volkswagen-financial-services-revolutionieren-die-kfz-zulassungsvorgaenge-fuer-unternehmen",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/mission-accomplished-die-vng-handel-vertrieb-kommt-mit-ihren-prozessen-auf-die-plattform",
       "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -146,6 +128,18 @@
       "source": "germany",
       "stage": "detail",
       "url": "https://www.soprasteria.de/newsroom/success-stories/details/pbb-deutsche-pfandbriefbank-automatisiert-manuelle-taetigkeiten-mit-hilfe-von-rpa",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/einsatz-am-limit-herausforderung-fuer-feuerwehren-und-rettungsdienste",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/wie-eine-cloudbasierte-losung-das-servicegeschaft-von-symmedia-beschleunigt",
       "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -187,7 +181,7 @@
     {
       "source": "belgium",
       "stage": "detail",
-      "url": "https://www.soprasteria.be/newsroom/success-stories/details/preparing-governance-for-the-ai-era-in-an-international-organisation",
+      "url": "https://www.soprasteria.be/newsroom/success-stories/details/lantis-ai-that-empowers-people-not-replaces-them",
       "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -199,7 +193,7 @@
     {
       "source": "belgium",
       "stage": "detail",
-      "url": "https://www.soprasteria.be/newsroom/success-stories/details/Transitioning-the-HvA-and-UvA-Data-Center-to-the-Cloud",
+      "url": "https://www.soprasteria.be/newsroom/success-stories/details/keeping-water-a-source-of-joy",
       "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -211,19 +205,19 @@
     {
       "source": "belgium",
       "stage": "detail",
-      "url": "https://www.soprasteria.be/newsroom/success-stories/details/faster-smarter-local-train-movement-planning-with-the-ormas-portal",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "belgium",
-      "stage": "detail",
-      "url": "https://www.soprasteria.be/newsroom/success-stories/details/keeping-water-a-source-of-joy",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "belgium",
-      "stage": "detail",
       "url": "https://www.soprasteria.be/newsroom/success-stories/details/enabling-interoperable-and-sovereign-defence-operations-in-luxembourg-with-sap",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "belgium",
+      "stage": "detail",
+      "url": "https://www.soprasteria.be/newsroom/success-stories/details/preparing-governance-for-the-ai-era-in-an-international-organisation",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "belgium",
+      "stage": "detail",
+      "url": "https://www.soprasteria.be/newsroom/success-stories/details/Transitioning-the-HvA-and-UvA-Data-Center-to-the-Cloud",
       "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -235,13 +229,31 @@
     {
       "source": "belgium",
       "stage": "detail",
-      "url": "https://www.soprasteria.be/newsroom/success-stories/details/lantis-ai-that-empowers-people-not-replaces-them",
+      "url": "https://www.soprasteria.be/newsroom/success-stories/details/trust-as-a-foundation-building-digital-agility-together",
       "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "belgium",
       "stage": "detail",
-      "url": "https://www.soprasteria.be/newsroom/success-stories/details/trust-as-a-foundation-building-digital-agility-together",
+      "url": "https://www.soprasteria.be/newsroom/success-stories/details/faster-smarter-local-train-movement-planning-with-the-ormas-portal",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "belgium",
+      "stage": "detail",
+      "url": "https://www.soprasteria.be/newsroom/success-stories/details/cloud-migration-gives-kadaster-a-digital-edge-and-accelerates-professionalisation",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "belgium",
+      "stage": "detail",
+      "url": "https://www.soprasteria.be/newsroom/success-stories/details/curium-strengthening-it-compliance-for-a-secure-and-scalable-future",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "belgium",
+      "stage": "detail",
+      "url": "https://www.soprasteria.be/newsroom/success-stories/details/stairway-to-the-cloud-with-microsoft-azure-for-a-significant-norwegian-municipality",
       "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -251,10 +263,10 @@
       "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
     },
     {
-      "source": "belgium",
+      "source": "luxembourg",
       "stage": "detail",
-      "url": "https://www.soprasteria.be/newsroom/success-stories/details/stairway-to-the-cloud-with-microsoft-azure-for-a-significant-norwegian-municipality",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.be', port=443): Read timed out. (read timeout=4)"
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/the-future-of-money-has-no-age-limit",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "luxembourg",
@@ -265,13 +277,7 @@
     {
       "source": "luxembourg",
       "stage": "detail",
-      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/trust-as-a-foundation-building-digital-agility-together",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "luxembourg",
-      "stage": "detail",
-      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/anwb-roadside-assistance-modernises-planning-with-a-smart-cloud-solution",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/cloud-migration-gives-kadaster-a-digital-edge-and-accelerates-professionalisation",
       "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -283,19 +289,67 @@
     {
       "source": "luxembourg",
       "stage": "detail",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/enabling-interoperable-and-sovereign-defence-operations-in-luxembourg-with-sap",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "luxembourg",
+      "stage": "detail",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/trust-as-a-foundation-building-digital-agility-together",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "luxembourg",
+      "stage": "detail",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/keeping-water-a-source-of-joy",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "luxembourg",
+      "stage": "detail",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/lantis-ai-that-empowers-people-not-replaces-them",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "luxembourg",
+      "stage": "detail",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/preparing-governance-for-the-ai-era-in-an-international-organisation",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "luxembourg",
+      "stage": "detail",
       "url": "https://www.soprasteria.lu/newsroom/success-stories/details/Transitioning-the-HvA-and-UvA-Data-Center-to-the-Cloud",
       "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "luxembourg",
       "stage": "detail",
-      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/cz-zorgverzekeringen-transforming-customer-experience-with-flutter",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/anwb-roadside-assistance-modernises-planning-with-a-smart-cloud-solution",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "luxembourg",
+      "stage": "detail",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/free-to-get-lost-in-the-moment",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "luxembourg",
+      "stage": "detail",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/curium-strengthening-it-compliance-for-a-secure-and-scalable-future",
       "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "luxembourg",
       "stage": "detail",
       "url": "https://www.soprasteria.lu/newsroom/success-stories/details/stairway-to-the-cloud-with-microsoft-azure-for-a-significant-norwegian-municipality",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "luxembourg",
+      "stage": "detail",
+      "url": "https://www.soprasteria.lu/newsroom/success-stories/details/cz-zorgverzekeringen-transforming-customer-experience-with-flutter",
       "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -307,37 +361,7 @@
     {
       "source": "netherlands",
       "stage": "detail",
-      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/keeping-water-a-source-of-joy",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "netherlands",
-      "stage": "detail",
-      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/enabling-interoperable-and-sovereign-defence-operations-in-luxembourg-with-sap",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "netherlands",
-      "stage": "detail",
-      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/kvk-chamber-of-commerce-on-course-with-a-future-proof-digital-landscape",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "netherlands",
-      "stage": "detail",
-      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/anwb-roadside-assistance-modernises-planning-with-a-smart-cloud-solution",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "netherlands",
-      "stage": "detail",
-      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/lantis-ai-that-empowers-people-not-replaces-them",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "netherlands",
-      "stage": "detail",
-      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/Transitioning-the-HvA-and-UvA-Data-Center-to-the-Cloud",
+      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/the-future-of-money-has-no-age-limit",
       "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -349,13 +373,49 @@
     {
       "source": "netherlands",
       "stage": "detail",
+      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/faster-smarter-local-train-movement-planning-with-the-ormas-portal",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "netherlands",
+      "stage": "detail",
       "url": "https://www.soprasteria.nl/newsroom/success-stories/details/cloud-migration-gives-kadaster-a-digital-edge-and-accelerates-professionalisation",
       "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "netherlands",
       "stage": "detail",
+      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/anwb-roadside-assistance-modernises-planning-with-a-smart-cloud-solution",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "netherlands",
+      "stage": "detail",
       "url": "https://www.soprasteria.nl/newsroom/success-stories/details/preparing-governance-for-the-ai-era-in-an-international-organisation",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "netherlands",
+      "stage": "detail",
+      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/kvk-chamber-of-commerce-on-course-with-a-future-proof-digital-landscape",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "netherlands",
+      "stage": "detail",
+      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/keeping-water-a-source-of-joy",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "netherlands",
+      "stage": "detail",
+      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/lantis-ai-that-empowers-people-not-replaces-them",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "netherlands",
+      "stage": "detail",
+      "url": "https://www.soprasteria.nl/newsroom/success-stories/details/enabling-interoperable-and-sovereign-defence-operations-in-luxembourg-with-sap",
       "error": "HTTPSConnectionPool(host='www.soprasteria.nl', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -379,19 +439,13 @@
     {
       "source": "france",
       "stage": "detail",
-      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/safran-aircraft-engines-s-4hana-pour-moderniser-le-si",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "france",
-      "stage": "detail",
       "url": "https://www.soprasteria.fr/espace-media/cas-client/details/le-groupe-seb-poursuit-son-chemin-vers-s-4hana",
       "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "france",
       "stage": "detail",
-      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/les-transports-publics-de-la-region-nouvelle-aquitaine-font-le-choix-d-une-mobilite-multimodale-et-durable",
+      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/arquus-sap-s-4hana-au-service-de-ses-ambitions",
       "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -403,13 +457,43 @@
     {
       "source": "france",
       "stage": "detail",
+      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/comment-fidal-redefinit-la-pratique-du-droit-grace-a-l-ia",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "france",
+      "stage": "detail",
       "url": "https://www.soprasteria.fr/espace-media/cas-client/details/comment-post-luxembourg-a-modernise-et-unifie-ses-systemes-it",
       "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "france",
       "stage": "detail",
+      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/tradsncf-l-ia-au-service-des-agents-de-gare-pour-l-accueil-des-voyageurs",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "france",
+      "stage": "detail",
       "url": "https://www.soprasteria.fr/espace-media/cas-client/details/modalis-nouvelle-aquitaine-mobilites-donne-un-acces-unique-aux-transports-regionaux",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "france",
+      "stage": "detail",
+      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/safran-aircraft-engines-s-4hana-pour-moderniser-le-si",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "france",
+      "stage": "detail",
+      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/ssh-la-solution-cloud-de-maintenance-a-distance-de-symmedia",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "france",
+      "stage": "detail",
+      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/les-transports-publics-de-la-region-nouvelle-aquitaine-font-le-choix-d-une-mobilite-multimodale-et-durable",
       "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -427,25 +511,13 @@
     {
       "source": "france",
       "stage": "detail",
-      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/ssh-la-solution-cloud-de-maintenance-a-distance-de-symmedia",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "france",
-      "stage": "detail",
-      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/arquus-sap-s-4hana-au-service-de-ses-ambitions",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "france",
-      "stage": "detail",
-      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/tradsncf-l-ia-au-service-des-agents-de-gare-pour-l-accueil-des-voyageurs",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "france",
-      "stage": "detail",
       "url": "https://www.soprasteria.fr/espace-media/cas-client/details/transformation-sap-roquette",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
+    },
+    {
+      "source": "france",
+      "stage": "detail",
+      "url": "https://www.soprasteria.fr/espace-media/cas-client/details/la-strategie-data-de-geodis-supply-chain",
       "error": "HTTPSConnectionPool(host='www.soprasteria.fr', port=443): Read timed out. (read timeout=4)"
     },
     {
@@ -463,104 +535,14 @@
     {
       "source": "india",
       "stage": "detail",
-      "url": "https://www.soprasteria.in/insights/case-studies/details/application-modernization-database-migration",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.in', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "india",
-      "stage": "detail",
       "url": "https://www.soprasteria.in/insights/case-studies/details/mastering-the-multi-cloud-the-focas-observability-transformation",
       "error": "HTTPSConnectionPool(host='www.soprasteria.in', port=443): Read timed out. (read timeout=4)"
     },
     {
       "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/hafslund--slik-blir-ki-en-del-av-arbeidshverdagen",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/equinor-nytt-liv-til-20-000-maskiner",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/sporveien--over-til-ny-digital-lsning-for-turnusplanlegging",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/troms-kommune-fremtidsrettet-it-med-helhetlig-strategi",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/skygard--bygger-servicenow-fundament-for-vekst",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/tine--nar-data-gjr-det-helt-konge-a-produsere-melk",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/tine-nar-melken-blir-digital",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/statens-vegvesen-bedre-oversikt-over-veiprosjekter-med-ny-nettlsning",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/forsvaret--menneske-og-maskin-som-livreddere",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/nav-ungdomsprogrammet-skal-fa-unge-ut-i-arbeid-og-utdanning",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/aker-bp--vil-planlegge-en-brnn-pa-en-dag",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/apotek-1-nar-systemene-snakker-lytter-vi",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/oslo-kommune-oslobygg-styrker-sin-industrielle-it",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/digitaliseringsdirektoratet-innovasjon-med-stimulab-tech",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
-    },
-    {
-      "source": "norway",
-      "stage": "detail",
-      "url": "https://www.soprasteria.no/prosjekter/details/apotek-1-hva-har-farmasilosninger-med-katedraler-a-gjore",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=4)"
+      "stage": "listing",
+      "url": "https://www.soprasteria.no/prosjekter",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=8)"
     }
   ]
 }

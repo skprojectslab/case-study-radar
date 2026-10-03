@@ -1,26 +1,20 @@
 {
-  "run_at": "2026-10-02T12:35:56.065430+00:00",
+  "run_at": "2026-10-03T11:40:09.480920+00:00",
   "summary": {
-    "run_at": "2026-10-02T12:35:56.065430+00:00",
+    "run_at": "2026-10-03T11:40:09.480920+00:00",
     "sources": 11,
-    "discovered": 30,
+    "discovered": 21,
     "new": 0,
     "updated": 0,
-    "existing": 30,
-    "errors": 92
+    "existing": 21,
+    "errors": 89
   },
   "by_market": {
     "Germany": {
-      "records": 2,
+      "records": 3,
       "new": 0,
       "updated": 0,
-      "existing": 2
-    },
-    "Belgium": {
-      "records": 2,
-      "new": 0,
-      "updated": 0,
-      "existing": 2
+      "existing": 3
     },
     "Italy": {
       "records": 3,
@@ -28,29 +22,23 @@
       "updated": 0,
       "existing": 3
     },
-    "Luxembourg": {
-      "records": 7,
-      "new": 0,
-      "updated": 0,
-      "existing": 7
-    },
     "Netherlands": {
       "records": 1,
       "new": 0,
       "updated": 0,
       "existing": 1
     },
-    "France": {
-      "records": 2,
-      "new": 0,
-      "updated": 0,
-      "existing": 2
-    },
     "Sweden": {
       "records": 13,
       "new": 0,
       "updated": 0,
       "existing": 13
+    },
+    "India": {
+      "records": 1,
+      "new": 0,
+      "updated": 0,
+      "existing": 1
     }
   }
 }
