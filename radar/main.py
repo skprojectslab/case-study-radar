@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/"data"
 CONFIG=ROOT/"config"/"sources.yaml"
 MAX_WORKERS=8
-MAX_CANDIDATES_PER_SOURCE=30
+MAX_CANDIDATES_PER_SOURCE=0
 
 def load(path, default):
     if not path.exists(): return default
@@ -22,7 +22,7 @@ def save(path,obj):
     path.write_text(json.dumps(obj,ensure_ascii=False,indent=2),encoding="utf-8")
 
 def inspect_candidate(item):
-    try: return item, extract_detail(get(item["url"], timeout=(3, 15)),item), None
+    try: return item, extract_detail(get(item["url"]),item), None
     except Exception as e: return item,None,str(e)
 
 def run():
@@ -35,7 +35,7 @@ def run():
     for sid,cfg in sources.items():
         for listing in cfg["listing_urls"]:
             print(f"[{cfg['market']}] loading listing...",flush=True)
-            try: html=get(listing,timeout=(3,15))
+            try: html=get(listing,timeout=(5,15))
             except Exception as e:
                 errors.append({"source":sid,"stage":"listing","url":listing,"error":str(e)})
                 print(f"[{cfg['market']}] listing ERROR: {e}",flush=True)
@@ -43,8 +43,7 @@ def run():
 
             seeds=list(candidate_links(html,listing,cfg))
             unique={normalize_url(x["url"]):x for x in seeds}
-            limit=int(cfg.get("max_candidates", MAX_CANDIDATES_PER_SOURCE))
-            seeds=list(unique.values())[:limit]
+            seeds=list(unique.values()) if MAX_CANDIDATES_PER_SOURCE<=0 else list(unique.values())[:MAX_CANDIDATES_PER_SOURCE]
             print(f"[{cfg['market']}] candidates found: {len(unique)}; checking: {len(seeds)}",flush=True)
 
             accepted=0
