@@ -1,68 +1,74 @@
 {
-  "run_at": "2026-10-05T06:34:42.075558+00:00",
+  "run_at": "2026-10-05T06:49:49.512299+00:00",
   "summary": {
-    "run_at": "2026-10-05T06:34:42.075558+00:00",
+    "run_at": "2026-10-05T06:49:49.512299+00:00",
     "sources": 11,
-    "discovered": 104,
-    "new": 7,
-    "updated": 4,
-    "existing": 93,
-    "errors": 122
+    "discovered": 316,
+    "new": 23,
+    "updated": 0,
+    "existing": 293,
+    "errors": 92
   },
   "by_market": {
     "UK": {
-      "records": 10,
-      "new": 0,
+      "records": 31,
+      "new": 1,
       "updated": 0,
-      "existing": 10
+      "existing": 30
     },
     "Germany": {
-      "records": 5,
-      "new": 0,
+      "records": 17,
+      "new": 2,
       "updated": 0,
-      "existing": 5
+      "existing": 15
     },
     "Belgium": {
-      "records": 14,
-      "new": 1,
-      "updated": 1,
-      "existing": 12
-    },
-    "Luxembourg": {
-      "records": 27,
-      "new": 1,
-      "updated": 1,
-      "existing": 25
-    },
-    "Netherlands": {
-      "records": 14,
-      "new": 0,
+      "records": 59,
+      "new": 2,
       "updated": 0,
-      "existing": 14
+      "existing": 57
     },
-    "France": {
-      "records": 13,
-      "new": 5,
-      "updated": 0,
-      "existing": 8
-    },
-    "Sweden": {
-      "records": 13,
-      "new": 0,
-      "updated": 2,
-      "existing": 11
-    },
-    "India": {
+    "Italy": {
       "records": 3,
       "new": 0,
       "updated": 0,
       "existing": 3
     },
-    "Norway": {
-      "records": 5,
+    "Luxembourg": {
+      "records": 69,
+      "new": 1,
+      "updated": 0,
+      "existing": 68
+    },
+    "Netherlands": {
+      "records": 61,
+      "new": 3,
+      "updated": 0,
+      "existing": 58
+    },
+    "France": {
+      "records": 30,
+      "new": 9,
+      "updated": 0,
+      "existing": 21
+    },
+    "Sweden": {
+      "records": 13,
       "new": 0,
       "updated": 0,
-      "existing": 5
+      "existing": 13
+    },
+    "India": {
+      "records": 7,
+      "new": 4,
+      "updated": 0,
+      "existing": 3
+    },
+    "Norway": {
+      "records": 26,
+      "new": 1,
+      "updated": 0,
+      "existing": 25
     }
   }
 }
