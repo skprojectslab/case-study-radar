@@ -4,6 +4,7 @@ from ..utils import absolute_url, clean_text, normalize_url
 
 POSITIVE = ("success","story","stories","case","client","customer","project","reference","referencer","kund","kunde","kundreferenser","cas-client","storie","successo","prosjekt","prosjekter")
 GENERIC_TITLES = {"home","homepage","careers","career","contact","contact us","privacy","privacy policy","terms","terms and conditions","sitemap","newsroom","success stories","client stories","cas client","cas clients","storie di successo","kundreferenser","referencer","prosjekter"}
+FRANCE_DETAIL_PATH = "/espace-media/cas-client/details/"
 
 def _path(url):
     return urlsplit(url).path.rstrip("/") or "/"
@@ -14,8 +15,8 @@ def _same_domain(a,b):
 def _allowed_candidate(url, listing_url, cfg):
     if not _same_domain(url, listing_url) or url == normalize_url(listing_url):
         return False
-    path=_path(url).lower()
-    prefixes=cfg.get("allowed_path_prefixes") or []
+    path = _path(url).lower()
+    prefixes = cfg.get("allowed_path_prefixes") or []
     if prefixes and not any(path.startswith(p.rstrip("/").lower()+"/") for p in prefixes):
         return False
     for fragment in cfg.get("blocked_path_fragments", []):
@@ -23,8 +24,27 @@ def _allowed_candidate(url, listing_url, cfg):
             return False
     return True
 
+def _france_candidate_links(soup, listing_url):
+    seen=set()
+    for a in soup.find_all("a", href=True):
+        url=absolute_url(listing_url,a["href"])
+        if not _same_domain(url,listing_url):
+            continue
+        if FRANCE_DETAIL_PATH not in _path(url).lower():
+            continue
+        if url in seen:
+            continue
+        text=clean_text(a.get_text(" ",strip=True))
+        if len(text)<6:
+            continue
+        seen.add(url)
+        yield {"url":url,"anchor_text":text}
+
 def candidate_links(html, listing_url, cfg):
     soup=BeautifulSoup(html,"html.parser")
+    if str(cfg.get("market","")).strip().lower()=="france":
+        yield from _france_candidate_links(soup,listing_url)
+        return
     seen=set()
     for a in soup.find_all("a",href=True):
         url=absolute_url(listing_url,a["href"])
@@ -67,10 +87,12 @@ def extract_detail(html,seed):
     for selector in ["meta[name='description']","meta[property='og:description']"]:
         meta=soup.select_one(selector)
         if meta and meta.get("content"):
-            description=clean_text(meta["content"]); break
+            description=clean_text(meta["content"])
+            break
     if not description:
         p=main.find("p")
-        if p: description=clean_text(p.get_text(" ",strip=True))
+        if p:
+            description=clean_text(p.get_text(" ",strip=True))
     t=soup.find("time")
-    date=clean_text(t.get("datetime") or t.get_text(" ",strip=True)) if t else ""
-    return {"title":title,"description":description,"published_date":date,"categories":[],"client_name":""}
+    published_date=clean_text(t.get("datetime") or t.get_text(" ",strip=True)) if t else ""
+    return {"title":title,"description":description,"published_date":published_date,"categories":[],"client_name":""}
