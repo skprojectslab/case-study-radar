@@ -4,151 +4,150 @@ uk:
   language: en
   listing_urls:
   - https://www.soprasteria.co.uk/insights/client-success-stories
-  allowed_path_prefixes:
-  - /insights/client-success-stories
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
+
 germany:
   market: Germany
   domain: soprasteria.de
   language: de
   listing_urls:
   - https://www.soprasteria.de/newsroom/success-stories
-  allowed_path_prefixes:
-  - /newsroom/success-stories
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
+
 belgium:
   market: Belgium
   domain: soprasteria.be
   language: nl/fr
   listing_urls:
   - https://www.soprasteria.be/newsroom/success-stories
-  allowed_path_prefixes:
-  - /newsroom/success-stories
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
+
 denmark:
   market: Denmark
   domain: soprasteria.dk
   language: da
   listing_urls:
   - https://www.soprasteria.dk/Referencer
-  allowed_path_prefixes:
-  - /Referencer
   blocked_path_fragments:
   - /contact
   - /karriere
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
+
 italy:
   market: Italy
   domain: soprasteria.it
   language: it
   listing_urls:
   - https://www.soprasteria.it/chi-siamo/storie-di-successo
-  allowed_path_prefixes:
-  - /chi-siamo/storie-di-successo
   blocked_path_fragments:
   - /contact
   - /lavora
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
+
 luxembourg:
   market: Luxembourg
   domain: soprasteria.lu
   language: fr
   listing_urls:
   - https://www.soprasteria.lu/newsroom/success-stories
-  allowed_path_prefixes:
-  - /newsroom/success-stories
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
+
 netherlands:
   market: Netherlands
   domain: soprasteria.nl
   language: nl
   listing_urls:
   - https://www.soprasteria.nl/newsroom/success-stories
-  allowed_path_prefixes:
-  - /newsroom/success-stories
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
+
 france:
   market: France
   domain: soprasteria.fr
   language: fr
   listing_urls:
-  - https://www.soprasteria.fr/espace-media/cas-client
-  allowed_path_prefixes:
-  - /espace-media/cas-client
+  - https://www.soprasteria.fr/services/conseil/nos-client-stories
   blocked_path_fragments:
   - /contact
   - /carrieres
   - /privacy
   - /mentions-legales
   - /sitemap
+  max_candidates: 30
+
 sweden:
   market: Sweden
   domain: soprasteria.se
   language: sv
   listing_urls:
   - https://www.soprasteria.se/kundreferenser/
-  allowed_path_prefixes:
-  - /kundreferenser
   blocked_path_fragments:
   - /kontakt
   - /karriar
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
+
 india:
   market: India
   domain: soprasteria.in
   language: en
   listing_urls:
-  - https://www.soprasteria.in/insights#clientstories
-  allowed_path_prefixes:
-  - /insights
+  - https://www.soprasteria.in/insights
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
+
 norway:
   market: Norway
   domain: soprasteria.no
   language: 'no'
   listing_urls:
   - https://www.soprasteria.no/prosjekter
-  allowed_path_prefixes:
-  - /prosjekter
   blocked_path_fragments:
   - /kontakt
   - /karriere
   - /privacy
   - /terms
   - /sitemap
+  max_candidates: 30
