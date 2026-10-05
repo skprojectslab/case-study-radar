@@ -31,9 +31,9 @@
     "published_date": "2026-07-16",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "45d8533442b885c1725bde2de567afa757a6e4052a17f079b10ed128477e88d8",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/transforming-street-works-operations-for-m-group-services": {
     "market": "UK",
@@ -49,7 +49,7 @@
     "published_date": "2026-06-12",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "14f4de2e759b4fd237a17bb2024217a06adc141590454c682b6557db4b019e55",
     "status": "EXISTING"
   },
@@ -85,7 +85,7 @@
     "published_date": "2026-04-16",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "25f9bab6e2166e292a029634460dcf02adeb07b9a58ddaaa60efbfde1a757f11",
     "status": "EXISTING"
   },
@@ -103,7 +103,7 @@
     "published_date": "2026-02-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "068b7850bb7dcdf4d5ad2a9088ac1608a0c5facb9415c6f737a9ab903c3a54ae",
     "status": "EXISTING"
   },
@@ -121,9 +121,9 @@
     "published_date": "2025-11-12",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "187db12e6f08076cd6e207f6f2ba0f72b152ebe28d0ed2b0076147ad9e68cfed",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/making-healthcare-services-more-flexible": {
     "market": "UK",
@@ -139,7 +139,7 @@
     "published_date": "2025-10-03",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7b0ca2717c52d3b72cc522906e758fa974bc8e97eaa490e29749cc8f2f486c07",
     "status": "EXISTING"
   },
@@ -157,7 +157,7 @@
     "published_date": "2025-09-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "c0f194522f988e8097a2fe3607db5792fcad1e6e1d24009eb26d766b4482f1cf",
     "status": "EXISTING"
   },
@@ -175,7 +175,7 @@
     "published_date": "2025-07-24",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0ecec64c8dda6ea772ee6338d5f2b3ec4b9b483480175ea1d184bd8e7553feff",
     "status": "EXISTING"
   },
@@ -193,7 +193,7 @@
     "published_date": "2025-07-04",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a59688300a4533b459d5a40c291f44fd67a38e8b455c3fac14e38cd99b7ad6e0",
     "status": "EXISTING"
   },
@@ -211,7 +211,7 @@
     "published_date": "2025-06-16",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "72ad3e615dfe618448a37a726a242c59dcce2a61f960f5ccd30640ecb996198c",
     "status": "EXISTING"
   },
@@ -247,7 +247,7 @@
     "published_date": "2025-03-17",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "75686b3ba81176e5ead0ee2e6f4e2aeaba93a9c84015d8ea0a829757a7f1e4fb",
     "status": "EXISTING"
   },
@@ -283,7 +283,7 @@
     "published_date": "2025-02-12",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "fcd09632dd8a61a848f5f12794bdca74329f2ec6290f82f695b76f01cd98b5cc",
     "status": "EXISTING"
   },
@@ -319,7 +319,7 @@
     "published_date": "2024-10-31",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "fd54c0a2606d2e3fd261b84da042475c972b4bc82c516e5eaedda9184f0332cc",
     "status": "EXISTING"
   },
@@ -355,9 +355,9 @@
     "published_date": "2024-09-24",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "f3bc459bdcbca287b617225afc390628a8a89a8bfa573eaeec0b9413dce34148",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/sopra-steria-creates-digital-support-tool-for-uk-power-networks-customers": {
     "market": "UK",
@@ -373,7 +373,7 @@
     "published_date": "2024-09-16",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "c150ad63273fd6bf8522c79014eb488ae64338a1d42fb75cf60f15ddeef2db2c",
     "status": "EXISTING"
   },
@@ -391,9 +391,9 @@
     "published_date": "2024-08-16",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "ff7032142ba1b0269f1c64e0284de336bf2504fd740fdd9503185f449449f3a0",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/supporting-millions-of-passengers-at-europes-leading-short-haul-airline": {
     "market": "UK",
@@ -427,9 +427,9 @@
     "published_date": "2024-08-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "840ef0b790901f4bc9a9e05afd4083592a4929dcdb6fea7c3bd746a4ca367fa6",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/accelerating-innovative-expansion-using-a-strategic-approach-to-cloud-technolog": {
     "market": "UK",
@@ -463,9 +463,9 @@
     "published_date": "2024-06-24",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "614715097f597854b230734daf4120054824cf145b28f153de341f7740c7ba44",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/digital-transformation-and-customer-centred-organisation-change-for-sse": {
     "market": "UK",
@@ -535,7 +535,7 @@
     "published_date": "2024-05-24",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "62090f4aadc528844df96c1ee25ae50dbc38d168b1c0a73ecb9d847f63da04c9",
     "status": "EXISTING"
   },
@@ -553,9 +553,9 @@
     "published_date": "2024-05-15",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "1e9443e22dd12fd5311997f795a571bfa00f05f21b0d8a0d53eb41c6554eccf9",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/rema-1000-simple-digital-processes-are-often-the-best": {
     "market": "UK",
@@ -571,7 +571,7 @@
     "published_date": "2024-04-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "77e7bd7f06e8673a9a7673222dc980e4003d5f4f20caf5f46ded38f34b7340cf",
     "status": "EXISTING"
   },
@@ -589,7 +589,7 @@
     "published_date": "2024-04-16",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e413959d471e0f2ada300293c26b4a89f7e8788ad32dc591819c7b4049e00ab5",
     "status": "EXISTING"
   },
@@ -607,7 +607,7 @@
     "published_date": "2024-03-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "5c6cdf1c3a5191afdaad5e366371fc2800c9f346131c5bc014e702878f29c9f5",
     "status": "EXISTING"
   },
@@ -697,9 +697,9 @@
     "published_date": "2023-10-01",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "3a8ba75e9d22c54f89e74d7dc1f61e55c37c2e915be3035f64b768d677567592",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/biodrone-drone-services-revolutionising-sustainable-forestry-management": {
     "market": "UK",
@@ -877,9 +877,9 @@
     "published_date": "2022-07-15",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a4ca7b8a63b22046d0280f93f6220d95c9dce7a524e2432a99af645519ec8675",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/reimagined-citizen-centric-social-security-services2": {
     "market": "UK",
@@ -913,9 +913,9 @@
     "published_date": "2022-03-31",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "b3b019803f9b7108bd6a2392589209d485921cc4cd62107dc16716fb4208281f",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/creating-an-online-pension-drawdown-journey-for-hargreaves-lansdown-2": {
     "market": "UK",
@@ -1471,9 +1471,9 @@
     "published_date": "2019-10-24",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "d35b5b1ab18879f83f8864cb0442fb1a06f37bdece8bffb28019a59cf58f17e1",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.co.uk/insights/client-success-stories/details/delivering-flexibility-and-agility-with-a-global-mobile-banking-platform": {
     "market": "UK",
@@ -1615,7 +1615,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "c3e3421591011a1054d29d8d4c17b6987a72eaf1b97bf89506787f4e1664b9dc",
     "status": "EXISTING"
   },
@@ -1633,7 +1633,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "ed7380e8af2f0f6176022e17475b05764eb5fcc547cb1e9d6a34293b9eab05e4",
     "status": "EXISTING"
   },
@@ -1651,7 +1651,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "f3eee130893d9559fd0a0f17d2379dcc2c2423a5b407ed7c8442b6b8cf603256",
     "status": "EXISTING"
   },
@@ -1723,7 +1723,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "40fb54b339ec9d220bc02b70483f1bf7d594c08b3598779f6204553a5f9b5a25",
     "status": "EXISTING"
   },
@@ -1741,7 +1741,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "12c9eaa6eafc7c3d716e8bae0802bf2765987debc0b2d7d153e2fdcad147abd3",
     "status": "EXISTING"
   },
@@ -1759,7 +1759,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0bb43017fc6007d2240f207c2afb6bae878a0a8772ed63c5edee60952c0c8207",
     "status": "EXISTING"
   },
@@ -1795,9 +1795,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "6721e3e89c5761b2af6cf5c64c68ccb91c44c49dcc8d289a727f86ab06d81582",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.de/newsroom/success-stories/details/personalbeschaffungsstrategie-deutsche-bundesbehoerde": {
     "market": "Germany",
@@ -1813,7 +1813,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0586876d70023acc4de41450eb478534ecce08ab86944fb1914f3ac2e26c403e",
     "status": "EXISTING"
   },
@@ -1885,7 +1885,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a1706ce3e2283576d69a92e0419bb1c00b98afb4008e54e2630ccefed8cba09b",
     "status": "EXISTING"
   },
@@ -1957,7 +1957,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2ab0887747a9655a3ad43a6afd90b13890db18ffd66db48f537a54fc4292e84f",
     "status": "EXISTING"
   },
@@ -2029,9 +2029,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e9d28f6a3e8ab44ef9789b45034484f0a804780bf9eeba41d50356a507419001",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.de/newsroom/success-stories/details/open-grid-europe": {
     "market": "Germany",
@@ -3631,7 +3631,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "12d6ce2174fe7ced0e97e42509dab42b8392969a9f342042f5929d716c9489dd",
     "status": "EXISTING"
   },
@@ -3649,7 +3649,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "fa321e39654eca4f3068bca6524fe25f04b3359211f5fc210e6bf3d45d3252f9",
     "status": "EXISTING"
   },
@@ -3667,7 +3667,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e05e4341fa49d058a2aa2f1b1a9c43cfdb9144396bf081e608a2475df4c13647",
     "status": "EXISTING"
   },
@@ -3685,7 +3685,7 @@
     "published_date": "2026-09-03",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "fdf97556049516316b6ee30ccd468bfdc01be8eff6505f46eeacc6a7efc2f8b5",
     "status": "EXISTING"
   },
@@ -3703,7 +3703,7 @@
     "published_date": "2026-09-03",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "d2f8fb8c19c2f12b45df70318fa629fae0853b5054385c92a1293f2a800fcc50",
     "status": "EXISTING"
   },
@@ -3721,7 +3721,7 @@
     "published_date": "2026-08-14",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "10257d273593249637dab70f38f164482397347698d191b0be20198faf0012fb",
     "status": "EXISTING"
   },
@@ -3739,7 +3739,7 @@
     "published_date": "2026-04-08",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "f2d9e0e22dddda5a959ca5ad04d9ad29adb351af9794194db4b6bac17fb8fa0c",
     "status": "EXISTING"
   },
@@ -3757,7 +3757,7 @@
     "published_date": "2026-01-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "fed58a36a4c12f21da939f11851e24412bf6b2c168860d674ef24b895b12cedb",
     "status": "EXISTING"
   },
@@ -3775,7 +3775,7 @@
     "published_date": "2025-11-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0e84381f2ae242b4af9272d0c5df3840b6ebef0955fe1edd93c00b6c032d420a",
     "status": "EXISTING"
   },
@@ -3811,7 +3811,7 @@
     "published_date": "2025-10-21",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a0076a46c5b4f1424bf9fc45994b8d405814189cb7f257ea4b85ebfbb8e8d046",
     "status": "EXISTING"
   },
@@ -3829,7 +3829,7 @@
     "published_date": "2025-09-30",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "9ed00fe878a75b4b51a453e572013d8086b8253586859b1791fde2c52e8f2e59",
     "status": "EXISTING"
   },
@@ -3847,7 +3847,7 @@
     "published_date": "2025-09-04",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "706edbe4d5e3a3999788440825e499380f3a3de57c751684b1f12e8b396eaa17",
     "status": "EXISTING"
   },
@@ -3865,7 +3865,7 @@
     "published_date": "2025-08-29",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e13645c099eeb19b1df30dd13da042c619881f86b083c567d6ea0fe40fdf6423",
     "status": "EXISTING"
   },
@@ -3883,7 +3883,7 @@
     "published_date": "2025-05-04",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "21372ca851131add24a0468a4317fb42720f3c4a05e10cba234c1152bb959d5a",
     "status": "EXISTING"
   },
@@ -3901,7 +3901,7 @@
     "published_date": "2025-04-11",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7b1c3c19ff4c0dae79d2e648ff110d6928f784fe8c836befa49f14f8e312b63e",
     "status": "EXISTING"
   },
@@ -3937,7 +3937,7 @@
     "published_date": "2025-03-19",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "46351d82670bf1282d3519a66166382854018eb2fbb9f8373ba2ccca3cb0e00e",
     "status": "EXISTING"
   },
@@ -3973,7 +3973,7 @@
     "published_date": "2025-03-19",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2fe7fac9984baf5c92080b53a796d763dfdb67d726ac54166d107a4c5dbbf6b1",
     "status": "EXISTING"
   },
@@ -3991,7 +3991,7 @@
     "published_date": "2025-02-21",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7f20bef5781efb819b9542f6508b82dd2eb11d9af94e667346be5b83c1d80c1a",
     "status": "EXISTING"
   },
@@ -4027,7 +4027,7 @@
     "published_date": "2024-12-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2b373bcab4f4d0d8a3bc258d7cf06eb75b8bf0cddb69dd86e8958e2d36cb9cea",
     "status": "EXISTING"
   },
@@ -4045,7 +4045,7 @@
     "published_date": "2024-12-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "350fcfbcb8bcbb49608f5c31789ed7c570378747af62cabbbc26838446df91b2",
     "status": "EXISTING"
   },
@@ -4063,7 +4063,7 @@
     "published_date": "2024-12-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e5a81b4db8a0c4c0f6a4685a5d14bb762552531f3dadc2bf6be6ad3df8d35cd9",
     "status": "EXISTING"
   },
@@ -4081,7 +4081,7 @@
     "published_date": "2024-09-27",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e3515d9b1d96846e7e576ce5468eb98e71ba8ecacb66f47d726ed088a97a0342",
     "status": "EXISTING"
   },
@@ -4099,7 +4099,7 @@
     "published_date": "2024-09-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "eeed8a35bbaf666bc0e6fec71cb4abfa7fe7b7e845b361387e474ff9be9eee53",
     "status": "EXISTING"
   },
@@ -4117,7 +4117,7 @@
     "published_date": "2024-08-21",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "52624e6482c14c53b2957af7fd357288bbd8f1cb6acd8a58bb9ac032edc6ae5f",
     "status": "EXISTING"
   },
@@ -4153,7 +4153,7 @@
     "published_date": "2024-08-07",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "d8d6f157b024e3648197102bf53cfa0da1d40a0c7ab4430f73bc78ee1a868f28",
     "status": "EXISTING"
   },
@@ -4171,7 +4171,7 @@
     "published_date": "2024-08-01",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e8228867afc9fb3d05e20d4231d831003d6e753a0dcef2a012c4c8c88236b9a2",
     "status": "EXISTING"
   },
@@ -4189,7 +4189,7 @@
     "published_date": "2024-08-01",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "3cc6bc72f9c1299e42d475a908f26b39b73de546998ab88f1f6fc6c4ba3ed0ee",
     "status": "EXISTING"
   },
@@ -4225,7 +4225,7 @@
     "published_date": "2024-07-26",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7ad1685725f4f84fd885ab96226e3a2a805455c246e461019f350b439b3f6579",
     "status": "EXISTING"
   },
@@ -4243,7 +4243,7 @@
     "published_date": "2024-07-19",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "113fbd9efc0bd2a5b8dc4cd3c2875548af1df0967edd74267c9e9f7e56c5fb68",
     "status": "EXISTING"
   },
@@ -4279,7 +4279,7 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0d5ad430acc768f43e536e675f8fb8771aa0375b005398e5a24a7f81a8535e51",
     "status": "EXISTING"
   },
@@ -4297,7 +4297,7 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7d69f458acd257235597d75c54e5ab2130ecdb8a58069a8c93b5459080a70aaf",
     "status": "EXISTING"
   },
@@ -4351,9 +4351,9 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "5804ddee2ea81e06906df9b867a87a2bc94cffc89149b66b9250aff53b83d17b",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.lu/newsroom/success-stories/details/designing-the-future-experience-for-existing-mortgage-customers-at-a-leading-european-bank": {
     "market": "Luxembourg",
@@ -4369,7 +4369,7 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "79a9ed7d5f15074c34b33afb4658a26e2156d3a00a490b34a54d296d034ae031",
     "status": "EXISTING"
   },
@@ -4387,7 +4387,7 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2aed56be9a4d551393bb7a642a13f445a1d25da476356ba5ecfd994bd511a15c",
     "status": "EXISTING"
   },
@@ -4405,9 +4405,9 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0f3bca64d1a36b7798653571e76a9ced6fda2d97d1b37b7d99488fd00bf87789",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.lu/newsroom/success-stories/details/roquettes-sap-transformation-driving-efficiency-and-enhancing-customer-experience": {
     "market": "Luxembourg",
@@ -4423,9 +4423,9 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "930162033f34065aa37910d5d59cf83a4707bff5aff53b7ad5a35d82202c5204",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.lu/newsroom/success-stories/details/public-transport-in-the-nouvelle-aquitaine-region-chose-multimodal-and-sustainable-mobility": {
     "market": "Luxembourg",
@@ -4531,7 +4531,7 @@
     "published_date": "2024-07-17",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0d175317ed8d94dee194fc9a6f2719b748092bd9699720a789b26026c834434f",
     "status": "EXISTING"
   },
@@ -4585,7 +4585,7 @@
     "published_date": "2024-07-11",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e1bf07396687dca27196449ed40eea04b08952e443b4060cd07bb9add19cdf56",
     "status": "EXISTING"
   },
@@ -4855,7 +4855,7 @@
     "published_date": "2024-06-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "90cd151207c2658b93474b480edb1cdad71390216ec3d7d5658c9afbb861abdb",
     "status": "EXISTING"
   },
@@ -5161,7 +5161,7 @@
     "published_date": "2023-03-23",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "b19fd5a3f7f441e3381ac4a53de06eae6b514d896e461da70f6daf728800c3c7",
     "status": "EXISTING"
   },
@@ -5215,7 +5215,7 @@
     "published_date": "2026-09-03",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "9c13e68b15a0c30ef9aaa395cb198337cae18669180590db3d3c8fc6a4db257d",
     "status": "EXISTING"
   },
@@ -5233,7 +5233,7 @@
     "published_date": "2026-09-03",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "dc49a070e9a32a71a7f95accfac72faf0eb82ca86c0a8284c3241328781ac59f",
     "status": "EXISTING"
   },
@@ -5251,7 +5251,7 @@
     "published_date": "2026-08-14",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "10257d273593249637dab70f38f164482397347698d191b0be20198faf0012fb",
     "status": "EXISTING"
   },
@@ -5269,9 +5269,9 @@
     "published_date": "2026-04-08",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "9376a5e372428564c13672627b82d81b2b0016e37703a92521672868e78e6187",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/faster-smarter-local-train-movement-planning-with-the-ormas-portal": {
     "market": "Netherlands",
@@ -5287,7 +5287,7 @@
     "published_date": "2026-01-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "8d939072d7c120939f8aa3b4624782235e5e6ad274675bd73161e2957341d3e8",
     "status": "EXISTING"
   },
@@ -5305,7 +5305,7 @@
     "published_date": "2025-11-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0e84381f2ae242b4af9272d0c5df3840b6ebef0955fe1edd93c00b6c032d420a",
     "status": "EXISTING"
   },
@@ -5323,7 +5323,7 @@
     "published_date": "2025-10-31",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a44401997052e46aa1bbeb27a09a684633f6a5eb4442162c44d57a9f6fc09b73",
     "status": "EXISTING"
   },
@@ -5359,7 +5359,7 @@
     "published_date": "2025-09-30",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "9ed00fe878a75b4b51a453e572013d8086b8253586859b1791fde2c52e8f2e59",
     "status": "EXISTING"
   },
@@ -5377,7 +5377,7 @@
     "published_date": "2025-09-04",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2c14782b8a834d3b1cd37e84c93aefde90b2cb0f216d1ae1f4dfd2f064bb4dee",
     "status": "EXISTING"
   },
@@ -5413,7 +5413,7 @@
     "published_date": "2025-05-04",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "8779d7ac4b928320a8ede4616c1adbb92d894b6e39ecea63b6e3854792f725d2",
     "status": "EXISTING"
   },
@@ -5449,7 +5449,7 @@
     "published_date": "2025-04-08",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "02371ecb0a7663d1e5aec6d9a1ed84f0885507ed2e54ebe4518c04e25cde1b2f",
     "status": "EXISTING"
   },
@@ -5467,7 +5467,7 @@
     "published_date": "2025-03-19",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "46351d82670bf1282d3519a66166382854018eb2fbb9f8373ba2ccca3cb0e00e",
     "status": "EXISTING"
   },
@@ -5485,7 +5485,7 @@
     "published_date": "2025-03-19",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e4a6624df18ae4e935ad950831fe1d5e06f179d42397d71a76a339bea58738d2",
     "status": "EXISTING"
   },
@@ -5521,7 +5521,7 @@
     "published_date": "2025-02-21",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7f20bef5781efb819b9542f6508b82dd2eb11d9af94e667346be5b83c1d80c1a",
     "status": "EXISTING"
   },
@@ -5557,7 +5557,7 @@
     "published_date": "2024-12-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2b373bcab4f4d0d8a3bc258d7cf06eb75b8bf0cddb69dd86e8958e2d36cb9cea",
     "status": "EXISTING"
   },
@@ -5575,7 +5575,7 @@
     "published_date": "2024-12-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "350fcfbcb8bcbb49608f5c31789ed7c570378747af62cabbbc26838446df91b2",
     "status": "EXISTING"
   },
@@ -5593,7 +5593,7 @@
     "published_date": "2024-12-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e5a81b4db8a0c4c0f6a4685a5d14bb762552531f3dadc2bf6be6ad3df8d35cd9",
     "status": "EXISTING"
   },
@@ -5629,7 +5629,7 @@
     "published_date": "2024-09-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "eeed8a35bbaf666bc0e6fec71cb4abfa7fe7b7e845b361387e474ff9be9eee53",
     "status": "EXISTING"
   },
@@ -5647,7 +5647,7 @@
     "published_date": "2024-08-21",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "52624e6482c14c53b2957af7fd357288bbd8f1cb6acd8a58bb9ac032edc6ae5f",
     "status": "EXISTING"
   },
@@ -5665,7 +5665,7 @@
     "published_date": "2024-08-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "93aaf9483ebf5c3dab294c98c470448b2f6f6aee80b215d33f6d621899980ebd",
     "status": "EXISTING"
   },
@@ -5701,7 +5701,7 @@
     "published_date": "2024-08-01",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e8228867afc9fb3d05e20d4231d831003d6e753a0dcef2a012c4c8c88236b9a2",
     "status": "EXISTING"
   },
@@ -5719,7 +5719,7 @@
     "published_date": "2024-08-01",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "3cc6bc72f9c1299e42d475a908f26b39b73de546998ab88f1f6fc6c4ba3ed0ee",
     "status": "EXISTING"
   },
@@ -5737,7 +5737,7 @@
     "published_date": "2024-07-31",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "b7bc7dee820fcfc2ad3d75aa9a16618041e84fd7923a6abdd7cefb56ef63b940",
     "status": "EXISTING"
   },
@@ -5755,7 +5755,7 @@
     "published_date": "2024-07-26",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7ad1685725f4f84fd885ab96226e3a2a805455c246e461019f350b439b3f6579",
     "status": "EXISTING"
   },
@@ -5773,7 +5773,7 @@
     "published_date": "2024-07-19",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "113fbd9efc0bd2a5b8dc4cd3c2875548af1df0967edd74267c9e9f7e56c5fb68",
     "status": "EXISTING"
   },
@@ -5791,9 +5791,9 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7b57e59e2d443b6fb20ead70cd4425974b134b9b0e3495b2d22a8bbc699da937",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/ccb-subsea-as-equipped-for-increased-demand-with-new-cloud-based-erp-system": {
     "market": "Netherlands",
@@ -5809,7 +5809,7 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0d5ad430acc768f43e536e675f8fb8771aa0375b005398e5a24a7f81a8535e51",
     "status": "EXISTING"
   },
@@ -5827,7 +5827,7 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7d69f458acd257235597d75c54e5ab2130ecdb8a58069a8c93b5459080a70aaf",
     "status": "EXISTING"
   },
@@ -5899,7 +5899,7 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "79a9ed7d5f15074c34b33afb4658a26e2156d3a00a490b34a54d296d034ae031",
     "status": "EXISTING"
   },
@@ -5917,7 +5917,7 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2aed56be9a4d551393bb7a642a13f445a1d25da476356ba5ecfd994bd511a15c",
     "status": "EXISTING"
   },
@@ -5953,7 +5953,7 @@
     "published_date": "2024-07-18",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "930162033f34065aa37910d5d59cf83a4707bff5aff53b7ad5a35d82202c5204",
     "status": "EXISTING"
   },
@@ -6079,7 +6079,7 @@
     "published_date": "2024-07-11",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "26e6b87295604c2b54d322fa7c35391d3becd62d2006709534b92422ed2f0a37",
     "status": "EXISTING"
   },
@@ -6097,9 +6097,9 @@
     "published_date": "2024-07-11",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "919553e24909fcd151f63735ef826736124561f3ec5a7dffec9ee14989398827",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/leading-french-insurer---sepa-compliance": {
     "market": "Netherlands",
@@ -6115,9 +6115,9 @@
     "published_date": "2024-07-11",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e1bf07396687dca27196449ed40eea04b08952e443b4060cd07bb9add19cdf56",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/improved-customer-experience-at-ing": {
     "market": "Netherlands",
@@ -6277,9 +6277,9 @@
     "published_date": "2024-07-10",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "3f5dea104e48d378b840718ae46082c15ca44daeed35f9c9a5f5b5cb0247b75d",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/national-highways-digitalises-its-national-traffic-information-service": {
     "market": "Netherlands",
@@ -6493,9 +6493,9 @@
     "published_date": "2024-02-02",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "989a9be655f2c4e9177dd9f1a5cfa6a917587e50ffbf6da3fd3929fde5995033",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/rabobank-professionalises-team-to-increase-business-value": {
     "market": "Netherlands",
@@ -6547,9 +6547,9 @@
     "published_date": "2023-11-14",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "90f096997072b920a03e6ee7981799fd78322342f3d232b5c20fb6e785ef6f13",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/transdev-nederland-your-journey-starts-here": {
     "market": "Netherlands",
@@ -6565,9 +6565,9 @@
     "published_date": "2023-11-06",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a89787c4a229e7a92cae95e9aa7dafaba3123ac5f540cbbb59015790385637ea",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/port-of-antwerp-bruges-optimises-dredging-campaigns-thanks-to-predictive-depth-model": {
     "market": "Netherlands",
@@ -6583,9 +6583,9 @@
     "published_date": "2023-10-17",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "bde2c409d90e51117403f9afb166eb2a3e49fd96062d511a39912645a46392fe",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/ecopower-improves-cyber-maturity-of-organization": {
     "market": "Netherlands",
@@ -6745,7 +6745,7 @@
     "published_date": "2026-05-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "9c41895c5557d1e8eca39bf4ae38aec6734427148886809b4e5bf2f3d2d3974a",
     "status": "EXISTING"
   },
@@ -6763,7 +6763,7 @@
     "published_date": "2026-05-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2a26d9c404297c4369bd01a5ce40d48716b632c8e4728ab79bdea66d2110d1bf",
     "status": "EXISTING"
   },
@@ -6781,7 +6781,7 @@
     "published_date": "2026-05-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "be1776c1b0e062482c53aa5e3f1ba2719391cb496e459d6b7286594ddca0b0a5",
     "status": "EXISTING"
   },
@@ -6799,7 +6799,7 @@
     "published_date": "2026-05-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "26ead1ed05b8b0c9a9472eb92ce83ea2863f58fd44c73e1a96ec423fc2458a59",
     "status": "EXISTING"
   },
@@ -6817,7 +6817,7 @@
     "published_date": "2025-08-28",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e4a6d719a6e76daeeffb9a56014b50083dd30bc256e34feea5ad49e780ec028f",
     "status": "EXISTING"
   },
@@ -6853,7 +6853,7 @@
     "published_date": "2025-02-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e942eaafcbb8b7618af5f0fcc67d282fd6bc8f77685110a15aed46572b22c2d2",
     "status": "EXISTING"
   },
@@ -6871,7 +6871,7 @@
     "published_date": "2025-01-31",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "9769a87f7c27d156e701bb5e31519b988002e776a858e31ebb5647145c945fe6",
     "status": "EXISTING"
   },
@@ -6889,7 +6889,7 @@
     "published_date": "2024-11-01",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a65e11019cfe97de9d4edc085725b43b83b630510a68f3267ec2aa36a54162e0",
     "status": "EXISTING"
   },
@@ -6907,7 +6907,7 @@
     "published_date": "2024-10-31",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7fa8af337f3df0b101b7a145705d0e0b4e8bb1d2f24ba6629370f0deb4bb2ddc",
     "status": "EXISTING"
   },
@@ -6925,7 +6925,7 @@
     "published_date": "2024-08-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "972dc8c7dad6adc9f7b7f4b7f031c83beaa34852fb537931d65f6c33cbd83bb0",
     "status": "EXISTING"
   },
@@ -6943,7 +6943,7 @@
     "published_date": "2024-06-03",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "d0a288827def2f435a53db8c435341c08096abe22d80a4201a3a723d680f3c1c",
     "status": "EXISTING"
   },
@@ -6961,7 +6961,7 @@
     "published_date": "2024-04-15",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "5a699d679f3091a5e26d2033e213358f092ea6322cfb6a5f0fa26875b37864dd",
     "status": "EXISTING"
   },
@@ -6979,7 +6979,7 @@
     "published_date": "2023-05-22",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2d16ff9ff51db6b3e0e0ec7df0d618f0135cd748d48b30f5675a61e823b23461",
     "status": "EXISTING"
   },
@@ -6997,7 +6997,7 @@
     "published_date": "2023-03-20",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "be245622cc234cf5379dbb83c429d0a50c001084b207e965ceb55a1ad2bb7b7e",
     "status": "EXISTING"
   },
@@ -7015,7 +7015,7 @@
     "published_date": "2021-06-28",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "9dee1bb38c4b8c341404dcdee37b75f31a23b723cf2cd6911ddbfa456386209c",
     "status": "EXISTING"
   },
@@ -7033,7 +7033,7 @@
     "published_date": "2021-06-28",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a56b248b5735962e7a6ec59ddaff958e8be44f962467f88b995aaf01e444c12d",
     "status": "EXISTING"
   },
@@ -7041,7 +7041,7 @@
     "market": "France",
     "source_id": "france",
     "source_domain": "soprasteria.fr",
-    "source_url": "https://www.soprasteria.fr/espace-media/cas-client",
+    "source_url": "https://www.soprasteria.fr/services/conseil/nos-client-stories",
     "language": "fr",
     "title": "Commute : Co-construisons la mobilité de demain",
     "description": "La gouvernance hybride et collaborative : moteur des mobilités futures",
@@ -7051,9 +7051,9 @@
     "published_date": "2021-05-31",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "e0cdaad585f648cb15846ee1f6c3b5cd30461a06676a28ba24bbc5ea5cb09015",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/unofi-repenser-l-experience-utilisateur-à-travers-la-refonte-de-son-espace-client": {
     "market": "France",
@@ -7069,7 +7069,7 @@
     "published_date": "2021-04-13",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "8b5f06bfd3f07b61d45df3d96636546ce0367d71853b058ea760e4cb0353779a",
     "status": "EXISTING"
   },
@@ -7087,7 +7087,7 @@
     "published_date": "2021-03-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "f9452762ce896d6df8c77f37448d093842f2acf344784a2bbaad60fb75cfd6fb",
     "status": "EXISTING"
   },
@@ -7105,7 +7105,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0aa61a7dd58ed353a90cb2c11548cc22ec124c3872df35b4175ea56624a3c531",
     "status": "EXISTING"
   },
@@ -7123,7 +7123,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2feaf9bc1a069f618336edc6e552d7f21ae070cd01d877ece36c5a5136ae01ad",
     "status": "EXISTING"
   },
@@ -7141,7 +7141,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "68a5662565f61116469e5c085a8a9c22cdae860f561bed3d242ceb92c11b7e50",
     "status": "EXISTING"
   },
@@ -7159,7 +7159,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "127aa8e5778980321f646dd7bbe7056d4ecf4f94ab3101e5786cf26c6ae8a502",
     "status": "EXISTING"
   },
@@ -7177,7 +7177,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "178b784da876a3f6713cc3892b5b79159815f796c264f7422d4f5c7daf73f113",
     "status": "EXISTING"
   },
@@ -7195,7 +7195,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "cd09d0ea0c442f308f13044b38ed31961dcb8981cc71d67adcdabbf6c7d7d7ad",
     "status": "EXISTING"
   },
@@ -7213,7 +7213,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "1e0861ad583b2f181b27b56b23b619c62267412cf4cd7accae9d6bb606b21f09",
     "status": "EXISTING"
   },
@@ -7231,7 +7231,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "f69fb6f015d4fadc61c774031590021753f82252db48b99c648c4fa20744eae7",
     "status": "EXISTING"
   },
@@ -7249,7 +7249,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7f6a5d927ccbc4e4cab75472f69d8d3a8a49059c5ab46106b7064dfb8036090a",
     "status": "EXISTING"
   },
@@ -7267,7 +7267,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "78953a8d484f98e7a91943fe2de0d8ec3c408a35469a1c772255355924ce7763",
     "status": "EXISTING"
   },
@@ -7285,7 +7285,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "fd2eb8b4cfb254748bb4e8208651d2b48db102d15a4ef6f043569bb1a18c0079",
     "status": "EXISTING"
   },
@@ -7303,7 +7303,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "856d06e540aa2c0a048cb3b73a9dc01bbf3ce7e1d46b888e2d8b2e24c9873005",
     "status": "EXISTING"
   },
@@ -7321,7 +7321,7 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "667d9e3d3426c1aceb0c1b1ea382f364158f60346ac92670c6d0242f21483f79",
     "status": "EXISTING"
   },
@@ -7339,7 +7339,7 @@
     "published_date": "2026-04-15",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "2ba01991fd4ff95a86cb7103212a729c3a2e8848e083988d1226b26d62eedba7",
     "status": "EXISTING"
   },
@@ -7357,7 +7357,7 @@
     "published_date": "2026-02-17",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "7c9b5184c6bef38dd6b1e34d9c728d6885451531f69718156e2066ec73adac2b",
     "status": "EXISTING"
   },
@@ -7375,7 +7375,7 @@
     "published_date": "2026-02-17",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "231c42c6e0780c75553ab53cc8eb63aa5fb65353f3b2086c8e67d8829c04786e",
     "status": "EXISTING"
   },
@@ -7411,7 +7411,7 @@
     "published_date": "2026-08-24",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "c2b3809ae38fc7a94232ffccc78229cd18c1caaf8f5c7b867acf81b6457e5874",
     "status": "EXISTING"
   },
@@ -7429,7 +7429,7 @@
     "published_date": "2026-08-06",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "166467e22def0c0acf617e6223cd224043bb7d5ec453ff1e9954a9818e7af4a2",
     "status": "EXISTING"
   },
@@ -7447,7 +7447,7 @@
     "published_date": "2026-08-06",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "41e86fa2b5025e4183dbc54ac8ce5038f2405bd6bb0c91d121d1878479d8eb92",
     "status": "EXISTING"
   },
@@ -7465,7 +7465,7 @@
     "published_date": "2026-07-13",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "607647465b0d3eb8bda9002676ed0255ddbb2c8e943e351165acf5da06bc328c",
     "status": "EXISTING"
   },
@@ -7537,7 +7537,7 @@
     "published_date": "2026-04-29",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "fe6217f0026d55b5f55c5f5f805befb7780caab46b9c5415555cac84f1bfe4c0",
     "status": "EXISTING"
   },
@@ -7573,7 +7573,7 @@
     "published_date": "2026-04-24",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "99b33f4f35ec11dc5c7b0995aab56b10a678891da2095f80a1e658128e017a6f",
     "status": "EXISTING"
   },
@@ -7591,7 +7591,7 @@
     "published_date": "2026-03-23",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a3549aad0e429698f41375085900a2271b2928fbd2e05b737b56a79c3a84438c",
     "status": "EXISTING"
   },
@@ -7627,9 +7627,9 @@
     "published_date": "2026-01-30",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "28ab2ba8bca9d2103418c96047e2716e2625c06c4b946dd967635785cf0b4cc9",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.no/prosjekter/details/norges-forskningsrad-moderne-datadrevet-svartjeneste-med-servicenow": {
     "market": "Norway",
@@ -7717,7 +7717,7 @@
     "published_date": "2025-12-08",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "35073acb663fa746de0bad061edafadbce9bf7b4ccba7ab0c3fac7b402f5d025",
     "status": "EXISTING"
   },
@@ -7807,7 +7807,7 @@
     "published_date": "2025-10-14",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "44606fd268a56ac30507e8305410b76bd9897ef31eb5ca90000c78af38976e6d",
     "status": "EXISTING"
   },
@@ -7843,7 +7843,7 @@
     "published_date": "2025-09-04",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "f68242668539fd10f4f9e3c42c6462252136a3dfbad5e92e0cfa1c1bfff90a20",
     "status": "EXISTING"
   },
@@ -8743,9 +8743,9 @@
     "published_date": "2023-03-24",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "53181ada96f7ddd3bc13d36d04fc59adfbd0701d155d3dc0d71ad6b4a91e21f1",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.no/prosjekter/details/asker-kommune-nar-arkivlsning-styrker-lokaldemokrati": {
     "market": "Norway",
@@ -9751,9 +9751,9 @@
     "published_date": "2020-11-05",
     "client_name": "",
     "first_seen": "2026-09-22T06:32:34.776388+00:00",
-    "last_seen": "2026-09-22T06:32:34.776388+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "01da1131951c8ff2a0c364979f25c9b89136e945233815ff27d66a4a794bf720",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.no/prosjekter/details/wallenius-wilhelmsen-merkevare--og-omdmmebygging-i-en-internasjonal-bransje": {
     "market": "Norway",
@@ -10273,9 +10273,9 @@
     "published_date": "2026-09-03",
     "client_name": "",
     "first_seen": "2026-10-05T06:08:56.501991+00:00",
-    "last_seen": "2026-10-05T06:34:42.075558+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "f1c2be66a1b6c031959e7839e93b04a850283dd2719f2affeecfd9f54811160d",
-    "status": "UPDATED"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.nl/newsroom/success-stories/details/the-future-of-money-has-no-age-limit": {
     "market": "Netherlands",
@@ -10291,7 +10291,7 @@
     "published_date": "2026-09-03",
     "client_name": "",
     "first_seen": "2026-10-05T06:08:56.501991+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "d8aa57aef2c59847892154a46886a9262cd17086cfaf1e87b8aa7e0ff68b1e56",
     "status": "EXISTING"
   },
@@ -10345,7 +10345,7 @@
     "published_date": "2019-11-29",
     "client_name": "",
     "first_seen": "2026-10-05T06:34:42.075558+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "90e266a332ceaa9fc549c3944d1e878ebd02a8ab8d860c6a65faf6d9c30c1005",
     "status": "EXISTING"
   },
@@ -10363,7 +10363,7 @@
     "published_date": "2020-11-03",
     "client_name": "",
     "first_seen": "2026-10-05T06:34:42.075558+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0f78e1e072e7a682ea71be563f88478bdd12211105e46d8f31806e1b1ab7d3a9",
     "status": "EXISTING"
   },
@@ -10381,7 +10381,7 @@
     "published_date": "2019-10-02",
     "client_name": "",
     "first_seen": "2026-10-05T06:34:42.075558+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "efb7b2e206e0b6f931e20cb542aab71cc7676edad28727b4c67b9c211de3133f",
     "status": "EXISTING"
   },
@@ -10417,7 +10417,7 @@
     "published_date": "2019-09-26",
     "client_name": "",
     "first_seen": "2026-10-05T06:34:42.075558+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "9e80818caeaad12ab1c6defd36477ea707aab93b9ac2da1116cc9871e609962a",
     "status": "EXISTING"
   },
@@ -10471,9 +10471,9 @@
     "published_date": "",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "9911ed43da17884640b2f2fe0365c7db629ab8c3fa1fa30085e0ef93192d8aa2",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.be/newsroom/success-stories/details/document-segmentation-in-the-banking-industry": {
     "market": "Belgium",
@@ -10597,9 +10597,9 @@
     "published_date": "2020-02-04",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "6004e3033a2f2c3612139fc709dc999486859f808f8b547acb51c2674f89ba15",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/drs-redefinit-strategie-controle-projet-modernisation-equipements": {
     "market": "France",
@@ -10615,9 +10615,9 @@
     "published_date": "2019-10-01",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "c5645e10c8de210f0e67f11ced25e90ec50db39969088d021f64a1c5081aef4f",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/airbus-creer-valeur-it-gouvernance": {
     "market": "France",
@@ -10633,9 +10633,9 @@
     "published_date": "2019-07-23",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "d17aaa3596c2a0d473238e950aa2487636dff62e3dad0867046e71392dc79b2a",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/cap-sur-le-cloud-pour-wallenius-wilhelmsen": {
     "market": "France",
@@ -10651,9 +10651,9 @@
     "published_date": "2020-10-19",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "fa62927a6d77b59ec98e71957bed55f02c2b5da6b23b46da63f740ac9b1ed0b2",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/ministere-defense-service-armees-si-approvisionnements-produits-sante": {
     "market": "France",
@@ -10669,9 +10669,9 @@
     "published_date": "2019-07-23",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "8e5f2eef46d2fad31645b172c29ea593829eda35db6521f3e8d7cacded8328f1",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/aife-(agence-pour-l-informatique-financiere-de-l-etat)-chorus": {
     "market": "France",
@@ -10687,9 +10687,9 @@
     "published_date": "2019-11-29",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "de33d538a5062fb85e2284b4e01e5e288ff7c80dd316949069b392a16ed72988",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/sopra-steria-next-accompagne-dgddi-innovation-blockchain": {
     "market": "France",
@@ -10705,9 +10705,9 @@
     "published_date": "2019-10-02",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "a8bd830ebaa5de750abb3b8a2e2e63231fc880391a5e13ff8ff939ce45b1c7a6",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/veolia-cloud-first-strategie-sopra-steria-accompagne-transformation-digitale-veolia": {
     "market": "France",
@@ -10723,9 +10723,9 @@
     "published_date": "2019-07-23",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "99e8e543a3a72e902113947c510fddeeafa23bf82f53a6bae2c12fd5893b82c9",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.fr/espace-media/cas-client/details/airbus-premier-vol-de-l-a350xwb": {
     "market": "France",
@@ -10741,9 +10741,9 @@
     "published_date": "2019-07-23",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "cc11a50a5e8fa379391a61c58589b94108e25b86b909a476fe8e0a75fb614348",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.in/insights/india-insights/point-of-view/unlocking-efficiency-through-finops-operating-models-and-collaborative-culture": {
     "market": "India",
@@ -10759,9 +10759,9 @@
     "published_date": "2026-04-17",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "804301280c87d853bb1a5c7ba0642b4f6086a2aa07740a4faa435c418b3aeaf0",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.in/insights/india-insights/point-of-view/llmops-scalable-generative-ai-at-sopra-steria": {
     "market": "India",
@@ -10777,9 +10777,9 @@
     "published_date": "2026-05-08",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "778f5697fc491c7496021c6eaa2058ed0f86610342e80b4cd215e2b94b580d78",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.in/insights/india-insights": {
     "market": "India",
@@ -10795,9 +10795,9 @@
     "published_date": "2026-05-08",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "0274b9cf69452c6cbe6dea2ed671811dc4f0ce51948f20a40d26e4c33b8aec7f",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.in/insights/india-insights/point-of-view/shifting-tides-the-strategic-move-from-llm-to-slm": {
     "market": "India",
@@ -10813,9 +10813,9 @@
     "published_date": "2026-04-08",
     "client_name": "",
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
-    "last_seen": "2026-10-05T06:49:49.512299+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
     "content_hash": "fb1204dc814ad7db66c650c711d8e0846e6c43fad9dbca53a494ecd38b918802",
-    "status": "NEW"
+    "status": "EXISTING"
   },
   "https://www.soprasteria.no/prosjekter/details/oslo-kommune-oslobygg-styrker-sin-industrielle-it": {
     "market": "Norway",
@@ -10833,6 +10833,24 @@
     "first_seen": "2026-10-05T06:49:49.512299+00:00",
     "last_seen": "2026-10-05T06:49:49.512299+00:00",
     "content_hash": "6cf5df244025de3dcfac63ef834f8492d33775da9ca73406485e1bb5c64ba17d",
+    "status": "NEW"
+  },
+  "https://www.soprasteria.lu/newsroom/success-stories/details/marketing-intelligence-at-ing": {
+    "market": "Luxembourg",
+    "source_id": "luxembourg",
+    "source_domain": "soprasteria.lu",
+    "source_url": "https://www.soprasteria.lu/newsroom/success-stories",
+    "language": "fr",
+    "title": "Marketing intelligence at ING",
+    "description": "Sopra Steria helped ING grow its predictive analytics, delivering two million high-quality marketing targets annually and expanding marketing intelligence.",
+    "url": "https://www.soprasteria.lu/newsroom/success-stories/details/marketing-intelligence-at-ing",
+    "canonical_url": "https://www.soprasteria.lu/newsroom/success-stories/details/marketing-intelligence-at-ing",
+    "categories": [],
+    "published_date": "2024-07-11",
+    "client_name": "",
+    "first_seen": "2026-10-05T14:40:04.722451+00:00",
+    "last_seen": "2026-10-05T14:40:04.722451+00:00",
+    "content_hash": "6db70c6c3190254f4ba185b9f7cb6e7dd30673d005ab4663e2c5972ea1f4bf34",
     "status": "NEW"
   }
 }
