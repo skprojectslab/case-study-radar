@@ -6,14 +6,14 @@ uk:
   - https://www.soprasteria.co.uk/insights/client-success-stories
   allowed_path_prefixes:
   - /insights/client-success-stories
-  detail_path_contains:
-  - /insights/client-success-stories/
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /insights/client-success-stories/
 germany:
   market: Germany
   domain: soprasteria.de
@@ -22,14 +22,14 @@ germany:
   - https://www.soprasteria.de/newsroom/success-stories
   allowed_path_prefixes:
   - /newsroom/success-stories
-  detail_path_contains:
-  - /newsroom/success-stories/details/
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /newsroom/success-stories/details/
 belgium:
   market: Belgium
   domain: soprasteria.be
@@ -38,14 +38,14 @@ belgium:
   - https://www.soprasteria.be/newsroom/success-stories
   allowed_path_prefixes:
   - /newsroom/success-stories
-  detail_path_contains:
-  - /newsroom/success-stories/details/
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /newsroom/success-stories/details/
 denmark:
   market: Denmark
   domain: soprasteria.dk
@@ -54,14 +54,14 @@ denmark:
   - https://www.soprasteria.dk/Referencer
   allowed_path_prefixes:
   - /Referencer
-  detail_path_contains:
-  - /Referencer/
   blocked_path_fragments:
   - /contact
   - /karriere
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /hvem-hjalper-vi/details/
 italy:
   market: Italy
   domain: soprasteria.it
@@ -70,14 +70,14 @@ italy:
   - https://www.soprasteria.it/chi-siamo/storie-di-successo
   allowed_path_prefixes:
   - /chi-siamo/storie-di-successo
-  detail_path_contains:
-  - /chi-siamo/storie-di-successo/
   blocked_path_fragments:
   - /contact
   - /lavora
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /chi-siamo/storie-di-successo/
 luxembourg:
   market: Luxembourg
   domain: soprasteria.lu
@@ -86,14 +86,14 @@ luxembourg:
   - https://www.soprasteria.lu/newsroom/success-stories
   allowed_path_prefixes:
   - /newsroom/success-stories
-  detail_path_contains:
-  - /newsroom/success-stories/details/
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /newsroom/success-stories/details/
 netherlands:
   market: Netherlands
   domain: soprasteria.nl
@@ -102,14 +102,14 @@ netherlands:
   - https://www.soprasteria.nl/newsroom/success-stories
   allowed_path_prefixes:
   - /newsroom/success-stories
-  detail_path_contains:
-  - /newsroom/success-stories/details/
   blocked_path_fragments:
   - /contact
   - /careers
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /newsroom/success-stories/details/
 france:
   market: France
   domain: soprasteria.fr
@@ -118,14 +118,14 @@ france:
   - https://www.soprasteria.fr/services/conseil/nos-client-stories
   allowed_path_prefixes:
   - /espace-media/cas-client
-  detail_path_contains:
-  - /espace-media/cas-client/details/
   blocked_path_fragments:
   - /contact
   - /carrieres
   - /privacy
   - /mentions-legales
   - /sitemap
+  detail_path_prefixes:
+  - /espace-media/cas-client/details/
 sweden:
   market: Sweden
   domain: soprasteria.se
@@ -134,14 +134,14 @@ sweden:
   - https://www.soprasteria.se/kundreferenser/
   allowed_path_prefixes:
   - /kundreferenser
-  detail_path_contains:
-  - /kundreferenser/
   blocked_path_fragments:
   - /kontakt
   - /karriar
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /kundreferenser/
 india:
   market: India
   domain: soprasteria.in
@@ -156,6 +156,8 @@ india:
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /insights/
 norway:
   market: Norway
   domain: soprasteria.no
@@ -164,11 +166,11 @@ norway:
   - https://www.soprasteria.no/prosjekter
   allowed_path_prefixes:
   - /prosjekter
-  detail_path_contains:
-  - /prosjekter/details/
   blocked_path_fragments:
   - /kontakt
   - /karriere
   - /privacy
   - /terms
   - /sitemap
+  detail_path_prefixes:
+  - /prosjekter/details/
