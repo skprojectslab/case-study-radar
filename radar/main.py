@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/"data"
 CONFIG=ROOT/"config"/"sources.yaml"
 MAX_WORKERS=8
-MAX_CANDIDATES_PER_SOURCE=0
+MAX_CANDIDATES_PER_SOURCE=500
 
 def load(path, default):
     if not path.exists(): return default
@@ -35,7 +35,7 @@ def run():
     for sid,cfg in sources.items():
         for listing in cfg["listing_urls"]:
             print(f"[{cfg['market']}] loading listing...",flush=True)
-            try: html=get(listing,timeout=(5,15))
+            try: html=get(listing,timeout=(2,8))
             except Exception as e:
                 errors.append({"source":sid,"stage":"listing","url":listing,"error":str(e)})
                 print(f"[{cfg['market']}] listing ERROR: {e}",flush=True)
@@ -43,7 +43,7 @@ def run():
 
             seeds=list(candidate_links(html,listing,cfg))
             unique={normalize_url(x["url"]):x for x in seeds}
-            seeds=list(unique.values()) if MAX_CANDIDATES_PER_SOURCE<=0 else list(unique.values())[:MAX_CANDIDATES_PER_SOURCE]
+            seeds=list(unique.values())[:MAX_CANDIDATES_PER_SOURCE]
             print(f"[{cfg['market']}] candidates found: {len(unique)}; checking: {len(seeds)}",flush=True)
 
             accepted=0
