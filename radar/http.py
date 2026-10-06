@@ -1,18 +1,13 @@
 import time
 import requests
-
-HEADERS={"User-Agent":"CaseStudyRadar/2.4 (+deterministic research crawler)"}
-
-
+SESSION=requests.Session()
+SESSION.headers.update({"User-Agent":"CaseStudyRadar/2.3 (+deterministic research crawler)"})
 def get(url, timeout=(5,20), retries=3):
     last=None
-    for attempt in range(1,retries+1):
+    for attempt in range(retries):
         try:
-            r=requests.get(url,headers=HEADERS,timeout=timeout)
-            r.raise_for_status()
-            return r.text
+            r=SESSION.get(url,timeout=timeout); r.raise_for_status(); return r.text
         except requests.RequestException as e:
             last=e
-            if attempt < retries:
-                time.sleep(1.5 * attempt)
+            if attempt+1<retries: time.sleep(0.75*(attempt+1))
     raise last
