@@ -1,13 +1,209 @@
 {
   "summary": {
-    "run_at": "2026-10-06T09:13:49.768957+00:00",
+    "run_at": "2026-10-06T10:06:46.522600+00:00",
     "sources": 11,
-    "discovered": 13,
+    "discovered": 609,
     "new": 0,
-    "updated": 0,
-    "existing": 13,
-    "errors": 0
+    "updated": 5,
+    "existing": 604,
+    "errors": 14
   },
-  "changes": [],
-  "errors": []
+  "changes": [
+    {
+      "type": "UPDATED",
+      "market": "Norway",
+      "record": {
+        "market": "Norway",
+        "source_id": "norway",
+        "source_domain": "soprasteria.no",
+        "source_url": "https://www.soprasteria.no/prosjekter",
+        "language": "no",
+        "title": "Aker BP: Frigjøring av data innen offshore",
+        "description": "Hvordan kan Aker BP frigjøre og bruke store mengder data? Et innovasjonsinitiativ skal hjelpe dem på veien. Vi har bidratt med designmetoder for visualisering.",
+        "url": "https://www.soprasteria.no/prosjekter/details/aker-bp-frigjring-av-data-innen-offshore",
+        "canonical_url": "https://www.soprasteria.no/prosjekter/details/aker-bp-frigjring-av-data-innen-offshore",
+        "categories": [],
+        "published_date": "2025-03-05",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-06T10:06:46.522600+00:00",
+        "content_hash": "aa33b3429bb7eeed0729a36f32604bcec8e7a0514360bf25567b91a7782366ce",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Norway",
+      "record": {
+        "market": "Norway",
+        "source_id": "norway",
+        "source_domain": "soprasteria.no",
+        "source_url": "https://www.soprasteria.no/prosjekter",
+        "language": "no",
+        "title": "Norsk Kylling: Målet er at de skal ha det som plommen i egget",
+        "description": "Norsk Kylling har blitt en innsiktsdrevet organisasjon, og satt satt en helt ny standard for innovasjon, energismarte løsninger og sirkulærøkonomi.",
+        "url": "https://www.soprasteria.no/prosjekter/details/norsk-kylling-datadrevet-innsikt-dyrevelferd-barekraft",
+        "canonical_url": "https://www.soprasteria.no/prosjekter/details/norsk-kylling-datadrevet-innsikt-dyrevelferd-barekraft",
+        "categories": [],
+        "published_date": "2024-07-01",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-06T10:06:46.522600+00:00",
+        "content_hash": "853139016347acd8f647ed06b81ccfa4c5b3d977d6fe1b26c593944f358d8fcd",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Norway",
+      "record": {
+        "market": "Norway",
+        "source_id": "norway",
+        "source_domain": "soprasteria.no",
+        "source_url": "https://www.soprasteria.no/prosjekter",
+        "language": "no",
+        "title": "REMA 1000: Med ServiceNow som systemstøtte for åpenhetsloven",
+        "description": "REMA 1000 økte sporbarhet for egne merkevarer med ServiceNow i tråd med åpenhetsloven. Samspillet mellom datakildene er viktig for et helhetlig bilde og effektivisering av prosessene.",
+        "url": "https://www.soprasteria.no/prosjekter/details/rema-1000-med-servicenow-som-systemsttte-for-apenhetsloven",
+        "canonical_url": "https://www.soprasteria.no/prosjekter/details/rema-1000-med-servicenow-som-systemsttte-for-apenhetsloven",
+        "categories": [],
+        "published_date": "2023-04-25",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-06T10:06:46.522600+00:00",
+        "content_hash": "056b7063821ceece8acdc0f8cf918ffa8f556a8136a5d0a20f557def3d009adc",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Norway",
+      "record": {
+        "market": "Norway",
+        "source_id": "norway",
+        "source_domain": "soprasteria.no",
+        "source_url": "https://www.soprasteria.no/prosjekter",
+        "language": "no",
+        "title": "Coop: Obs Analytics – forretningsverdi gjennom avansert dataanalyse",
+        "description": "Obs så potensialet i å bli mer datadrevet, og forstå bedre hvordan handlemønsteret blir påvirket av varehusenes utforming.",
+        "url": "https://www.soprasteria.no/prosjekter/details/coop-obs-analytics-forretningsverdi-gjennom-avansert-dataanalyse",
+        "canonical_url": "https://www.soprasteria.no/prosjekter/details/coop-obs-analytics-forretningsverdi-gjennom-avansert-dataanalyse",
+        "categories": [],
+        "published_date": "2021-04-15",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-06T10:06:46.522600+00:00",
+        "content_hash": "cb65ba4cbffdf133a5bfebe115cd9d84f950dc63fb096047be2c88473b1ce25b",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Norway",
+      "record": {
+        "market": "Norway",
+        "source_id": "norway",
+        "source_domain": "soprasteria.no",
+        "source_url": "https://www.soprasteria.no/prosjekter",
+        "language": "no",
+        "title": "Åkerblå: Eksperten i den andre enden",
+        "description": "Fjernstyring for tilgjengelighet på fiskehelsetjenester. Blandet, utvidet og virtuell virkelighet, HoloLens2, samhandlingsteknologi effektiviserer.",
+        "url": "https://www.soprasteria.no/prosjekter/details/akerbla-eksperten-i-den-andre-enden",
+        "canonical_url": "https://www.soprasteria.no/prosjekter/details/akerbla-eksperten-i-den-andre-enden",
+        "categories": [],
+        "published_date": "2021-02-04",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-06T10:06:46.522600+00:00",
+        "content_hash": "8552ff59622877aaba0d10e74759e876d78e8e2b7e54a35839302f23e020a0f3",
+        "status": "UPDATED"
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/bundesanstalt-fuer-strassenwesen-reduziert-baustellenstaus",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/pbb-deutsche-pfandbriefbank-automatisiert-manuelle-taetigkeiten-mit-hilfe-von-rpa",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/airbus-fuehrt-sap-extended-warehouse-management-ein",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/e-verfahrensakte-saechsische-justiz",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/troms-kommune-fremtidsrettet-it-med-helhetlig-strategi",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/oslo-kommune-oslobygg-styrker-sin-industrielle-it",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/stavanger-universitetssjukehus-redesign-av-dagbehandling",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/roaf-slik-identifiserer-vi-miljtiltakene-med-mest-effekt",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/telenor-alfa-faar-landet-til-aa-virke",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/kripos-bare-en-chat-unna-hjelp",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/oslo-kommune-inn-i-fremtiden-for-ettertiden",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/klp-aa-snakke-kundens-spraak-om-sap",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/utlendingsdirektoratet-udi-schrems-ii-vurdering",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/hemit-veien-til-redusert-risiko",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=20)"
+    }
+  ]
 }
