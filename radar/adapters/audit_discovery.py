@@ -92,6 +92,65 @@ def candidate_links(html, listing_url, cfg):
         seen.add(url)
         yield {"url": url, "anchor_text": text}
 
+DESCRIPTION_GENERIC = {
+    "success story", "success stories", "client story", "client stories",
+    "case study", "case studies", "success story | sopra steria",
+    "success stories | sopra steria", "client stories | sopra steria",
+    "sopra steria", "home", "homepage"
+}
+
+def _description_is_good(value):
+    value = clean_text(value)
+    if len(value) < 40:
+        return False
+    low = value.lower().strip(" .|-")
+    if low in DESCRIPTION_GENERIC:
+        return False
+    if low.startswith("success story |") or low.startswith("success stories |"):
+        return False
+    if low.startswith("client story |") or low.startswith("client stories |"):
+        return False
+    if low.endswith(" | sopra steria") and len(low.split()) < 12:
+        return False
+    bad = ("cookie policy", "privacy policy", "terms and conditions", "skip to content", "read more", "load more")
+    if low in bad or len(set(low.split())) < 6:
+        return False
+    return True
+
+def _description_score(value, title):
+    value = clean_text(value)
+    if not _description_is_good(value):
+        return -1
+    score = min(len(value), 500) / 100
+    words = [w.lower() for w in __import__("re").findall(r"[\w-]{4,}", title or "")]
+    low = value.lower()
+    score += min(sum(1 for w in words if w in low), 3) * 1.5
+    if value.count(".") >= 1 or value.count("?") >= 1:
+        score += 1
+    if len(value) > 700:
+        score -= 1
+    return score
+
+def _best_description(soup, main, title):
+    candidates = []
+    for selector in ["meta[name='description']", "meta[property='og:description']"]:
+        meta = soup.select_one(selector)
+        if meta and meta.get("content"):
+            candidates.append((clean_text(meta.get("content")), 10))
+
+    for p in main.find_all("p"):
+        text = clean_text(p.get_text(" ", strip=True))
+        if _description_is_good(text):
+            candidates.append((text, 0))
+
+    ranked = []
+    for value, bonus in candidates:
+        score = _description_score(value, title)
+        if score >= 0:
+            ranked.append((score + bonus, value))
+    ranked.sort(key=lambda x: (-x[0], len(x[1])))
+    return ranked[0][1] if ranked else ""
+
 def extract_detail(html, seed):
     soup = BeautifulSoup(html, "html.parser")
     main = soup.find("main") or soup
@@ -107,42 +166,18 @@ def extract_detail(html, seed):
         return None
 
     main_text = clean_text(main.get_text(" ", strip=True))
-
-    # Explicit detail URLs are already strong evidence. Require a modest
-    # amount of content, but don't reject valid short case pages.
     if len(main_text) < 120:
         return None
 
-    description = ""
-    for selector in [
-        "meta[name='description']",
-        "meta[property='og:description']"
-    ]:
-        meta = soup.select_one(selector)
-        if meta and meta.get("content"):
-            description = clean_text(meta["content"])
-            break
-
-    if not description:
-        for p in main.find_all("p"):
-            candidate = clean_text(p.get_text(" ", strip=True))
-            if len(candidate) >= 40:
-                description = candidate
-                break
+    description = _best_description(soup, main, title)
 
     published_date = ""
     time_el = soup.find("time")
     if time_el:
-        published_date = clean_text(
-            time_el.get("datetime") or time_el.get_text(" ", strip=True)
-        )
+        published_date = clean_text(time_el.get("datetime") or time_el.get_text(" ", strip=True))
 
-    # Deterministic category extraction from common taxonomy labels.
     categories = []
-    for selector in [
-        "[class*='tag'] a", "[class*='category'] a",
-        "[class*='taxonomy'] a", "[rel='tag']"
-    ]:
+    for selector in ["[class*='tag'] a", "[class*='category'] a", "[class*='taxonomy'] a", "[rel='tag']"]:
         for el in soup.select(selector):
             value = clean_text(el.get_text(" ", strip=True))
             if value and value.lower() not in {x.lower() for x in categories}:
