@@ -1,157 +1,66 @@
 from bs4 import BeautifulSoup
 from urllib.parse import urlsplit
 from ..utils import absolute_url, clean_text, normalize_url
-
-POSITIVE = (
-    "success", "story", "stories", "case", "client", "customer",
-    "project", "reference", "referencer", "kund", "kunde",
-    "kundreferenser", "cas-client", "storie", "successo",
-    "prosjekt", "prosjekter"
-)
-
-GENERIC_TITLES = {
-    "home", "homepage", "careers", "career", "contact", "contact us",
-    "privacy", "privacy policy", "terms", "terms and conditions",
-    "sitemap", "newsroom", "success stories", "client stories",
-    "cas client", "cas clients", "storie di successo",
-    "kundreferenser", "referencer", "prosjekter"
-}
-
-def _path(url):
-    return urlsplit(url).path.rstrip("/") or "/"
-
-def _same_domain(a, b):
-    return urlsplit(a).netloc.lower() == urlsplit(b).netloc.lower()
-
-def _allowed_candidate(url, listing_url, cfg):
-    if not _same_domain(url, listing_url) or url == normalize_url(listing_url):
-        return False
-
-    path = _path(url).lower()
-
-    # Prefer explicit detail URL structures. This is the main false-positive
-    # control for the global Sopra Steria sites.
-    detail_prefixes = cfg.get("detail_path_prefixes") or []
-    if detail_prefixes:
-        return any(path.startswith(p.rstrip("/").lower()) for p in detail_prefixes)
-
-    prefixes = cfg.get("allowed_path_prefixes") or []
-    if prefixes and not any(
-        path.startswith(p.rstrip("/").lower() + "/") for p in prefixes
-    ):
-        return False
-
-    for fragment in cfg.get("blocked_path_fragments", []):
-        if fragment.lower() in path:
-            return False
-
-    return True
-
-def _france_candidate_links(soup, listing_url, cfg):
-    seen = set()
-    for a in soup.find_all("a", href=True):
-        url = absolute_url(listing_url, a["href"])
-        if not _allowed_candidate(url, listing_url, cfg):
-            continue
-        if url in seen:
-            continue
-        text = clean_text(a.get_text(" ", strip=True))
-        if len(text) < 6:
-            continue
-        seen.add(url)
-        yield {"url": url, "anchor_text": text}
-
-def candidate_links(html, listing_url, cfg):
-    soup = BeautifulSoup(html, "html.parser")
-
-    if str(cfg.get("market", "")).strip().lower() == "france":
-        yield from _france_candidate_links(soup, listing_url, cfg)
-        return
-
-    seen = set()
-    for a in soup.find_all("a", href=True):
-        url = absolute_url(listing_url, a["href"])
-        if not _allowed_candidate(url, listing_url, cfg):
-            continue
-
-        text = clean_text(a.get_text(" ", strip=True))
-        if len(text) < 6:
-            continue
-
-        # When a source has an explicit detail path, URL structure is enough.
-        # Do not require English keywords on multilingual pages.
-        detail_prefixes = cfg.get("detail_path_prefixes") or []
-        if not detail_prefixes:
-            hay = (url + " " + text).lower()
-            if not any(keyword in hay for keyword in POSITIVE):
-                continue
-
-        if url in seen:
-            continue
-
-        seen.add(url)
-        yield {"url": url, "anchor_text": text}
-
-def extract_detail(html, seed):
-    soup = BeautifulSoup(html, "html.parser")
-    main = soup.find("main") or soup
-
-    h1 = soup.find("h1")
-    if h1:
-        title = clean_text(h1.get_text(" ", strip=True))
+GENERIC_TITLES={"home","homepage","careers","career","contact","contact us","privacy","privacy policy","terms","terms and conditions","sitemap","newsroom","success stories","client stories","cas client","cas clients","storie di successo","kundreferenser","referencer","prosjekter"}
+CARD_WORDS=("card","tile","teaser","story","project","reference","result","item","case")
+SKIP_ANCESTORS=("nav","header","footer","aside","form")
+def _path(url): return urlsplit(url).path.rstrip("/") or "/"
+def _same_domain(a,b): return urlsplit(a).netloc.lower()==urlsplit(b).netloc.lower()
+def _detail_prefixes(cfg): return [p.rstrip("/").lower()+"/" for p in (cfg.get("detail_path_prefixes") or [])]
+def _is_detail(url,listing_url,cfg):
+    if not _same_domain(url,listing_url) or url==normalize_url(listing_url): return False
+    path=_path(url).lower()+"/"
+    return any(path.startswith(p) for p in _detail_prefixes(cfg))
+def _bad_container(node): return any(getattr(x,"name","") in SKIP_ANCESTORS for x in node.parents)
+def _card_for_link(a):
+    node=a
+    for _ in range(6):
+        if node is None or not getattr(node,"name",None) or node.name in SKIP_ANCESTORS: break
+        text=clean_text(node.get_text(" ",strip=True))
+        if len(text)<=1200:
+            headings=node.find_all(["h1","h2","h3","h4","h5"],limit=3)
+            paragraphs=node.find_all("p",limit=3)
+            times=node.find_all("time",limit=2)
+            attrs=" ".join(node.get("class") or [])+" "+str(node.get("id") or "")
+            score=(2 if headings else 0)+(1 if paragraphs else 0)+(1 if times else 0)+(1 if any(w in attrs.lower() for w in CARD_WORDS) else 0)+(1 if len(clean_text(a.get_text(" ",strip=True)))>=10 else 0)
+            if score>=2 and (headings or len(clean_text(a.get_text(" ",strip=True)))>=15): return node
+        node=node.parent
+    return None
+def _extract_seed(a,card,listing_url):
+    url=absolute_url(listing_url,a["href"])
+    hs=card.find_all(["h1","h2","h3","h4","h5"],limit=5)
+    title=clean_text(hs[0].get_text(" ",strip=True)) if hs else clean_text(a.get_text(" ",strip=True))
+    if len(title)<6: return None
+    t=card.find("time"); date=clean_text(t.get("datetime") or t.get_text(" ",strip=True)) if t else ""
+    desc=""
+    for p in card.find_all("p",limit=5):
+        txt=clean_text(p.get_text(" ",strip=True))
+        if len(txt)>=40: desc=txt; break
+    return {"url":url,"anchor_text":title,"listing_title":title,"listing_description":desc,"listing_date":date}
+def candidate_links(html,listing_url,cfg):
+    soup=BeautifulSoup(html,"html.parser"); seen=set()
+    for a in soup.find_all("a",href=True):
+        url=absolute_url(listing_url,a["href"])
+        if not _is_detail(url,listing_url,cfg) or url in seen or _bad_container(a): continue
+        card=_card_for_link(a)
+        if card is None: continue
+        item=_extract_seed(a,card,listing_url)
+        if item and item["url"] not in seen:
+            seen.add(item["url"]); yield item
+def extract_detail(html,seed):
+    soup=BeautifulSoup(html,"html.parser"); main=soup.find("main") or soup; h1=soup.find("h1")
+    if h1: title=clean_text(h1.get_text(" ",strip=True))
     else:
-        meta = soup.select_one("meta[property='og:title']")
-        title = clean_text(meta.get("content", "")) if meta else seed["anchor_text"]
-
-    if title.lower() in GENERIC_TITLES or len(title) < 6:
-        return None
-
-    main_text = clean_text(main.get_text(" ", strip=True))
-
-    # Explicit detail URLs are already strong evidence. Require a modest
-    # amount of content, but don't reject valid short case pages.
-    if len(main_text) < 120:
-        return None
-
-    description = ""
-    for selector in [
-        "meta[name='description']",
-        "meta[property='og:description']"
-    ]:
-        meta = soup.select_one(selector)
-        if meta and meta.get("content"):
-            description = clean_text(meta["content"])
-            break
-
-    if not description:
-        for p in main.find_all("p"):
-            candidate = clean_text(p.get_text(" ", strip=True))
-            if len(candidate) >= 40:
-                description = candidate
-                break
-
-    published_date = ""
-    time_el = soup.find("time")
-    if time_el:
-        published_date = clean_text(
-            time_el.get("datetime") or time_el.get_text(" ", strip=True)
-        )
-
-    # Deterministic category extraction from common taxonomy labels.
-    categories = []
-    for selector in [
-        "[class*='tag'] a", "[class*='category'] a",
-        "[class*='taxonomy'] a", "[rel='tag']"
-    ]:
-        for el in soup.select(selector):
-            value = clean_text(el.get_text(" ", strip=True))
-            if value and value.lower() not in {x.lower() for x in categories}:
-                categories.append(value)
-
-    return {
-        "title": title,
-        "description": description,
-        "published_date": published_date,
-        "categories": categories,
-        "client_name": "",
-    }
+        meta=soup.select_one("meta[property='og:title']"); title=clean_text(meta.get("content","")) if meta else seed.get("anchor_text","")
+    if title.lower() in GENERIC_TITLES or len(title)<6: return None
+    if len(clean_text(main.get_text(" ",strip=True)))<120: return None
+    desc=seed.get("listing_description","")
+    for selector in ["meta[name='description']","meta[property='og:description']"]:
+        meta=soup.select_one(selector)
+        if meta and meta.get("content"): desc=clean_text(meta.get("content")); break
+    if not desc:
+        for p in main.find_all("p",limit=8):
+            txt=clean_text(p.get_text(" ",strip=True))
+            if len(txt)>=40: desc=txt; break
+    t=soup.find("time"); date=clean_text(t.get("datetime") or t.get_text(" ",strip=True)) if t else seed.get("listing_date","")
+    return {"title":title,"description":desc,"published_date":date,"categories":[],"client_name":""}
