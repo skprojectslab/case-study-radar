@@ -1,13 +1,527 @@
 {
   "summary": {
-    "run_at": "2026-10-07T03:22:00.775242+00:00",
+    "run_at": "2026-10-07T05:11:26.810341+00:00",
     "sources": 11,
-    "discovered": 623,
+    "discovered": 611,
     "new": 0,
-    "updated": 0,
-    "existing": 623,
-    "errors": 0
+    "updated": 20,
+    "existing": 591,
+    "errors": 12
   },
-  "changes": [],
-  "errors": []
+  "changes": [
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Faster, smarter local train movement planning with the ORMAS Portal",
+        "description": "ProRail is responsible for managing thousands of local train movements across the Dutch railway network. These movements are essential for maintenance, logistics, and operational continuity. However, the planning and approval process for local train movements was highly manual and time-consuming. Planners often had to wait several days – or even weeks - for approvals, relying on fragmented systems and manual coordination. This created delays, reduced flexibility, and placed unnecessary pressure on planners, crews, and operations, at a time when speed and coordination are critical for passenger, freight and crew.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/faster-smarter-local-train-movement-planning-with-the-ormas-portal",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/faster-smarter-local-train-movement-planning-with-the-ormas-portal",
+        "categories": [],
+        "published_date": "2026-01-20",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "fed58a36a4c12f21da939f11851e24412bf6b2c168860d674ef24b895b12cedb",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Keeping water a source of joy",
+        "description": "Water is part of everyday life in Limburg. It is where people play, relax and spend time together. They should not have to worry about water levels, data models or the technology working behind the scenes. But for the people responsible for water management, there is always a question: Can we see what is coming in time to act?",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/keeping-water-a-source-of-joy",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/keeping-water-a-source-of-joy",
+        "categories": [],
+        "published_date": "2026-09-03",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "d2f8fb8c19c2f12b45df70318fa629fae0853b5054385c92a1293f2a800fcc50",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Free to get lost in the moment",
+        "description": "On a warm summer evening, thousands of people stand together in a field, looking towards the stage.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/free-to-get-lost-in-the-moment",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/free-to-get-lost-in-the-moment",
+        "categories": [],
+        "published_date": "2026-09-03",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "fdf97556049516316b6ee30ccd468bfdc01be8eff6505f46eeacc6a7efc2f8b5",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "The future of money has no age limit",
+        "description": "It's a bright Saturday morning. An older woman is out and about, walking through the city. She stops, takes out her phone and makes an online payment. Done. She puts her phone away and carries on with her day. That quiet confidence is easy to overlook. But every successful payment depends on a chain that has to work in a fraction of a second. An authorisation request travels through different systems. Balances are checked. The transaction is secured. A response comes back. The customer sees a green light. Behind it is an infrastructure that has to be reliable, secure and available. Sopra Steria operates that infrastructure for four banks, bringing software, application management, infrastructure, networks and cybersecurity together as one service. Four brands. One engine underneath. And most of the time, nobody notices it.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/the-future-of-money-has-no-age-limit",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/the-future-of-money-has-no-age-limit",
+        "categories": [],
+        "published_date": "2026-09-03",
+        "client_name": "",
+        "first_seen": "2026-10-05T06:08:56.501991+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "f1c2be66a1b6c031959e7839e93b04a850283dd2719f2affeecfd9f54811160d",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Preparing Governance for the AI Era in an International Organisation",
+        "description": "As artificial intelligence becomes part of everyday operations, organisations must ensure that innovation goes hand in hand with strong governance and trust.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/preparing-governance-for-the-ai-era-in-an-international-organisation",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/preparing-governance-for-the-ai-era-in-an-international-organisation",
+        "categories": [],
+        "published_date": "2026-04-08",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "f2d9e0e22dddda5a959ca5ad04d9ad29adb351af9794194db4b6bac17fb8fa0c",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Lantis – AI that empowers people, not replaces them",
+        "description": "Lantis plays a key role in the mobility development of the Antwerp region with projects such as the Oosterweel Connection. The organisation faced a major challenge: the IT team was overwhelmed by daily operations, while employees lost valuable time searching for documents, procedures and contracts. Crucial knowledge risked becoming fragmented in a maze of systems and people.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/lantis-ai-that-empowers-people-not-replaces-them",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/lantis-ai-that-empowers-people-not-replaces-them",
+        "categories": [],
+        "published_date": "2025-09-04",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "706edbe4d5e3a3999788440825e499380f3a3de57c751684b1f12e8b396eaa17",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Curium: Strengthening IT compliance for a secure and scalable future",
+        "description": "Curium is a global leader in nuclear medicine, specialising in the production and distribution of radiopharmaceuticals used for both diagnostic and therapeutic applications. Operating within a highly time-sensitive supply chain, Curium ensures that its nuclear isotopes—critical for patient treatments—reach hospitals within hours of production.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/curium-strengthening-it-compliance-for-a-secure-and-scalable-future",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/curium-strengthening-it-compliance-for-a-secure-and-scalable-future",
+        "categories": [],
+        "published_date": "2025-05-04",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "b1c60a999df3e33f13c3bbd978f91f8125e142b68e6954c4e19de8fea0880b1c",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "VLAIO: Trust as a foundation. Building digital agility together.",
+        "description": "VLAIO (Flanders Innovation & Entrepreneurship) set out to strengthen its digital environment with a partner who could think along, dig deeper, and deliver tailored solutions. No off the-shelf approach, but a team with proven technical expertise, a future-proof way of working, and a clear focus on value for money. This was backed by thorough research, sharp questioning, and the ability to translate needs into practical, workable solutions. The collaboration began with improving the existing website, enhancing usability, and launching several subprojects, from new tools to a content management environment that empowers the internal team to work independently.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/trust-as-a-foundation-building-digital-agility-together",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/trust-as-a-foundation-building-digital-agility-together",
+        "categories": [],
+        "published_date": "2025-08-29",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "e13645c099eeb19b1df30dd13da042c619881f86b083c567d6ea0fe40fdf6423",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Reshaping Learning: A Five-Year Journey in Digital Innovation for Febelfin Academy",
+        "description": "In a rapidly evolving financial sector, the importance of innovation and digital transformation cannot be overstated. Febelfin Academy, the training centre for professionals working in the broad financial sector in Belgium, has been at the forefront of this transformation. In collaboration with Sopra Steria, they embarked on a five-year journey to create a cutting-edge Learning Management System (LMS) platform. This customer case explores their path of continuous improvement and how Sopra Steria played an important role in achieving their goals.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/reshaping-learning-a-five-year-journey-in-digital-innovation-for-febelfin-academy",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/reshaping-learning-a-five-year-journey-in-digital-innovation-for-febelfin-academy",
+        "categories": [],
+        "published_date": "2023-11-14",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "9ba8aeac72272442148826594153a01cd73caedbb36c0a43b05a09eee5993ed9",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Schiphol migrates E-Business Suite to Oracle IaaS as a stepping stone towards SaaS",
+        "description": "Schiphol is one of Europe's largest airports and is constantly working to strengthen its position as such. As part of this effort, the airport has developed an IT strategy that heavily relies on Cloud technology. Schiphol used the ERP application Oracle E-Business suite (EBS) for accounting purposes. As part of the IT strategy, Schiphol was aiming to migrate the functionality of the old on-premise EBS application to Oracle Fusion Apps, a Software as a Service (SaaS) model application from Oracle.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/schiphol-migrates-e-business-suite-to-oracle-iaas-as-a-stepping-stone-towards-saas",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/schiphol-migrates-e-business-suite-to-oracle-iaas-as-a-stepping-stone-towards-saas",
+        "categories": [],
+        "published_date": "2023-05-22",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "50a1e9f11ff872ab33b065d68cda31429d1345dc1d99373b1c6d9e3d0524084f",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Enhancing detection at de Volksbank",
+        "description": "Facing the challenge of a nearly outdated and unsupported system, De Volksbank, comprising ASN Bank, BLG Wonen, RegioBank, and SNS, recognized the critical need for a technological upgrade of their fraud detection software. The existing RiskShield Investigator, integral to combating fraudulent transactions, had become obsolete, demanding a transition to the enhanced RiskShield Application Center by Inform. With well over 3 million customers, De Volksbank sought Sopra Steria’s expertise to ensure a smooth migration while minimizing the disruption for their subject matter experts.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/enhancing-detection-at-de-volksbank",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/enhancing-detection-at-de-volksbank",
+        "categories": [],
+        "published_date": "2023-11-22",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "5023285cdd2b4eb9dd7c5979f16409610909c4d6eb82deb8ff461fc9a502dc12",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Stater pursues real-time and advanced system integration with eConsumer platform.",
+        "description": "In order to allow private individuals to consult and modify their current mortgage data, Stater contracted Sopra Steria to develop an eConsumer platform. By offering this real-time, modular and multilingual product directly to the end-consumer, the independent outsourcing partner for banks opts for an advanced and challenging system integration. Tom Huylebroeck, Product Owner/Customer Journeys at Stater Belgium is happy to tell us more about it.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/stater-pursues-real-time-and-advanced-system-integration-with-econsumer-platform",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/stater-pursues-real-time-and-advanced-system-integration-with-econsumer-platform",
+        "categories": [],
+        "published_date": "2023-08-02",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "d8bb0a680ce8973c55d7b0b9b73716f37c6b910c4a119d0fc3e282d0df3a530c",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Transdev Nederland: your journey starts here",
+        "description": "Mobility is essential to go to work, to study, to meet friends and family, to enjoy culture, to get medical care....just to live. The freedom to get around is essential to everyday life.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/transdev-nederland-your-journey-starts-here",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/transdev-nederland-your-journey-starts-here",
+        "categories": [],
+        "published_date": "2023-11-06",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "dee33f3f293b702e8cff104e5401f0acdd8c7c15a1fbaf737a25def45d828bc4",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Semantic data modeling at the National Police",
+        "description": "Image being a Police officer. Your task is to enforce the law and help those that are in need. And although you have many colleagues, there is always a lot to do. You need to be informed fast and correctly so you can act quickly on the most urgent and serious case. You need to be able to inform others, so they can do the same. And you need to be careful: you are dealing with information about real people. Some are criminals, some are in need of help, and some are actually the victim of a crime.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/semantic-data-modeling-at-the-national-police",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/semantic-data-modeling-at-the-national-police",
+        "categories": [],
+        "published_date": "2023-10-02",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "1c3587b91214e7e1820b09d918e03bec4b208e043bdb2225e0f332fd9f7b7551",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "City of Mechelen easily manages its 20 sub-sites using cms eGo",
+        "description": "The City of Mechelen was looking for a way to manage its 20 websites centrally and turned to its existing cms supplier, Sopra Steria. They upgraded the current content management system (cms) eGo to the new, flexible version with versatile options: eGo 4. \"This time, we wanted to prioritise various integration options. And with eGo 4, we succeeded\", says Christophe Maes, Project Coordinator at the City of Mechelen.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/city-of-mechelen-easily-manages-its-20-sub-sites-using-cms-ego",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/city-of-mechelen-easily-manages-its-20-sub-sites-using-cms-ego",
+        "categories": [],
+        "published_date": "2023-06-19",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "28d2d3db1c95128051600bd77707181bebf947bf1bcd1f4f6152bf12a1cc35e3",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Ecopower improves cyber-maturity of organization",
+        "description": "Ecopower is a cooperative producer and supplier of renewable energy. Customers, both private and professional, who co-invest in this production, can also consume Ecopower electricity. Ecopower’s activities contribute to a democratic, decentralized and sustainable energy system based on 100% renewable energy for electricity, heating and mobility. By having citizens co-owning wind turbines, solar panels, small water powerplants and a pellet factory and taking democratic control of their own energy production and supply, they drive the awareness of and support for renewable energy in our society.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/ecopower-improves-cyber-maturity-of-organization",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/ecopower-improves-cyber-maturity-of-organization",
+        "categories": [],
+        "published_date": "2023-10-04",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "4cb9b4f2e1c3ca2367e4da0a4b359dc593e0a4a4988c9afa70bfe86b45a29ef1",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Navigating Innovation: Predictive Depth Model for Port of Antwerp-Bruges",
+        "description": "We helped Port of Antwerp Bruges to create a model that accurately predicts bottom-depth evolution which allows them to optimize their dredging campaigns.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/port-of-antwerp-bruges-optimises-dredging-campaigns-thanks-to-predictive-depth-model",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/port-of-antwerp-bruges-optimises-dredging-campaigns-thanks-to-predictive-depth-model",
+        "categories": [],
+        "published_date": "2023-10-17",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "7b3d9dc4d17b694ab1349178711bdc7d9e14b51c249347b4629ec32d9b800cbe",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Fiera Milano improves its Customer Experience with Cloud Data solution",
+        "description": "Fiera Milano is the domestic market leader and one of the main integrated operators worldwide in the exhibition and congress sector. Fiera Milano has been listed in the STAR segment of the Euronext Milan stock market since 2002. To better serve its thousands of customers and millions of visitors, Fiera Milano has embraced a major Digital Transformation, part of its “CONN.E.C.T. 2025” Strategic Plan including a Data Management Program. With the objective to become a data-driven company, the leading fair company has decided to create a new integrated Data Platform. The company awarded Sopra Steria to perform the design, build and implement the Data Platform supporting the entire information assets.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/fiera-milano-improves-its-customer-experience-with-cloud-data-solution",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/fiera-milano-improves-its-customer-experience-with-cloud-data-solution",
+        "categories": [],
+        "published_date": "2023-01-23",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "a6d5b66057763d490d0bf7c48f7d6889ea2fd7526e8b5501c1fc964e99730359",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "TM Roco Tailors Cost Estimations and Optimises Operations for Oosterweel Junction",
+        "description": "At Sopra Steria, our commitment to delivering tailored, complex and innovative solutions is exemplified in our collaboration with TM Roco. This conglomerate of ten companies involved in the monumental Oosterweel junction project sought an effective solution for their construction estimations, leading to our partnership facilitated by DEME.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/tm-roco-tailors-cost-estimations-and-optimises-operations-for-oosterweel-junction",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/tm-roco-tailors-cost-estimations-and-optimises-operations-for-oosterweel-junction",
+        "categories": [],
+        "published_date": "2023-02-14",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "0a1f600e2ec0b12172ee3ca014ebb9db398c51a851f3057641047bbe24841737",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "Netherlands",
+      "record": {
+        "market": "Netherlands",
+        "source_id": "netherlands",
+        "source_domain": "soprasteria.nl",
+        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
+        "language": "nl",
+        "title": "Royal FloraHolland implements SAP BRIM",
+        "description": "Royal FloraHolland is a cooperative organization that operates as an auction and wants to handle invoices in a homogenous way. This client-centered organization had high demands for the software to be implemented: it has to be standardized and able to process high volumes (millions of lines of invoices pass through the system daily). It also needs to be robust and able to handle foreign currency and tax rates because of FloraHolland’s ambition to expand beyond borders.",
+        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/royal-floraholland-implements-sap-brim",
+        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/royal-floraholland-implements-sap-brim",
+        "categories": [],
+        "published_date": "2023-03-23",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-07T05:11:26.810341+00:00",
+        "content_hash": "b19fd5a3f7f441e3381ac4a53de06eae6b514d896e461da70f6daf728800c3c7",
+        "status": "UPDATED"
+      }
+    }
+  ],
+  "errors": [
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/gelsenwasser-verlagert-einen-teil-des-messdatenmanagements-auf-die-plattform-cpxenergy",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/einsatz-am-limit-herausforderung-fuer-feuerwehren-und-rettungsdienste",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/pbb-deutsche-pfandbriefbank-automatisiert-manuelle-taetigkeiten-mit-hilfe-von-rpa",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/airbus-fuehrt-sap-extended-warehouse-management-ein",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/personalbeschaffungsstrategie-deutsche-bundesbehoerde",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/e-verfahrensakte-saechsische-justiz",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/organisationsanalyse-bundesamt-für-das-personalmanagement-der-bundeswehr-(bapersbw)",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/airbus-creating-value-from-it-project-management",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/airbus-firstflight-of-the-A350-XWB",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/berufsgenossenschaft-rohstoffe-und-chemische-industrie",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/gascade-gastransport",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    },
+    {
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/omv-gas-marketing-trading-gmbh",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=20)"
+    }
+  ]
 }
