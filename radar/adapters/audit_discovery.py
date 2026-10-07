@@ -92,7 +92,7 @@ def candidate_links(html, listing_url, cfg):
         seen.add(url)
         yield {"url": url, "anchor_text": text}
 
-def extract_detail(html, seed):
+def extract_detail(html, seed, market=""):
     soup = BeautifulSoup(html, "html.parser")
     main = soup.find("main") or soup
 
@@ -113,22 +113,31 @@ def extract_detail(html, seed):
     if len(main_text) < 120:
         return None
 
-    description = ""
-    for selector in [
-        "meta[name='description']",
-        "meta[property='og:description']"
-    ]:
-        meta = soup.select_one(selector)
-        if meta and meta.get("content"):
-            description = clean_text(meta["content"])
-            break
+ description = ""
 
-    if not description:
-        for p in main.find_all("p"):
-            candidate = clean_text(p.get_text(" ", strip=True))
-            if len(candidate) >= 40:
-                description = candidate
-                break
+for selector in [
+    "meta[name='description']",
+    "meta[property='og:description']"
+]:
+    meta = soup.select_one(selector)
+    if meta and meta.get("content"):
+        description = clean_text(meta["content"])
+        break
+
+# Netherlands pages sometimes expose a generic metadata description.
+# Ignore it and use the actual case-study introduction instead.
+if (
+    str(market).strip().lower() == "netherlands"
+    and description.lower() == "success story | sopra steria"
+):
+    description = ""
+
+if not description:
+    for p in main.find_all("p"):
+        candidate = clean_text(p.get_text(" ", strip=True))
+        if len(candidate) >= 40:
+            description = candidate
+            break    
 
     published_date = ""
     time_el = soup.find("time")
