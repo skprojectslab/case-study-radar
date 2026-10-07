@@ -6,7 +6,7 @@ import time
 import yaml
 from .http import get
 from .utils import normalize_url, content_hash
-from .adapters.audit_discovery import candidate_links, extract_detail, _description_is_good
+from .adapters.audit_discovery import candidate_links, extract_detail
 
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/"data"
@@ -74,16 +74,8 @@ def run():
                         "client_name":detail["client_name"],
                         "first_seen":history.get(url,{}).get("first_seen",run_at),"last_seen":run_at
                     }
-                    old=history.get(url)
-                    # Safety guard: do not overwrite a known-good historical description
-                    # with an empty/generic/weakly extracted description.
-                    if old is not None:
-                        old_description = old.get("description", "")
-                        new_description = r.get("description", "")
-                        if _description_is_good(old_description) and not _description_is_good(new_description):
-                            r["description"] = old_description
-
                     r["content_hash"]=content_hash(r)
+                    old=history.get(url)
                     r["status"]="NEW" if old is None else ("UPDATED" if old.get("content_hash")!=r["content_hash"] else "EXISTING")
                     current[url]=r; accepted+=1
             print(f"[{cfg['market']}] accepted: {accepted}",flush=True)
