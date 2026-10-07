@@ -27,11 +27,13 @@ def save(path,obj):
     path.write_text(json.dumps(obj,ensure_ascii=False,indent=2),encoding="utf-8")
 
 
-def inspect_candidate(item):
+def inspect_candidate(item, market):
     try:
-        return item,extract_detail(get(item["url"],timeout=DETAIL_TIMEOUT,retries=2),item),None
-    except Exception as e:
-        return item,None,str(e)
+        return item,extract_detail(
+            get(item["url"],timeout=DETAIL_TIMEOUT,retries=2),
+            item,
+            market
+        ),None
 
 
 def run():
@@ -57,7 +59,7 @@ def run():
 
             accepted=0
             with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-                futures=[pool.submit(inspect_candidate,x) for x in seeds]
+               futures=[pool.submit(inspect_candidate,x,cfg["market"]) for x in seeds]
                 for future in as_completed(futures):
                     seed,detail,error=future.result()
                     if error:
