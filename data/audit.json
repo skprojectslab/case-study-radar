@@ -1,80 +1,80 @@
 {
-  "run_at": "2026-10-08T02:54:00.250624+00:00",
+  "run_at": "2026-10-08T03:55:17.328024+00:00",
   "summary": {
-    "run_at": "2026-10-08T02:54:00.250624+00:00",
+    "run_at": "2026-10-08T03:55:17.328024+00:00",
     "sources": 11,
     "discovered": 623,
     "new": 0,
-    "updated": 0,
-    "existing": 623,
+    "updated": 338,
+    "existing": 285,
     "errors": 0
   },
   "by_market": {
     "UK": {
       "records": 91,
       "new": 0,
-      "updated": 0,
-      "existing": 91
+      "updated": 16,
+      "existing": 75
     },
     "Germany": {
       "records": 30,
       "new": 0,
-      "updated": 0,
-      "existing": 30
+      "updated": 12,
+      "existing": 18
     },
     "Belgium": {
       "records": 89,
       "new": 0,
-      "updated": 0,
-      "existing": 89
+      "updated": 38,
+      "existing": 51
     },
     "Denmark": {
       "records": 20,
       "new": 0,
-      "updated": 0,
-      "existing": 20
+      "updated": 8,
+      "existing": 12
     },
     "Italy": {
       "records": 3,
       "new": 0,
-      "updated": 0,
-      "existing": 3
+      "updated": 1,
+      "existing": 2
     },
     "Luxembourg": {
       "records": 89,
       "new": 0,
-      "updated": 0,
-      "existing": 89
+      "updated": 38,
+      "existing": 51
     },
     "Netherlands": {
       "records": 89,
       "new": 0,
-      "updated": 0,
-      "existing": 89
+      "updated": 38,
+      "existing": 51
     },
     "France": {
       "records": 34,
       "new": 0,
-      "updated": 0,
-      "existing": 34
+      "updated": 13,
+      "existing": 21
     },
     "Sweden": {
       "records": 13,
       "new": 0,
-      "updated": 0,
-      "existing": 13
+      "updated": 13,
+      "existing": 0
     },
     "India": {
       "records": 3,
       "new": 0,
-      "updated": 0,
-      "existing": 3
+      "updated": 1,
+      "existing": 2
     },
     "Norway": {
       "records": 162,
       "new": 0,
-      "updated": 0,
-      "existing": 162
+      "updated": 160,
+      "existing": 2
     }
   }
 }
