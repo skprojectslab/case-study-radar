@@ -1,7 +1,5 @@
 from bs4 import BeautifulSoup
 from urllib.parse import urlsplit
-import json
-import re
 
 from ..utils import absolute_url, clean_text, normalize_url
 
@@ -26,7 +24,6 @@ POSITIVE = (
     "prosjekter",
 )
 
-
 GENERIC_TITLES = {
     "home",
     "homepage",
@@ -50,45 +47,23 @@ GENERIC_TITLES = {
     "prosjekter",
 }
 
-
-GENERIC_CLIENT_VALUES = {
-    "",
-    "client",
-    "customer",
-    "client name",
-    "customer name",
-    "our client",
-    "the client",
-    "organisation",
-    "organization",
-    "company",
-    "partner",
-    "sopra steria",
-    "sopra steria next",
-    "sopra steria in",
-    "sopra steria benelux",
-    "read more",
-    "learn more",
-    "see more",
-    "details",
-}
-
-
+# Descriptions which are clearly generic CMS/site descriptions
+# rather than a description of the individual case study.
 GENERIC_DESCRIPTIONS = {
     "success story | sopra steria",
+    "success stories | sopra steria",
     "client story | sopra steria",
     "client stories | sopra steria",
-    "success stories | sopra steria",
-    "sopra steria",
-    "read more about our servicenow services.",
+    "case study | sopra steria",
+    "case studies | sopra steria",
 }
 
-
-CLIENT_LABEL_PATTERN = re.compile(
-    r"^\s*(client|customer|client name|customer name|"
-    r"our client|the client|client organisation|client organization|"
-    r"customer organisation|customer organization)\s*:?\s*$",
-    re.IGNORECASE,
+# Known generic descriptions observed on the UK site.
+# These should not be allowed to overwrite a meaningful paragraph.
+SUSPICIOUS_DESCRIPTION_PHRASES = (
+    "worked with a large public body since 2021",
+    "successfully transition to an oracle fusion cloud",
+    "chosen for an important strategic project",
 )
 
 
@@ -116,11 +91,12 @@ def _allowed_candidate(url, listing_url, cfg):
 
     prefixes = cfg.get("allowed_path_prefixes") or []
 
-    if prefixes and not any(
-        path.startswith(p.rstrip("/").lower() + "/")
-        for p in prefixes
-    ):
-        return False
+    if prefixes:
+        if not any(
+            path.startswith(p.rstrip("/").lower() + "/")
+            for p in prefixes
+        ):
+            return False
 
     for fragment in cfg.get("blocked_path_fragments", []):
         if fragment.lower() in path:
@@ -135,7 +111,10 @@ def _france_candidate_links(soup, listing_url, cfg):
     for a in soup.find_all("a", href=True):
         url = absolute_url(listing_url, a["href"])
 
-        if not _allowed_candidate(url, listing_url, cfg) or url in seen:
+        if not _allowed_candidate(url, listing_url, cfg):
+            continue
+
+        if url in seen:
             continue
 
         text = clean_text(a.get_text(" ", strip=True))
@@ -155,7 +134,11 @@ def candidate_links(html, listing_url, cfg):
     soup = BeautifulSoup(html, "html.parser")
 
     if str(cfg.get("market", "")).strip().lower() == "france":
-        yield from _france_candidate_links(soup, listing_url, cfg)
+        yield from _france_candidate_links(
+            soup,
+            listing_url,
+            cfg,
+        )
         return
 
     seen = set()
@@ -190,55 +173,7 @@ def candidate_links(html, listing_url, cfg):
         }
 
 
-# ---------------------------------------------------------------------------
-# Generic helpers
-# ---------------------------------------------------------------------------
-
-def _normalise_value(value):
-    value = clean_text(value)
-
-    if not value:
-        return ""
-
-    value = re.sub(r"\s+", " ", value)
-    value = value.strip(" |•·:-")
-
-    return value
-
-
-def _is_generic_client(value):
-    return _normalise_value(value).lower() in GENERIC_CLIENT_VALUES
-
-
-def _add_unique(values, value):
-    value = _normalise_value(value)
-
-    if not value:
-        return
-
-    if len(value) > 100:
-        return
-
-    if value.lower() in {
-        "instagram",
-        "facebook",
-        "linkedin",
-        "twitter",
-        "youtube",
-        "x",
-        "share",
-        "follow us",
-    }:
-        return
-
-    if not any(
-        existing.lower() == value.lower()
-        for existing in values
-    ):
-        values.append(value)
-
-
-def _extract_json_ld(soup):
+def _json_ld_objects(soup):
     objects = []
 
     for script in soup.select("script[type='application/ld+json']"):
@@ -248,362 +183,223 @@ def _extract_json_ld(soup):
             continue
 
         try:
+            import json
+
             data = json.loads(raw)
+
+            if isinstance(data, list):
+                objects.extend(data)
+            elif isinstance(data, dict):
+                objects.append(data)
+
         except Exception:
             continue
-
-        if isinstance(data, list):
-            objects.extend(data)
-
-        elif isinstance(data, dict):
-            graph = data.get("@graph")
-
-            if isinstance(graph, list):
-                objects.extend(graph)
-            else:
-                objects.append(data)
 
     return objects
 
 
-# ---------------------------------------------------------------------------
-# CLIENT
-# ---------------------------------------------------------------------------
-
 def _extract_client_from_labelled_html(soup):
-    """
-    Only extract a client when the page explicitly labels the value
-    as Client / Customer.
-
-    This intentionally does NOT infer a client from arbitrary page text.
-    """
-
-    # Case 1:
-    # <div>
-    #   <span>Client</span>
-    #   <span>Example Ltd</span>
-    # </div>
-    for element in soup.find_all(string=CLIENT_LABEL_PATTERN):
-        label = element.parent
-
-        if not label:
-            continue
-
-        parent = label.parent
-
-        if parent:
-            children = list(parent.find_all(recursive=False))
-
-            for index, child in enumerate(children):
-                child_text = clean_text(
-                    child.get_text(" ", strip=True)
-                )
-
-                if CLIENT_LABEL_PATTERN.match(child_text):
-                    for following in children[index + 1:]:
-                        value = _normalise_value(
-                            following.get_text(" ", strip=True)
-                        )
-
-                        if (
-                            value
-                            and not _is_generic_client(value)
-                            and 2 <= len(value) <= 150
-                        ):
-                            return value
-
-            # Case 2:
-            # <div>Client: Example Ltd</div>
-            parent_text = clean_text(
-                parent.get_text(" ", strip=True)
-            )
-
-            match = re.match(
-                r"^(?:client|customer|client name|customer name|"
-                r"our client|the client|client organisation|"
-                r"client organization|customer organisation|"
-                r"customer organization)\s*:\s*(.+)$",
-                parent_text,
-                re.IGNORECASE,
-            )
-
-            if match:
-                value = _normalise_value(match.group(1))
-
-                if (
-                    value
-                    and not _is_generic_client(value)
-                    and 2 <= len(value) <= 150
-                ):
-                    return value
-
-        # Case 3:
-        # label followed by sibling
-        sibling = label.find_next_sibling()
-
-        if sibling:
-            value = _normalise_value(
-                sibling.get_text(" ", strip=True)
-            )
-
-            if (
-                value
-                and not _is_generic_client(value)
-                and 2 <= len(value) <= 150
-            ):
-                return value
-
-    return ""
-
-
-def _extract_client_from_json_ld(json_ld):
-    """
-    Only use explicitly named client/customer properties.
-
-    Do NOT treat author, publisher, creator or provider as the client.
-    """
-
-    valid_keys = {
-        "client",
-        "customer",
-        "clientname",
-        "customername",
-        "client_name",
-        "customer_name",
-    }
-
-    normalised_keys = {
-        re.sub(r"[^a-z0-9]", "", key.lower())
-        for key in valid_keys
-    }
-
-    for obj in json_ld:
-        if not isinstance(obj, dict):
-            continue
-
-        for key, value in obj.items():
-            key_normalised = re.sub(
-                r"[^a-z0-9]",
-                "",
-                key.lower(),
-            )
-
-            if key_normalised not in normalised_keys:
-                continue
-
-            if isinstance(value, str):
-                candidate = _normalise_value(value)
-
-                if (
-                    candidate
-                    and not _is_generic_client(candidate)
-                    and 2 <= len(candidate) <= 150
-                ):
-                    return candidate
-
-            elif isinstance(value, dict):
-                candidate = _normalise_value(
-                    value.get("name", "")
-                )
-
-                if (
-                    candidate
-                    and not _is_generic_client(candidate)
-                    and 2 <= len(candidate) <= 150
-                ):
-                    return candidate
-
-    return ""
-
-
-def _extract_client(soup, json_ld):
     """
     Conservative client extraction.
 
-    Priority:
-      1. Explicit Client/Customer HTML field
-      2. Explicit JSON-LD client/customer field
-
-    Deliberately NO title-based inference.
+    Only accept a value when the page explicitly labels it as:
+    Client / Customer / Kunde / Kund / Customer name etc.
     """
 
+    labels = {
+        "client",
+        "customer",
+        "client name",
+        "customer name",
+        "kunde",
+        "kund",
+        "kundnamn",
+        "klient",
+    }
+
+    # Look through common definition-list/table structures.
+    for el in soup.find_all(["dt", "th", "strong", "b", "span", "div"]):
+        label = clean_text(el.get_text(" ", strip=True)).lower()
+
+        if label not in labels:
+            continue
+
+        # Definition-list pattern: <dt>Client</dt><dd>...</dd>
+        if el.name == "dt":
+            nxt = el.find_next_sibling("dd")
+
+            if nxt:
+                value = clean_text(nxt.get_text(" ", strip=True))
+
+                if 2 <= len(value) <= 150:
+                    return value
+
+        # Table pattern: <th>Client</th><td>...</td>
+        if el.name == "th":
+            nxt = el.find_next_sibling("td")
+
+            if nxt:
+                value = clean_text(nxt.get_text(" ", strip=True))
+
+                if 2 <= len(value) <= 150:
+                    return value
+
+        # Generic parent with label + nearby value.
+        parent = el.parent
+
+        if parent:
+            text = clean_text(parent.get_text(" ", strip=True))
+
+            if text.lower().startswith(label):
+                value = clean_text(text[len(label):].strip(" :-"))
+
+                if 2 <= len(value) <= 150:
+                    return value
+
+    return ""
+
+
+def _extract_client_from_json_ld(soup):
+    """
+    Conservative JSON-LD extraction.
+
+    Only use explicit Organization/Person names where the page
+    structure clearly identifies a client/customer relationship.
+    """
+
+    for obj in _json_ld_objects(soup):
+        if not isinstance(obj, dict):
+            continue
+
+        for key in ("client", "customer"):
+            value = obj.get(key)
+
+            if isinstance(value, dict):
+                name = clean_text(value.get("name", ""))
+
+                if 2 <= len(name) <= 150:
+                    return name
+
+            elif isinstance(value, str):
+                value = clean_text(value)
+
+                if 2 <= len(value) <= 150:
+                    return value
+
+    return ""
+
+
+def _extract_client(soup):
     client = _extract_client_from_labelled_html(soup)
 
     if client:
         return client
 
-    client = _extract_client_from_json_ld(json_ld)
-
-    if client:
-        return client
-
-    return ""
+    return _extract_client_from_json_ld(soup)
 
 
-# ---------------------------------------------------------------------------
-# CATEGORIES
-# ---------------------------------------------------------------------------
-
-def _extract_categories(soup, json_ld):
+def _extract_categories(soup):
     """
-    Conservative category extraction.
+    Extremely conservative category extraction.
 
-    We deliberately avoid generic selectors such as:
-        [class*='tag']
-        [class*='category']
-        [class*='sector']
+    Do NOT use broad class selectors such as:
+      [class*='tag']
+      [class*='category']
 
-    Those produced false positives such as "Instagram".
-
-    Only explicit metadata is accepted here.
+    because these can capture footer/social/navigation elements.
     """
 
     categories = []
 
-    # Explicit HTML rel=tag is retained because it is semantically defined.
-    for element in soup.select("[rel='tag']"):
-        value = clean_text(
-            element.get_text(" ", strip=True)
-        )
+    def add(value):
+        value = clean_text(value)
 
-        if 2 <= len(value) <= 100:
-            _add_unique(categories, value)
+        if not value:
+            return
 
-    # Meta keywords are semantically explicit.
+        if len(value) > 100:
+            return
+
+        if value.lower() in {
+            "instagram",
+            "facebook",
+            "linkedin",
+            "youtube",
+            "twitter",
+            "x",
+        }:
+            return
+
+        if value.lower() not in {
+            x.lower() for x in categories
+        }:
+            categories.append(value)
+
+    # Explicit rel=tag is the safest HTML signal.
+    for el in soup.select("[rel='tag']"):
+        add(el.get_text(" ", strip=True))
+
+    # Explicit metadata.
     for meta in soup.select("meta[name='keywords']"):
-        raw = clean_text(meta.get("content", ""))
+        value = meta.get("content", "")
 
-        if not raw:
-            continue
+        if value:
+            for item in value.split(","):
+                add(item)
 
-        for value in re.split(r"\s*[|;,]\s*", raw):
-            value = _normalise_value(value)
-
-            if 2 <= len(value) <= 100:
-                _add_unique(categories, value)
-
-    # Article section is explicit metadata.
     for meta in soup.select("meta[property='article:section']"):
-        value = clean_text(
-            meta.get("content", "")
-        )
-
-        if 2 <= len(value) <= 100:
-            _add_unique(categories, value)
+        add(meta.get("content", ""))
 
     # JSON-LD keywords.
-    for obj in json_ld:
+    for obj in _json_ld_objects(soup):
         if not isinstance(obj, dict):
             continue
 
         keywords = obj.get("keywords")
 
         if isinstance(keywords, str):
-            values = re.split(r"\s*[|;,]\s*", keywords)
-
-            for value in values:
-                value = _normalise_value(value)
-
-                if 2 <= len(value) <= 100:
-                    _add_unique(categories, value)
+            for item in keywords.split(","):
+                add(item)
 
         elif isinstance(keywords, list):
-            for value in keywords:
-                if not isinstance(value, str):
-                    continue
-
-                value = _normalise_value(value)
-
-                if 2 <= len(value) <= 100:
-                    _add_unique(categories, value)
+            for item in keywords:
+                if isinstance(item, str):
+                    add(item)
 
     return categories
 
 
-# ---------------------------------------------------------------------------
-# DESCRIPTION
-# ---------------------------------------------------------------------------
+def _is_suspicious_description(description):
+    d = clean_text(description).lower()
 
-def _title_tokens(title):
-    return {
-        word.lower()
-        for word in re.findall(
-            r"[A-Za-zÀ-ÿ0-9]{4,}",
-            title or "",
-        )
-    }
+    if not d:
+        return True
+
+    if d in GENERIC_DESCRIPTIONS:
+        return True
+
+    for phrase in SUSPICIOUS_DESCRIPTION_PHRASES:
+        if phrase in d:
+            return True
+
+    return False
 
 
-def _description_quality(description, title):
+def _extract_description(soup, main):
     """
-    Score a description based on whether it looks relevant to the title.
+    Preserve the original stable behaviour:
 
-    This is deliberately deterministic.
-    """
+    1. meta description
+    2. og:description
+    3. first meaningful paragraph
 
-    description = clean_text(description)
-
-    if not description:
-        return -999
-
-    lowered = description.lower()
-
-    if lowered in GENERIC_DESCRIPTIONS:
-        return -999
-
-    if len(description) < 40:
-        return -100
-
-    if len(description) > 800:
-        return -10
-
-    title_words = _title_tokens(title)
-
-    description_words = {
-        word.lower()
-        for word in re.findall(
-            r"[A-Za-zÀ-ÿ0-9]{4,}",
-            description,
-        )
-    }
-
-    overlap = len(
-        title_words.intersection(description_words)
-    )
-
-    score = overlap * 10
-
-    # Prefer descriptions that actually describe the case study rather
-    # than generic navigation/service copy.
-    if "sopra steria" in lowered:
-        score += 1
-
-    if "worked with" in lowered:
-        score += 2
-
-    if "partnered with" in lowered:
-        score += 2
-
-    if "helped" in lowered:
-        score += 1
-
-    if "supports" in lowered:
-        score += 1
-
-    return score
-
-
-def _extract_description(soup, main, title):
-    """
-    Collect candidate descriptions and choose the strongest relevant one.
-
-    This is specifically designed to avoid the two UK cases where the
-    generic meta description belonged to another page/template.
+    We only reject the description when it is clearly generic/wrong.
+    We do NOT score descriptions against the title because that caused
+    hundreds of false UPDATED records.
     """
 
     candidates = []
 
-    # Meta descriptions.
     for selector in [
         "meta[name='description']",
         "meta[property='og:description']",
@@ -611,88 +407,42 @@ def _extract_description(soup, main, title):
         meta = soup.select_one(selector)
 
         if meta and meta.get("content"):
-            value = clean_text(
-                meta.get("content")
-            )
-
-            if value:
-                candidates.append(
-                    ("meta", value)
-                )
-
-    # First meaningful paragraphs.
-    for paragraph in main.find_all("p"):
-        value = clean_text(
-            paragraph.get_text(" ", strip=True)
-        )
-
-        if len(value) < 40:
-            continue
-
-        if value.lower() in GENERIC_DESCRIPTIONS:
-            continue
-
-        if value not in [
-            candidate[1]
-            for candidate in candidates
-        ]:
             candidates.append(
-                ("paragraph", value)
+                clean_text(meta.get("content"))
             )
 
-        # We don't need to inspect hundreds of paragraphs.
-        if len(candidates) >= 25:
-            break
+    for description in candidates:
+        if not _is_suspicious_description(description):
+            return description
 
-    if not candidates:
-        return ""
-
-    scored = []
-
-    for source, value in candidates:
-        score = _description_quality(
-            value,
-            title,
+    # If metadata is generic/wrong, use the first meaningful paragraph.
+    for p in main.find_all("p"):
+        candidate = clean_text(
+            p.get_text(" ", strip=True)
         )
 
-        # Paragraphs are preferred over meta descriptions when their
-        # relevance is materially stronger.
-        if source == "paragraph":
-            score += 3
+        if len(candidate) < 40:
+            continue
 
-        scored.append(
-            (
-                score,
-                source == "paragraph",
-                value,
-            )
-        )
+        if candidate.lower() in GENERIC_DESCRIPTIONS:
+            continue
 
-    scored.sort(
-        key=lambda item: (
-            item[0],
-            item[1],
-            -len(item[2]),
-        ),
-        reverse=True,
-    )
+        return candidate
 
-    best_score, _, best_value = scored[0]
+    # Preserve whatever metadata exists if no better paragraph exists.
+    if candidates:
+        return candidates[0]
 
-    if best_score <= 0:
-        # Last-resort meaningful candidate.
-        for _, value in candidates:
-            if len(value) >= 40:
-                return value
+    return ""
 
-    return best_value
-
-
-# ---------------------------------------------------------------------------
-# DATE
-# ---------------------------------------------------------------------------
 
 def _extract_date(soup):
+    """
+    Conservative date extraction.
+
+    Only explicit date metadata is used.
+    """
+
     time_el = soup.find("time")
 
     if time_el:
@@ -706,16 +456,15 @@ def _extract_date(soup):
 
     for selector in [
         "meta[property='article:published_time']",
+        "meta[property='article:modified_time']",
         "meta[name='date']",
         "meta[name='publish-date']",
-        "meta[name='published-date']",
+        "meta[name='publication-date']",
     ]:
         meta = soup.select_one(selector)
 
         if meta and meta.get("content"):
-            value = clean_text(
-                meta.get("content")
-            )
+            value = clean_text(meta.get("content"))
 
             if value:
                 return value
@@ -723,21 +472,14 @@ def _extract_date(soup):
     return ""
 
 
-# ---------------------------------------------------------------------------
-# DETAIL EXTRACTION
-# ---------------------------------------------------------------------------
-
 def extract_detail(html, seed):
-    soup = BeautifulSoup(
-        html,
-        "html.parser",
-    )
+    soup = BeautifulSoup(html, "html.parser")
 
     main = soup.find("main") or soup
 
-    # ---------------------------------------------------------
+    # -------------------------
     # TITLE
-    # ---------------------------------------------------------
+    # -------------------------
 
     h1 = soup.find("h1")
 
@@ -750,22 +492,18 @@ def extract_detail(html, seed):
             "meta[property='og:title']"
         )
 
-        if meta:
-            title = clean_text(
-                meta.get("content", "")
-            )
-        else:
-            title = seed["anchor_text"]
+        title = (
+            clean_text(meta.get("content", ""))
+            if meta
+            else seed["anchor_text"]
+        )
 
-    if (
-        title.lower() in GENERIC_TITLES
-        or len(title) < 6
-    ):
+    if title.lower() in GENERIC_TITLES or len(title) < 6:
         return None
 
-    # ---------------------------------------------------------
-    # MINIMUM CONTENT
-    # ---------------------------------------------------------
+    # -------------------------
+    # MAIN CONTENT VALIDATION
+    # -------------------------
 
     main_text = clean_text(
         main.get_text(" ", strip=True)
@@ -774,23 +512,16 @@ def extract_detail(html, seed):
     if len(main_text) < 120:
         return None
 
-    # ---------------------------------------------------------
-    # JSON-LD
-    # ---------------------------------------------------------
-
-    json_ld = _extract_json_ld(soup)
-
-    # ---------------------------------------------------------
+    # -------------------------
     # DESCRIPTION
-    # ---------------------------------------------------------
+    # -------------------------
 
     description = _extract_description(
         soup,
         main,
-        title,
     )
 
-    # Netherlands-specific correction retained.
+    # Netherlands-specific protection
     if (
         str(seed.get("_market", "")).strip().lower()
         == "netherlands"
@@ -799,42 +530,32 @@ def extract_detail(html, seed):
     ):
         description = ""
 
-        for paragraph in main.find_all("p"):
+        for p in main.find_all("p"):
             candidate = clean_text(
-                paragraph.get_text(" ", strip=True)
+                p.get_text(" ", strip=True)
             )
 
             if len(candidate) >= 40:
                 description = candidate
                 break
 
-    # ---------------------------------------------------------
+    # -------------------------
     # DATE
-    # ---------------------------------------------------------
+    # -------------------------
 
     published_date = _extract_date(soup)
 
-    # ---------------------------------------------------------
+    # -------------------------
     # CLIENT
-    # ---------------------------------------------------------
+    # -------------------------
 
-    client_name = _extract_client(
-        soup,
-        json_ld,
-    )
+    client_name = _extract_client(soup)
 
-    # ---------------------------------------------------------
+    # -------------------------
     # CATEGORIES
-    # ---------------------------------------------------------
+    # -------------------------
 
-    categories = _extract_categories(
-        soup,
-        json_ld,
-    )
-
-    # ---------------------------------------------------------
-    # RESULT
-    # ---------------------------------------------------------
+    categories = _extract_categories(soup)
 
     return {
         "title": title,
