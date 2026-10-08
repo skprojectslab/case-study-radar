@@ -1,38 +1,38 @@
 {
-  "run_at": "2026-10-08T07:17:35.475007+00:00",
+  "run_at": "2026-10-08T13:30:26.554676+00:00",
   "summary": {
-    "run_at": "2026-10-08T07:17:35.475007+00:00",
+    "run_at": "2026-10-08T13:30:26.554676+00:00",
     "sources": 11,
-    "discovered": 619,
+    "discovered": 623,
     "new": 0,
-    "updated": 532,
-    "existing": 87,
-    "errors": 4
+    "updated": 4,
+    "existing": 619,
+    "errors": 0
   },
   "by_market": {
     "UK": {
       "records": 91,
       "new": 0,
-      "updated": 77,
-      "existing": 14
+      "updated": 0,
+      "existing": 91
     },
     "Germany": {
-      "records": 26,
+      "records": 30,
       "new": 0,
-      "updated": 23,
-      "existing": 3
+      "updated": 4,
+      "existing": 26
     },
     "Belgium": {
       "records": 89,
       "new": 0,
-      "updated": 74,
-      "existing": 15
+      "updated": 0,
+      "existing": 89
     },
     "Denmark": {
       "records": 20,
       "new": 0,
-      "updated": 17,
-      "existing": 3
+      "updated": 0,
+      "existing": 20
     },
     "Italy": {
       "records": 3,
@@ -43,38 +43,38 @@
     "Luxembourg": {
       "records": 89,
       "new": 0,
-      "updated": 74,
-      "existing": 15
+      "updated": 0,
+      "existing": 89
     },
     "Netherlands": {
       "records": 89,
       "new": 0,
-      "updated": 74,
-      "existing": 15
+      "updated": 0,
+      "existing": 89
     },
     "France": {
       "records": 34,
       "new": 0,
-      "updated": 31,
-      "existing": 3
+      "updated": 0,
+      "existing": 34
     },
     "Sweden": {
       "records": 13,
       "new": 0,
-      "updated": 8,
-      "existing": 5
+      "updated": 0,
+      "existing": 13
     },
     "India": {
       "records": 3,
       "new": 0,
-      "updated": 3,
-      "existing": 0
+      "updated": 0,
+      "existing": 3
     },
     "Norway": {
       "records": 162,
       "new": 0,
-      "updated": 151,
-      "existing": 11
+      "updated": 0,
+      "existing": 162
     }
   }
 }
