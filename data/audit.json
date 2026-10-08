@@ -1,38 +1,38 @@
 {
-  "run_at": "2026-10-07T13:24:27.777603+00:00",
+  "run_at": "2026-10-08T02:54:00.250624+00:00",
   "summary": {
-    "run_at": "2026-10-07T13:24:27.777603+00:00",
+    "run_at": "2026-10-08T02:54:00.250624+00:00",
     "sources": 11,
-    "discovered": 503,
+    "discovered": 623,
     "new": 0,
     "updated": 0,
-    "existing": 503,
-    "errors": 32
+    "existing": 623,
+    "errors": 0
   },
   "by_market": {
     "UK": {
-      "records": 85,
+      "records": 91,
       "new": 0,
       "updated": 0,
-      "existing": 85
+      "existing": 91
     },
     "Germany": {
-      "records": 27,
+      "records": 30,
       "new": 0,
       "updated": 0,
-      "existing": 27
+      "existing": 30
     },
     "Belgium": {
-      "records": 86,
+      "records": 89,
       "new": 0,
       "updated": 0,
-      "existing": 86
+      "existing": 89
     },
     "Denmark": {
-      "records": 19,
+      "records": 20,
       "new": 0,
       "updated": 0,
-      "existing": 19
+      "existing": 20
     },
     "Italy": {
       "records": 3,
@@ -40,17 +40,23 @@
       "updated": 0,
       "existing": 3
     },
-    "Netherlands": {
-      "records": 84,
+    "Luxembourg": {
+      "records": 89,
       "new": 0,
       "updated": 0,
-      "existing": 84
+      "existing": 89
+    },
+    "Netherlands": {
+      "records": 89,
+      "new": 0,
+      "updated": 0,
+      "existing": 89
     },
     "France": {
-      "records": 33,
+      "records": 34,
       "new": 0,
       "updated": 0,
-      "existing": 33
+      "existing": 34
     },
     "Sweden": {
       "records": 13,
@@ -65,10 +71,10 @@
       "existing": 3
     },
     "Norway": {
-      "records": 150,
+      "records": 162,
       "new": 0,
       "updated": 0,
-      "existing": 150
+      "existing": 162
     }
   }
 }
