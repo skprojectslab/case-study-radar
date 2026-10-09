@@ -1,124 +1,13 @@
 {
   "summary": {
-    "run_at": "2026-10-09T03:06:53.863978+00:00",
+    "run_at": "2026-10-09T13:17:54.332578+00:00",
     "sources": 11,
     "discovered": 623,
     "new": 0,
-    "updated": 5,
-    "existing": 618,
+    "updated": 0,
+    "existing": 623,
     "errors": 0
   },
-  "changes": [
-    {
-      "type": "UPDATED",
-      "market": "UK",
-      "record": {
-        "market": "UK",
-        "source_id": "uk",
-        "source_domain": "soprasteria.co.uk",
-        "source_url": "https://www.soprasteria.co.uk/insights/client-success-stories",
-        "language": "en",
-        "title": "Transforming Shared Services with a large public body",
-        "description": "Sopra Steria Next has worked with a large public body since 2021 to successfully transition to an Oracle Fusion Cloud Enterprise Resource Planning (ERP) solution.",
-        "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/transforming-shared-services-with-a-large-public-body",
-        "canonical_url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/transforming-shared-services-with-a-large-public-body",
-        "categories": [],
-        "published_date": "2025-03-07",
-        "client_name": "",
-        "first_seen": "2026-09-22T06:32:34.776388+00:00",
-        "last_seen": "2026-10-09T03:06:53.863978+00:00",
-        "content_hash": "e0d2ebd89d6ec3d7f1f3e3857410dfb3777dbe5b3eec5b6771938152a6a57f1a",
-        "status": "UPDATED"
-      }
-    },
-    {
-      "type": "UPDATED",
-      "market": "UK",
-      "record": {
-        "market": "UK",
-        "source_id": "uk",
-        "source_domain": "soprasteria.co.uk",
-        "source_url": "https://www.soprasteria.co.uk/insights/client-success-stories",
-        "language": "en",
-        "title": "Enhancing officer visibility and operational efficiency for Humberside Police",
-        "description": "Sopra Steria Next has worked with a large public body since 2021 to successfully transition to an Oracle Fusion Cloud Enterprise Resource Planning (ERP) solution.",
-        "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/enhancing-officer-visibility-and-operational-efficiency-for-humberside-police",
-        "canonical_url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/enhancing-officer-visibility-and-operational-efficiency-for-humberside-police",
-        "categories": [],
-        "published_date": "2025-03-17",
-        "client_name": "",
-        "first_seen": "2026-09-22T06:32:34.776388+00:00",
-        "last_seen": "2026-10-09T03:06:53.863978+00:00",
-        "content_hash": "75686b3ba81176e5ead0ee2e6f4e2aeaba93a9c84015d8ea0a829757a7f1e4fb",
-        "status": "UPDATED"
-      }
-    },
-    {
-      "type": "UPDATED",
-      "market": "UK",
-      "record": {
-        "market": "UK",
-        "source_id": "uk",
-        "source_domain": "soprasteria.co.uk",
-        "source_url": "https://www.soprasteria.co.uk/insights/client-success-stories",
-        "language": "en",
-        "title": "Sopra Steria creates digital support tool for UK Power Networks customers",
-        "description": "After working together for 25 years, Sopra Steria was chosen for an important strategic project.",
-        "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/sopra-steria-creates-digital-support-tool-for-uk-power-networks-customers",
-        "canonical_url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/sopra-steria-creates-digital-support-tool-for-uk-power-networks-customers",
-        "categories": [],
-        "published_date": "2024-09-16",
-        "client_name": "",
-        "first_seen": "2026-09-22T06:32:34.776388+00:00",
-        "last_seen": "2026-10-09T03:06:53.863978+00:00",
-        "content_hash": "c150ad63273fd6bf8522c79014eb488ae64338a1d42fb75cf60f15ddeef2db2c",
-        "status": "UPDATED"
-      }
-    },
-    {
-      "type": "UPDATED",
-      "market": "UK",
-      "record": {
-        "market": "UK",
-        "source_id": "uk",
-        "source_domain": "soprasteria.co.uk",
-        "source_url": "https://www.soprasteria.co.uk/insights/client-success-stories",
-        "language": "en",
-        "title": "The Agriculture Middleware Strategy passes its first inspection",
-        "description": "After working together for 25 years, Sopra Steria was chosen for an important strategic project.",
-        "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/the-agriculture-middleware-strategy-passes-its-first-inspection",
-        "canonical_url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/the-agriculture-middleware-strategy-passes-its-first-inspection",
-        "categories": [],
-        "published_date": "2023-10-26",
-        "client_name": "",
-        "first_seen": "2026-09-22T06:32:34.776388+00:00",
-        "last_seen": "2026-10-09T03:06:53.863978+00:00",
-        "content_hash": "6b82b86edeb8a0d29e72d255e2b2624b57d109fa522e11a59fd0a6535cd6443d",
-        "status": "UPDATED"
-      }
-    },
-    {
-      "type": "UPDATED",
-      "market": "Netherlands",
-      "record": {
-        "market": "Netherlands",
-        "source_id": "netherlands",
-        "source_domain": "soprasteria.nl",
-        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
-        "language": "nl",
-        "title": "Curium: Strengthening IT compliance for a secure and scalable future",
-        "description": "Curium is a global leader in nuclear medicine, specialising in the production and distribution of radiopharmaceuticals used for both diagnostic and therapeutic applications. Operating within a highly time-sensitive supply chain, Curium ensures that its nuclear isotopes—critical for patient treatments—reach hospitals within hours of production.",
-        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/curium-strengthening-it-compliance-for-a-secure-and-scalable-future",
-        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/curium-strengthening-it-compliance-for-a-secure-and-scalable-future",
-        "categories": [],
-        "published_date": "2025-05-04",
-        "client_name": "",
-        "first_seen": "2026-09-22T06:32:34.776388+00:00",
-        "last_seen": "2026-10-09T03:06:53.863978+00:00",
-        "content_hash": "b1c60a999df3e33f13c3bbd978f91f8125e142b68e6954c4e19de8fea0880b1c",
-        "status": "UPDATED"
-      }
-    }
-  ],
+  "changes": [],
   "errors": []
 }
