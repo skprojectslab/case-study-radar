@@ -1,13 +1,13 @@
 {
-  "run_at": "2026-10-11T12:50:59.741623+00:00",
+  "run_at": "2026-10-12T15:26:39.341416+00:00",
   "summary": {
-    "run_at": "2026-10-11T12:50:59.741623+00:00",
+    "run_at": "2026-10-12T15:26:39.341416+00:00",
     "sources": 11,
-    "discovered": 623,
-    "new": 0,
+    "discovered": 462,
+    "new": 1,
     "updated": 0,
-    "existing": 623,
-    "errors": 0
+    "existing": 461,
+    "errors": 1
   },
   "by_market": {
     "UK": {
@@ -35,8 +35,8 @@
       "existing": 20
     },
     "Italy": {
-      "records": 3,
-      "new": 0,
+      "records": 4,
+      "new": 1,
       "updated": 0,
       "existing": 3
     },
@@ -69,12 +69,6 @@
       "new": 0,
       "updated": 0,
       "existing": 3
-    },
-    "Norway": {
-      "records": 162,
-      "new": 0,
-      "updated": 0,
-      "existing": 162
     }
   }
 }
