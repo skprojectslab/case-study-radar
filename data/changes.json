@@ -1,43 +1,20 @@
 {
   "summary": {
-    "run_at": "2026-10-12T15:26:39.341416+00:00",
+    "run_at": "2026-10-13T14:12:28.468611+00:00",
     "sources": 11,
-    "discovered": 462,
-    "new": 1,
+    "discovered": 623,
+    "new": 0,
     "updated": 0,
-    "existing": 461,
+    "existing": 623,
     "errors": 1
   },
-  "changes": [
-    {
-      "type": "NEW",
-      "market": "Italy",
-      "record": {
-        "market": "Italy",
-        "source_id": "italy",
-        "source_domain": "soprasteria.it",
-        "source_url": "https://www.soprasteria.it/chi-siamo/storie-di-successo",
-        "language": "it",
-        "title": "ARIA - Progettare servizi pubblici digitali mettendo il cittadino al centro",
-        "description": "ARIA S.p.A., la centrale acquisti e di innovazione di Regione Lombardia, aveva l'esigenza di ripensare la progettazione e l'erogazione dei servizi digitali rivolti a cittadini, imprese ed enti del territorio. La sfida era superare un approccio tradizionalmente orientato ai processi amministrativi per adottare un modello capace di rispondere in modo più efficace ai bisogni reali degli utenti finali, semplificando l'accesso ai servizi e migliorandone l'esperienza d'uso. In un contesto in cui la Pubblica Amministrazione è chiamata a innovare mantenendo elevati standard di accessibilità, inclusione ed efficienza, ARIA ha scelto di intraprendere un percorso di trasformazione centrato sulle persone.",
-        "url": "https://www.soprasteria.it/chi-siamo/storie-di-successo/aria---progettare-servizi-pubblici-digitali-mettendo-il-cittadino-al-centro",
-        "canonical_url": "https://www.soprasteria.it/chi-siamo/storie-di-successo/aria---progettare-servizi-pubblici-digitali-mettendo-il-cittadino-al-centro",
-        "categories": [],
-        "published_date": "",
-        "client_name": "",
-        "first_seen": "2026-10-12T15:26:39.341416+00:00",
-        "last_seen": "2026-10-12T15:26:39.341416+00:00",
-        "content_hash": "f8d484d98103385db7b29f2cb3ba97eb0723bcb2c76777c8b041b0b5d544bc60",
-        "status": "NEW"
-      }
-    }
-  ],
+  "changes": [],
   "errors": [
     {
-      "source": "norway",
-      "stage": "listing",
-      "url": "https://www.soprasteria.no/prosjekter",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.no', port=443): Read timed out. (read timeout=30)"
+      "source": "germany",
+      "stage": "detail",
+      "url": "https://www.soprasteria.de/newsroom/success-stories/details/airbus-firstflight-of-the-A350-XWB",
+      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=45)"
     }
   ]
 }
