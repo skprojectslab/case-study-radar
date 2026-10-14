@@ -1,13 +1,13 @@
 {
-  "run_at": "2026-10-13T14:12:28.468611+00:00",
+  "run_at": "2026-10-14T11:52:52.298770+00:00",
   "summary": {
-    "run_at": "2026-10-13T14:12:28.468611+00:00",
+    "run_at": "2026-10-14T11:52:52.298770+00:00",
     "sources": 11,
-    "discovered": 623,
+    "discovered": 590,
     "new": 0,
     "updated": 0,
-    "existing": 623,
-    "errors": 1
+    "existing": 590,
+    "errors": 34
   },
   "by_market": {
     "UK": {
@@ -17,10 +17,10 @@
       "existing": 91
     },
     "Germany": {
-      "records": 29,
+      "records": 30,
       "new": 0,
       "updated": 0,
-      "existing": 29
+      "existing": 30
     },
     "Belgium": {
       "records": 89,
@@ -71,10 +71,10 @@
       "existing": 3
     },
     "Norway": {
-      "records": 162,
+      "records": 128,
       "new": 0,
       "updated": 0,
-      "existing": 162
+      "existing": 128
     }
   }
 }

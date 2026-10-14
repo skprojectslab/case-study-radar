@@ -1,20 +1,218 @@
 {
   "summary": {
-    "run_at": "2026-10-13T14:12:28.468611+00:00",
+    "run_at": "2026-10-14T11:52:52.298770+00:00",
     "sources": 11,
-    "discovered": 623,
+    "discovered": 590,
     "new": 0,
     "updated": 0,
-    "existing": 623,
-    "errors": 1
+    "existing": 590,
+    "errors": 34
   },
   "changes": [],
   "errors": [
     {
-      "source": "germany",
+      "source": "norway",
       "stage": "detail",
-      "url": "https://www.soprasteria.de/newsroom/success-stories/details/airbus-firstflight-of-the-A350-XWB",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=45)"
+      "url": "https://www.soprasteria.no/prosjekter/details/sykehuspartner-samler-kunder-og-leverandrer-i-salesforce",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/sykehuspartner-samler-kunder-og-leverandrer-i-salesforce"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/oslo-kommune-oslobygg-styrker-sin-industrielle-it",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/oslo-kommune-oslobygg-styrker-sin-industrielle-it"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/gassco-holder-europa-varm",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/gassco-holder-europa-varm"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/lotteri--og-stiftelsestilsynet-strategisk-plattformvalg-med-salesforce",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/lotteri--og-stiftelsestilsynet-strategisk-plattformvalg-med-salesforce"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/archer-it-som-skal-virke-globalt-24-7",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/archer-it-som-skal-virke-globalt-24-7"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/kongsberg-digital-skybasert-navigasjonsprogramvare-for-maritim-simulatortrening",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/kongsberg-digital-skybasert-navigasjonsprogramvare-for-maritim-simulatortrening"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/statnett-effektiv-analyse-av-data-fra-strmnettet-ker-elektrifiseringen",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/statnett-effektiv-analyse-av-data-fra-strmnettet-ker-elektrifiseringen"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/ruter-en-inkluderende-opplevelse-for-tilrettelagte-transporttjenester",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/ruter-en-inkluderende-opplevelse-for-tilrettelagte-transporttjenester"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/politiets-it-enhet-gevinstrealisering-av-digitalisering-i-politiet",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/politiets-it-enhet-gevinstrealisering-av-digitalisering-i-politiet"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/stavanger-universitetssjukehus-redesign-av-dagbehandling",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/stavanger-universitetssjukehus-redesign-av-dagbehandling"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/wallenius-wilhelmsen-seiler-sin-egen-sj",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/wallenius-wilhelmsen-seiler-sin-egen-sj"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/sykehjemsetaten-nattugla-vaker-over-tove",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/sykehjemsetaten-nattugla-vaker-over-tove"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/barentswatch-du-tror-kanskje-ikke-utvikleren-er-pa-jobb-her",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/barentswatch-du-tror-kanskje-ikke-utvikleren-er-pa-jobb-her"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/bane-nor-en-brukervennlig-ansattportal-basert-pa-servicenow",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/bane-nor-en-brukervennlig-ansattportal-basert-pa-servicenow"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/bufdir-meklingstjeneste-for-foreldre-som-skilles",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/bufdir-meklingstjeneste-for-foreldre-som-skilles"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/holocare-hologrammer-som-redder-liv",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/holocare-hologrammer-som-redder-liv"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/oslobygg-endringsledelse-pa-veien-til-ny-organisasjonsmodell",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/oslobygg-endringsledelse-pa-veien-til-ny-organisasjonsmodell"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/kongsberg-defence-aerospace-moderne-utvikleropplevelse-som-drivkraft-i-endring",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/kongsberg-defence-aerospace-moderne-utvikleropplevelse-som-drivkraft-i-endring"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/vestre-viken-helseforetak-tryggere-pasientforlop",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/vestre-viken-helseforetak-tryggere-pasientforlop"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/aker-bp-frigjring-av-data-innen-offshore",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/aker-bp-frigjring-av-data-innen-offshore"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/trondheim-kommune-en-ryddig-vei-til-skyen-med-microsoft-azure-cloud",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/trondheim-kommune-en-ryddig-vei-til-skyen-med-microsoft-azure-cloud"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/dnb-migrering-fra-atlassian-datasenter-til-sky",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/dnb-migrering-fra-atlassian-datasenter-til-sky"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/sparebank1-utvikling-mer-effektiv-it-styring-for-prioritering-maloppnaelse-og-verdiskaping",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/sparebank1-utvikling-mer-effektiv-it-styring-for-prioritering-maloppnaelse-og-verdiskaping"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/oslo-universitetssykehus-helhetlig-prosesskartlegging-for-det-nye-radiumhospitalet",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/oslo-universitetssykehus-helhetlig-prosesskartlegging-for-det-nye-radiumhospitalet"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/gjensidige-fra-strategisk-satsningsomrade-til-skalert-app-i-markedet",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/gjensidige-fra-strategisk-satsningsomrade-til-skalert-app-i-markedet"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/bufdir-ki-assistert-opplring-hjelper-helsefagsarbeidere-a-gi-bedre-tjenester-til-voldsofre",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/bufdir-ki-assistert-opplring-hjelper-helsefagsarbeidere-a-gi-bedre-tjenester-til-voldsofre"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/roaf-slik-identifiserer-vi-miljtiltakene-med-mest-effekt",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/roaf-slik-identifiserer-vi-miljtiltakene-med-mest-effekt"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/voice-brekraftsrapportering-mer-enn-bare-tall",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/voice-brekraftsrapportering-mer-enn-bare-tall"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/moller-bil-helhetlig-kundeopplevelse-med-headless-teknologi",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/moller-bil-helhetlig-kundeopplevelse-med-headless-teknologi"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/telenor-alfa-faar-landet-til-aa-virke",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/telenor-alfa-faar-landet-til-aa-virke"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/ruter-selvkjorende-kollektivtransport-er-naer",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/ruter-selvkjorende-kollektivtransport-er-naer"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/gront-punkt-gjenvinningskalkulator-for-emballasjedesign",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/gront-punkt-gjenvinningskalkulator-for-emballasjedesign"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/redd-barna-digitale-laringsmidler",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/redd-barna-digitale-laringsmidler"
+    },
+    {
+      "source": "norway",
+      "stage": "detail",
+      "url": "https://www.soprasteria.no/prosjekter/details/kripos-bare-en-chat-unna-hjelp",
+      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter/details/kripos-bare-en-chat-unna-hjelp"
     }
   ]
 }
