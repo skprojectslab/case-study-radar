@@ -1,13 +1,36 @@
 {
   "summary": {
-    "run_at": "2026-10-15T07:21:32.778273+00:00",
+    "run_at": "2026-10-15T11:30:08.742719+00:00",
     "sources": 11,
     "discovered": 624,
-    "new": 0,
+    "new": 1,
     "updated": 0,
-    "existing": 624,
+    "existing": 623,
     "errors": 0
   },
-  "changes": [],
+  "changes": [
+    {
+      "type": "NEW",
+      "market": "Sweden",
+      "record": {
+        "market": "Sweden",
+        "source_id": "sweden",
+        "source_domain": "soprasteria.se",
+        "source_url": "https://www.soprasteria.se/kundreferenser/",
+        "language": "sv",
+        "title": "Så skapade Vattenfall förutsättningar för att skala AI-agenter",
+        "description": "Hur kan AI-agenter skapa verkligt affärsvärde och stärka verksamhetens långsiktiga konkurrenskraft? För Vattenfall hjälpte Sopra Steria till att definiera, prioritera och konkretisera de AI-initiativ som har störst potential att effektivisera processer, stärka beslutsfattandet och lägga grunden för fortsatt utveckling inom sälj- och marknad.",
+        "url": "https://www.soprasteria.se/kundreferenser/sa-skapade-vattenfall-forutsattningar-for-att-skala-ai-agenter",
+        "canonical_url": "https://www.soprasteria.se/kundreferenser/sa-skapade-vattenfall-forutsattningar-for-att-skala-ai-agenter",
+        "categories": [],
+        "published_date": "",
+        "client_name": "",
+        "first_seen": "2026-10-15T11:30:08.742719+00:00",
+        "last_seen": "2026-10-15T11:30:08.742719+00:00",
+        "content_hash": "43019add7b4876a8036e7aa1ef3f1c000a55cd8f82c3756b8d37a69593c34a2f",
+        "status": "NEW"
+      }
+    }
+  ],
   "errors": []
 }
