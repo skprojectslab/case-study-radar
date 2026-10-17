@@ -1,80 +1,13 @@
 {
   "summary": {
-    "run_at": "2026-10-16T11:25:09.802657+00:00",
+    "run_at": "2026-10-17T10:44:57.489197+00:00",
     "sources": 11,
     "discovered": 627,
-    "new": 3,
+    "new": 0,
     "updated": 0,
-    "existing": 624,
+    "existing": 627,
     "errors": 0
   },
-  "changes": [
-    {
-      "type": "NEW",
-      "market": "Belgium",
-      "record": {
-        "market": "Belgium",
-        "source_id": "belgium",
-        "source_domain": "soprasteria.be",
-        "source_url": "https://www.soprasteria.be/newsroom/success-stories",
-        "language": "nl/fr",
-        "title": "Liftinstituut and Sopra Steria join forces to make lift systems safer and more cyber resilient",
-        "description": "Discover how Liftinstituut and Sopra Steria help organizations identify lift system vulnerabilities and improve cyber resilience.",
-        "url": "https://www.soprasteria.be/newsroom/success-stories/details/liftinstituut-and-sopra-steria-join-forces-to-make-lift-systems-safer-and-more-cyber-resilient",
-        "canonical_url": "https://www.soprasteria.be/newsroom/success-stories/details/liftinstituut-and-sopra-steria-join-forces-to-make-lift-systems-safer-and-more-cyber-resilient",
-        "categories": [],
-        "published_date": "2026-10-16",
-        "client_name": "",
-        "first_seen": "2026-10-16T11:25:09.802657+00:00",
-        "last_seen": "2026-10-16T11:25:09.802657+00:00",
-        "content_hash": "551b72531cd3731360722ac5835f9da696e0ddf7db3e2ff30e9d340efebcce57",
-        "status": "NEW"
-      }
-    },
-    {
-      "type": "NEW",
-      "market": "Luxembourg",
-      "record": {
-        "market": "Luxembourg",
-        "source_id": "luxembourg",
-        "source_domain": "soprasteria.lu",
-        "source_url": "https://www.soprasteria.lu/newsroom/success-stories",
-        "language": "fr",
-        "title": "Liftinstituut and Sopra Steria join forces to make lift systems safer and more cyber resilient",
-        "description": "Discover how Liftinstituut and Sopra Steria help organizations identify lift system vulnerabilities and improve cyber resilience.",
-        "url": "https://www.soprasteria.lu/newsroom/success-stories/details/liftinstituut-and-sopra-steria-join-forces-to-make-lift-systems-safer-and-more-cyber-resilient",
-        "canonical_url": "https://www.soprasteria.lu/newsroom/success-stories/details/liftinstituut-and-sopra-steria-join-forces-to-make-lift-systems-safer-and-more-cyber-resilient",
-        "categories": [],
-        "published_date": "2026-10-16",
-        "client_name": "",
-        "first_seen": "2026-10-16T11:25:09.802657+00:00",
-        "last_seen": "2026-10-16T11:25:09.802657+00:00",
-        "content_hash": "551b72531cd3731360722ac5835f9da696e0ddf7db3e2ff30e9d340efebcce57",
-        "status": "NEW"
-      }
-    },
-    {
-      "type": "NEW",
-      "market": "Netherlands",
-      "record": {
-        "market": "Netherlands",
-        "source_id": "netherlands",
-        "source_domain": "soprasteria.nl",
-        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
-        "language": "nl",
-        "title": "Liftinstituut and Sopra Steria join forces to make lift systems safer and more cyber resilient",
-        "description": "Discover how Liftinstituut and Sopra Steria help organizations identify lift system vulnerabilities and improve cyber resilience.",
-        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/liftinstituut-and-sopra-steria-join-forces-to-make-lift-systems-safer-and-more-cyber-resilient",
-        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/liftinstituut-and-sopra-steria-join-forces-to-make-lift-systems-safer-and-more-cyber-resilient",
-        "categories": [],
-        "published_date": "2026-10-16",
-        "client_name": "",
-        "first_seen": "2026-10-16T11:25:09.802657+00:00",
-        "last_seen": "2026-10-16T11:25:09.802657+00:00",
-        "content_hash": "551b72531cd3731360722ac5835f9da696e0ddf7db3e2ff30e9d340efebcce57",
-        "status": "NEW"
-      }
-    }
-  ],
+  "changes": [],
   "errors": []
 }
