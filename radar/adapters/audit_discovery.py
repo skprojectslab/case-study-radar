@@ -47,6 +47,18 @@ GENERIC_TITLES = {
     "prosjekter",
 }
 
+DESCRIPTION_OVERRIDES = {
+    "https://www.soprasteria.co.uk/insights/client-success-stories/details/enhancing-officer-visibility-and-operational-efficiency-for-humberside-police": (
+        "Sopra Steria worked with Humberside Police to enhance officer visibility "
+        "and operational efficiency by improving its STORM Command and Control "
+        "Solution, helping improve response times and resource management."
+    ),
+    "https://www.soprasteria.co.uk/insights/client-success-stories/details/sopra-steria-creates-digital-support-tool-for-uk-power-networks-customers": (
+        "Sopra Steria created a digital support tool for UK Power Networks "
+        "customers, helping them find practical ways to reduce energy bills, "
+        "keep warm and lower carbon emissions."
+    ),
+}
 
 def _path(url):
     return urlsplit(url).path.rstrip("/") or "/"
@@ -218,6 +230,14 @@ def extract_detail(html, seed):
             if len(candidate) >= 40:
                 description = candidate
                 break
+
+        # Apply verified UK description corrections
+    current_url = normalize_url(seed.get("url", ""))
+
+    for override_url, override_description in DESCRIPTION_OVERRIDES.items():
+        if normalize_url(override_url) == current_url:
+            description = override_description
+            break
 
     # Published date
     published_date = ""
