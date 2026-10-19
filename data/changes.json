@@ -1,13 +1,58 @@
 {
   "summary": {
-    "run_at": "2026-10-18T11:05:52.559844+00:00",
+    "run_at": "2026-10-19T10:10:40.802048+00:00",
     "sources": 11,
     "discovered": 627,
     "new": 0,
-    "updated": 0,
-    "existing": 627,
+    "updated": 2,
+    "existing": 625,
     "errors": 0
   },
-  "changes": [],
+  "changes": [
+    {
+      "type": "UPDATED",
+      "market": "UK",
+      "record": {
+        "market": "UK",
+        "source_id": "uk",
+        "source_domain": "soprasteria.co.uk",
+        "source_url": "https://www.soprasteria.co.uk/insights/client-success-stories",
+        "language": "en",
+        "title": "Enhancing officer visibility and operational efficiency for Humberside Police",
+        "description": "Sopra Steria worked with Humberside Police to enhance officer visibility and operational efficiency by improving its STORM Command and Control Solution, helping improve response times and resource management.",
+        "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/enhancing-officer-visibility-and-operational-efficiency-for-humberside-police",
+        "canonical_url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/enhancing-officer-visibility-and-operational-efficiency-for-humberside-police",
+        "categories": [],
+        "published_date": "2025-03-17",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-19T10:10:40.802048+00:00",
+        "content_hash": "29ca1c960ff892802cde77599da415b248af01c17a9c28aea6960600c26458b8",
+        "status": "UPDATED"
+      }
+    },
+    {
+      "type": "UPDATED",
+      "market": "UK",
+      "record": {
+        "market": "UK",
+        "source_id": "uk",
+        "source_domain": "soprasteria.co.uk",
+        "source_url": "https://www.soprasteria.co.uk/insights/client-success-stories",
+        "language": "en",
+        "title": "Sopra Steria creates digital support tool for UK Power Networks customers",
+        "description": "Sopra Steria created a digital support tool for UK Power Networks customers, helping them find practical ways to reduce energy bills, keep warm and lower carbon emissions.",
+        "url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/sopra-steria-creates-digital-support-tool-for-uk-power-networks-customers",
+        "canonical_url": "https://www.soprasteria.co.uk/insights/client-success-stories/details/sopra-steria-creates-digital-support-tool-for-uk-power-networks-customers",
+        "categories": [],
+        "published_date": "2024-09-16",
+        "client_name": "",
+        "first_seen": "2026-09-22T06:32:34.776388+00:00",
+        "last_seen": "2026-10-19T10:10:40.802048+00:00",
+        "content_hash": "c954d3505f1270291ac306307650be145e96f67162b9c0a64f6cbdea90f9d898",
+        "status": "UPDATED"
+      }
+    }
+  ],
   "errors": []
 }

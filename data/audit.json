@@ -1,20 +1,20 @@
 {
-  "run_at": "2026-10-18T11:05:52.559844+00:00",
+  "run_at": "2026-10-19T10:10:40.802048+00:00",
   "summary": {
-    "run_at": "2026-10-18T11:05:52.559844+00:00",
+    "run_at": "2026-10-19T10:10:40.802048+00:00",
     "sources": 11,
     "discovered": 627,
     "new": 0,
-    "updated": 0,
-    "existing": 627,
+    "updated": 2,
+    "existing": 625,
     "errors": 0
   },
   "by_market": {
     "UK": {
       "records": 91,
       "new": 0,
-      "updated": 0,
-      "existing": 91
+      "updated": 2,
+      "existing": 89
     },
     "Germany": {
       "records": 30,
