@@ -271,10 +271,27 @@ def extract_detail(html, seed):
             ):
                 categories.append(value)
 
+  
+    # Client name: use explicit page metadata only
+    client_name = ""
+
+    for selector in [
+        "meta[name='client']",
+    ]:
+        meta = soup.select_one(selector)
+        if meta and meta.get("content"):
+            value = clean_text(meta.get("content", ""))
+            if value and value.lower() not in {
+                "sopra steria",
+                "sopra steria group",
+            }:
+                client_name = value
+                break
+
     return {
         "title": title,
         "description": description,
         "published_date": published_date,
         "categories": categories,
-        "client_name": "",
+        "client_name": client_name,
     }
