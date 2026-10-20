@@ -8,5 +8,19 @@ def normalize_url(url):
  return urlunsplit((p.scheme.lower(),p.netloc.lower(),path,urlencode(q),""))
 def absolute_url(base,href): return normalize_url(urljoin(base,href))
 def content_hash(r):
- x={k:r.get(k,"") for k in ["title","description","client_name","published_date","categories"]}
- return hashlib.sha256(json.dumps(x,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+    x = {
+        k: r.get(k, "")
+        for k in [
+            "title",
+            "description",
+            "published_date",
+            "categories",
+        ]
+    }
+    return hashlib.sha256(
+        json.dumps(
+            x,
+            sort_keys=True,
+            ensure_ascii=False
+        ).encode()
+    ).hexdigest()
