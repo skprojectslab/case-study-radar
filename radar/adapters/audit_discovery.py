@@ -127,7 +127,8 @@ def candidate_links(html, listing_url, cfg):
 
 
 def extract_client_name(title, description, main):
-    """Extract a client name only where a recognisable pattern supports it."""
+    """Extract client names from explicit metadata and recognisable text patterns."""
+
     excluded = {
         "sopra steria",
         "sopra steria next",
@@ -135,56 +136,127 @@ def extract_client_name(title, description, main):
         "case study",
         "success story",
         "success stories",
+        "client",
+        "customer",
+        "a leading european bank",
+        "a major airline",
+        "one of the country's favourite online retailers",
     }
 
-    # Explicit client metadata, when provided by the page.
-    meta = main.select_one("meta[name='client']")
-    if meta and meta.get("content"):
-        candidate = clean_text(meta["content"])
-        if candidate.lower() not in excluded:
-            return candidate
+    def valid(candidate):
+        candidate = clean_text(candidate).strip(" \t\r\n:,-–—.")
+        if not candidate or len(candidate) > 80:
+            return ""
+        if candidate.lower() in excluded:
+            return ""
+        if candidate.lower().startswith(("sopra steria ", "case study ")):
+            return ""
+        return candidate
 
-    # Explicit client label, supporting common label/value layouts.
-    for label in main.find_all(string=re.compile(r"^\s*client\s*:?\s*$", re.I)):
+    # 1. Explicit client metadata.
+    for selector in [
+        "meta[name='client']",
+        "meta[property='article:client']",
+        "[itemprop='client']",
+    ]:
+        element = main.select_one(selector)
+        if element:
+            value = (
+                element.get("content", "")
+                or element.get_text(" ", strip=True)
+            )
+            candidate = valid(value)
+            if candidate:
+                return candidate
+
+    # 2. Explicit client label, including common label/value layouts.
+    for label in main.find_all(
+        string=re.compile(r"^\s*client\s*:?\s*$", re.I)
+    ):
         parent = label.parent
         if not parent:
             continue
 
-        # Check the labelled element and its next sibling.
-        candidates = [
-            parent.get_text(" ", strip=True),
-            parent.find_next_sibling().get_text(" ", strip=True)
-            if parent.find_next_sibling() else "",
+        siblings = [
+            parent.find_next_sibling(),
+            parent.parent.find_next_sibling() if parent.parent else None,
         ]
 
-        for value in candidates:
-            value = re.sub(r"^\s*client\s*:?\s*", "", value, flags=re.I)
-            value = clean_text(value).strip(" :,-")
-            if value and value.lower() not in excluded:
-                return value
+        for sibling in siblings:
+            if sibling:
+                candidate = valid(sibling.get_text(" ", strip=True))
+                if candidate:
+                    return candidate
 
-    # Titles such as "Yara: Developing the digital workplace..."
-    match = re.match(r"^\s*([^:]{2,60}):\s+\S", title or "")
+    text = clean_text(description or "")
+    title_text = clean_text(title or "")
+
+    # 3. Titles beginning with a client name, e.g. "Yara: ..."
+    # Do not treat titles beginning with Sopra Steria as client names.
+    match = re.match(r"^\s*([^:]{2,60}):\s+\S", title_text)
     if match:
-        candidate = clean_text(match.group(1)).strip(" ,.")
-        if candidate.lower() not in excluded:
+        candidate = valid(match.group(1))
+        if candidate and not candidate.lower().startswith("sopra steria"):
             return candidate
 
-    # Description patterns with explicit client context.
-    text = description or ""
-    patterns = [
-        r"\bworked with\s+([A-Z][A-Za-z0-9&.,'’ -]{1,50}?)\s+to\b",
-        r"\bpartnered with\s+([A-Z][A-Za-z0-9&.,'’ -]{1,50}?)\s+to\b",
-        r"\bcreated\s+(?:a|an)\s+.+?\s+for\s+([A-Z][A-Za-z0-9&.,'’ -]{1,50}?)\s+customers\b",
+    # 4. Titles ending with an explicitly named organisation.
+    # Examples: "... for M Group Services", "... at AB Dynamics".
+    title_patterns = [
+        r"\bfor\s+((?:the\s+)?[A-Z][A-Za-z0-9&.'’()/-]*(?:\s+[A-Z][A-Za-z0-9&.'’()/-]*){0,5})\s*$",
+        r"\bat\s+((?:the\s+)?[A-Z][A-Za-z0-9&.'’()/-]*(?:\s+[A-Z][A-Za-z0-9&.'’()/-]*){0,5})\s*$",
     ]
 
-    for pattern in patterns:
-        match = re.search(pattern, text)
-        if not match:
-            continue
+    for pattern in title_patterns:
+        match = re.search(pattern, title_text)
+        if match:
+            candidate = valid(match.group(1))
+            if candidate:
+                return candidate
 
-        candidate = clean_text(match.group(1)).strip(" ,.")
-        if candidate and candidate.lower() not in excluded:
+    # 5. Description starts with the client name:
+    # "N Brown is...", "AB Dynamics partnered...", "Ecopower improves..."
+    # Require a clear grammatical cue after the organisation name.
+    opening_patterns = [
+        r"^(.{2,60}?)\s+(?:is|are|has|have|was|were)\s+(?:a|an|the)\b",
+        r"^(.{2,60}?)\s+(?:partnered|contracted|decided|selected|recognises|recognizes|plays|delivers|provides|operates)\b",
+    ]
+
+    for pattern in opening_patterns:
+        match = re.match(pattern, text, re.I)
+        if match:
+            candidate = valid(match.group(1))
+            if candidate:
+                return candidate
+
+    # 6. Explicit client relationship wording.
+    relationship_patterns = [
+        r"\bworked with\s+(.{2,60}?)\s+to\b",
+        r"\bpartnered with\s+(.{2,60}?)\s+to\b",
+        r"\bcontracted\s+(.{2,60}?)\s+to\b",
+        r"\bchosen by\s+(.{2,60}?)(?:\s+to\b|[,.;])",
+        r"\bappointed to support\s+(.{2,60}?)(?:\s+with\b|\s+on\b|[,.;])",
+        r"\bworked with\s+(.{2,60}?)(?:\s+to\b|[,.;])",
+    ]
+
+    for pattern in relationship_patterns:
+        match = re.search(pattern, text, re.I)
+        if match:
+            candidate = valid(match.group(1))
+            if candidate and candidate.lower() not in {
+                "a major airline",
+                "a large public body",
+                "the client",
+            }:
+                return candidate
+
+    # 7. Specific "for [organisation] customers" wording.
+    match = re.search(
+        r"\bfor\s+([A-Z][A-Za-z0-9&.'’/-]*(?:\s+[A-Z][A-Za-z0-9&.'’/-]*){0,5})\s+customers\b",
+        text,
+    )
+    if match:
+        candidate = valid(match.group(1))
+        if candidate:
             return candidate
 
     return ""
