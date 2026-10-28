@@ -6,62 +6,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Case Study Radar</title>
 <style>
-:root {
-  font-family: Arial, sans-serif;
-  color: #202938;
-  background: #f5f7fa;
-}
+:root { font-family: Arial, sans-serif; color: #202938; background: #f5f7fa; }
 * { box-sizing: border-box; }
 body { margin: 0; }
-header {
-  background: #142d4e;
-  color: white;
-  padding: 28px max(20px, calc((100% - 1200px)/2));
-}
+header { background: #142d4e; color: white; padding: 28px max(20px, calc((100% - 1200px)/2)); }
 header h1 { margin: 0 0 8px; font-size: 28px; }
 header p { margin: 0; color: #dce6f3; }
 main { max-width: 1200px; margin: 24px auto; padding: 0 18px; }
-.filters {
-  background: white; border: 1px solid #e0e5ec;
-  border-radius: 12px; padding: 16px;
-  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 12px;
-}
-input, select {
-  width: 100%; min-width: 0; padding: 11px;
-  border: 1px solid #ccd4df; border-radius: 7px;
-  background: white; font-size: 14px;
-}
+.views { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.view-btn, .clear-btn { border: 1px solid #ccd4df; border-radius: 8px; background: white; padding: 10px 14px; cursor: pointer; color: #202938; font-size: 14px; }
+.view-btn[aria-pressed="true"] { background: #142d4e; color: white; border-color: #142d4e; }
+.view-btn span { display: inline-block; margin-left: 6px; font-weight: bold; }
+.clear-btn { margin-left: auto; border-color: #d6a5a5; color: #8b2525; }
+.filters { background: white; border: 1px solid #e0e5ec; border-radius: 12px; padding: 16px; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 12px; }
+input, select { width: 100%; min-width: 0; padding: 11px; border: 1px solid #ccd4df; border-radius: 7px; background: white; font-size: 14px; }
 .summary { margin: 18px 0; color: #566579; font-size: 14px; }
 .cards { display: grid; gap: 14px; }
-.card {
-  background: white; border: 1px solid #e0e5ec;
-  border-radius: 12px; padding: 20px;
-}
+.card { background: white; border: 1px solid #e0e5ec; border-radius: 12px; padding: 20px; }
 .card h2 { margin: 10px 0; font-size: 19px; line-height: 1.4; }
 .card p { line-height: 1.6; color: #465569; }
 .meta { color: #66758a; font-size: 13px; }
-.tag {
-  display: inline-block; padding: 4px 8px;
-  border-radius: 5px; background: #edf2f8;
-  font-size: 12px; margin-right: 6px;
-}
+.tag { display: inline-block; padding: 4px 8px; border-radius: 5px; background: #edf2f8; font-size: 12px; margin-right: 6px; margin-bottom: 4px; }
 .tag.NEW { background: #e2f7e9; color: #176638; }
 .tag.UPDATED { background: #fff0d7; color: #875500; }
 a { color: #1459a6; }
 .open { font-weight: bold; text-decoration: none; }
-.empty, .error {
-  background: white; border-radius: 10px; padding: 24px;
-}
+.empty, .error { background: white; border-radius: 10px; padding: 24px; }
+.notice { margin: 10px 0 0; font-size: 12px; color: #66758a; }
 footer { text-align: center; padding: 30px; color: #718096; font-size: 12px; }
-@media(max-width:750px) {
-  .filters { grid-template-columns: 1fr 1fr; }
-  .filters input { grid-column: 1 / -1; }
-}
-@media(max-width:450px) {
-  .filters { grid-template-columns: 1fr; }
-  .filters input { grid-column: auto; }
-}
+@media(max-width:750px) { .filters { grid-template-columns: 1fr 1fr; } .filters input { grid-column: 1 / -1; } }
+@media(max-width:450px) { .filters { grid-template-columns: 1fr; } .filters input { grid-column: auto; } .clear-btn { margin-left: 0; } }
 </style>
 </head>
 <body>
@@ -71,19 +45,23 @@ footer { text-align: center; padding: 30px; color: #718096; font-size: 12px; }
 </header>
 
 <main>
+  <nav class="views" aria-label="Case study views">
+    <button class="view-btn" data-view="NEW" aria-pressed="true">New Additions <span id="newCount">0</span></button>
+    <button class="view-btn" data-view="UPDATED" aria-pressed="false">Updated Case Studies <span id="updatedCount">0</span></button>
+    <button class="view-btn" data-view="ALL" aria-pressed="false">All Case Studies <span id="allCount">0</span></button>
+    <button class="clear-btn" id="clearFeed" type="button">Clear change feed on this browser</button>
+  </nav>
+
+  <p class="notice" id="feedNotice">
+    New and updated items remain in the shared feed until its data file is manually cleared.
+    This button hides the current feed items on this browser only.
+  </p>
+
   <section class="filters" aria-label="Search and filters">
-    <input id="search" type="search"
-      placeholder="Search titles, clients and descriptions…"
-      aria-label="Search case studies">
-    <select id="market" aria-label="Filter by market">
-      <option value="">All markets</option>
-    </select>
-    <select id="language" aria-label="Filter by language">
-      <option value="">All languages</option>
-    </select>
-    <select id="category" aria-label="Filter by category">
-      <option value="">All categories</option>
-    </select>
+    <input id="search" type="search" placeholder="Search titles, clients and descriptions…" aria-label="Search case studies">
+    <select id="market" aria-label="Filter by market"><option value="">All markets</option></select>
+    <select id="language" aria-label="Filter by language"><option value="">All languages</option></select>
+    <select id="topic" aria-label="Filter by topic"><option value="">All topics</option></select>
     <select id="status" aria-label="Filter by status">
       <option value="">All statuses</option>
       <option value="NEW">New</option>
@@ -91,26 +69,44 @@ footer { text-align: center; padding: 30px; color: #718096; font-size: 12px; }
       <option value="EXISTING">Existing</option>
     </select>
     <select id="sort" aria-label="Sort results">
-      <option value="recent">Recently discovered</option>
+      <option value="recent">Recently discovered/changed</option>
       <option value="published">Publication date</option>
       <option value="title">Title A–Z</option>
       <option value="client">Client A–Z</option>
     </select>
   </section>
 
-  <div class="summary" id="summary" aria-live="polite">
-    Loading case studies…
-  </div>
+  <div class="summary" id="summary" aria-live="polite">Loading case studies…</div>
   <section class="cards" id="results"></section>
 </main>
 
-<footer>
-  Case Study Radar · Source content remains in its original language.
-</footer>
+<footer>Case Study Radar · Source content remains in its original language.</footer>
 
 <script>
 const $ = id => document.getElementById(id);
-let records = [];
+let records = [], feed = [], activeView = "NEW";
+
+const LANGUAGE_LABELS = {
+  en: "English", fr: "French", de: "German", it: "Italian",
+  nl: "Dutch", da: "Danish", no: "Norwegian", sv: "Swedish",
+  fi: "Finnish", es: "Spanish", pt: "Portuguese", pl: "Polish",
+  cs: "Czech", ro: "Romanian", hu: "Hungarian", "nl/fr": "Dutch / French"
+};
+
+const TOPIC_RULES = [
+  ["Artificial intelligence & automation", /\b(ai|artificial intelligence|generative ai|machine learning|copilot|automation|automated|rpa|robotic process automation|chatbot|conversational assistant)\b/i],
+  ["Cloud & infrastructure", /\bcloud|servicenow|infrastructure|data cent(er|re)|hosting|migration|moderni[sz]ation of applications\b/i],
+  ["Cybersecurity & identity", /\bcyber|security|secure|identity|biometric|fraud|threat|border security|zero trust\b/i],
+  ["Digital transformation", /\bdigital transformation|digitali[sz]ation|digital workplace|digital services|digitally|moderni[sz]e|moderni[sz]ation\b/i],
+  ["Data & analytics", /\bdata[- ]driven|analytics|data platform|business intelligence|insight|modelling|modeling|research study\b/i],
+  ["Customer experience & services", /\bcustomer experience|customer service|user experience|user experiences|customer[- ]centred|customer[- ]centered|contact centre|contact center|service design\b/i],
+  ["Public services & government", /\bgovernment|public body|public service|police|home office|ministry|department|council|civil service|visa application|defra|ukvi\b/i],
+  ["Healthcare & life sciences", /\bhealthcare|health|hospital|patient|clinical|life sciences|medical\b/i],
+  ["Energy & environment", /\benergy|utilities|electricity|carbon|environment|sustainab|emissions|renewable\b/i],
+  ["Transport & travel", /\brail|transport|airline|aviation|passenger|travel|mobility|maritime|shipping\b/i],
+  ["ERP & business applications", /\berp|oracle fusion|sap|enterprise resource planning|application management|business process|servicenow\b/i],
+  ["Workplace & collaboration", /\bcollaboration|workplace|employee experience|workforce|recruitment|human resources|\bhr\b|learning resources\b/i]
+];
 
 function text(value) {
   return value == null ? "" : String(value);
@@ -123,20 +119,29 @@ function escapeHTML(value) {
   })[ch]);
 }
 
-function uniqueValues(field) {
-  return [...new Set(records.flatMap(r => {
-    const v = r[field];
-    return Array.isArray(v) ? v : (v ? [v] : []);
-  }).map(text).filter(Boolean))]
+function langLabel(code) {
+  return LANGUAGE_LABELS[text(code).toLowerCase()]
+    || (text(code) ? text(code).toUpperCase() : "Unknown");
+}
+
+function topicsFor(record) {
+  const content = `${text(record.title)} ${text(record.description)} ${text(record.client_name)}`;
+  return TOPIC_RULES
+    .filter(([, pattern]) => pattern.test(content))
+    .map(([label]) => label);
+}
+
+function uniqueValues(values) {
+  return [...new Set(values.map(text).filter(Boolean))]
     .sort((a, b) => a.localeCompare(b));
 }
 
-function fillSelect(id, values) {
+function fillSelect(id, values, labelFn = value => value) {
   const select = $(id);
   for (const value of values) {
     const option = document.createElement("option");
     option.value = value;
-    option.textContent = value;
+    option.textContent = labelFn(value);
     select.appendChild(option);
   }
 }
@@ -150,85 +155,206 @@ function validSourceURL(value) {
   }
 }
 
+function recordKey(record) {
+  return text(record.canonical_url || record.url);
+}
+
+function hiddenFeedKeys() {
+  try {
+    return new Set(JSON.parse(localStorage.getItem("caseStudyRadarHiddenFeed") || "[]"));
+  } catch {
+    return new Set();
+  }
+}
+
+function feedRecords() {
+  const hidden = hiddenFeedKeys();
+
+  return feed.filter(item => {
+    const record = item.record || item;
+    const key = recordKey(record);
+    return key && !hidden.has(key);
+  }).map(item => ({
+    ...(item.record || item),
+    _feedType: item.type || (item.record || item).status,
+    _detectedAt: item.detected_at || (item.record || item).first_seen,
+    _lastChangedAt: item.last_changed_at || (item.record || item).last_seen
+  }));
+}
+
+function recordsForView() {
+  if (activeView === "ALL") return records;
+  return feedRecords().filter(record => record._feedType === activeView);
+}
+
+function updateCounts() {
+  const visibleFeed = feedRecords();
+  $("newCount").textContent = visibleFeed.filter(r => r._feedType === "NEW").length;
+  $("updatedCount").textContent = visibleFeed.filter(r => r._feedType === "UPDATED").length;
+  $("allCount").textContent = records.length;
+}
+
 function render() {
+  updateCounts();
+
   const query = $("search").value.trim().toLocaleLowerCase();
   const market = $("market").value;
   const language = $("language").value;
-  const category = $("category").value;
+  const topic = $("topic").value;
   const status = $("status").value;
 
-  let filtered = records.filter(r => {
+  let filtered = recordsForView().filter(record => {
+    const topics = topicsFor(record);
     const searchable = [
-      r.title, r.description, r.client_name,
-      r.market, ...(Array.isArray(r.categories) ? r.categories : [])
+      record.title, record.description, record.client_name,
+      record.market, langLabel(record.language), ...topics,
+      ...(Array.isArray(record.categories) ? record.categories : [])
     ].map(text).join(" ").toLocaleLowerCase();
 
+    const type = record._feedType || record.status;
+
     return (!query || searchable.includes(query))
-      && (!market || text(r.market) === market)
-      && (!language || text(r.language) === language)
-      && (!category || (Array.isArray(r.categories)
-        && r.categories.map(text).includes(category)))
-      && (!status || text(r.status) === status);
+      && (!market || text(record.market) === market)
+      && (!language || text(record.language) === language)
+      && (!topic || topics.includes(topic))
+      && (!status || text(type) === status);
   });
 
   switch ($("sort").value) {
     case "title":
-      filtered.sort((a,b) => text(a.title).localeCompare(text(b.title)));
+      filtered.sort((a, b) => text(a.title).localeCompare(text(b.title)));
       break;
     case "client":
-      filtered.sort((a,b) => text(a.client_name).localeCompare(text(b.client_name)));
+      filtered.sort((a, b) => text(a.client_name).localeCompare(text(b.client_name)));
       break;
     case "published":
-      filtered.sort((a,b) => text(b.published_date).localeCompare(text(a.published_date)));
+      filtered.sort((a, b) => text(b.published_date).localeCompare(text(a.published_date)));
       break;
     default:
-      filtered.sort((a,b) => text(b.last_seen).localeCompare(text(a.last_seen)));
+      filtered.sort((a, b) =>
+        text(b._lastChangedAt || b.last_seen || b._detectedAt || b.first_seen)
+          .localeCompare(text(a._lastChangedAt || a.last_seen || a._detectedAt || a.first_seen))
+      );
   }
 
-  $("summary").textContent =
-    `Showing ${filtered.length} of ${records.length} case studies`;
+  const viewLabel = activeView === "NEW"
+    ? "new additions"
+    : activeView === "UPDATED" ? "updated case studies" : "case studies";
+  const total = activeView === "ALL" ? records.length : recordsForView().length;
+
+  $("summary").textContent = `Showing ${filtered.length} of ${total} ${viewLabel}`;
 
   const results = $("results");
 
   if (!filtered.length) {
-    results.innerHTML = '<div class="empty">No matching case studies. Try changing your search or filters.</div>';
+    const message = activeView === "ALL"
+      ? "No matching case studies. Try changing your search or filters."
+      : `No ${viewLabel} match these filters. Choose All Case Studies to browse the full library.`;
+
+    results.innerHTML = `<div class="empty">${escapeHTML(message)}</div>`;
     return;
   }
 
-  results.innerHTML = filtered.map(r => {
-    const categories = Array.isArray(r.categories) ? r.categories : [];
-    const source = validSourceURL(r.url) ? r.url : "";
-    const badge = ["NEW", "UPDATED", "EXISTING"].includes(r.status)
-      ? `<span class="tag ${escapeHTML(r.status)}">${escapeHTML(r.status)}</span>`
+  results.innerHTML = filtered.map(record => {
+    const categories = Array.isArray(record.categories) ? record.categories : [];
+    const topics = topicsFor(record);
+    const source = validSourceURL(record.url) ? record.url : "";
+    const type = record._feedType || record.status;
+
+    const badge = ["NEW", "UPDATED", "EXISTING"].includes(type)
+      ? `<span class="tag ${escapeHTML(type)}">${
+          type === "NEW" ? "NEW ADDITION"
+          : type === "UPDATED" ? "UPDATED" : "EXISTING"
+        }</span>`
       : "";
 
+    const detected = record._detectedAt
+      ? new Date(record._detectedAt).toLocaleDateString() : "Not available";
+    const changed = record._lastChangedAt
+      ? new Date(record._lastChangedAt).toLocaleDateString() : detected;
+
     return `<article class="card">
-      <div>${badge}<span class="tag">${escapeHTML(r.market)}</span>
-      ${r.language ? `<span class="tag">${escapeHTML(r.language)}</span>` : ""}</div>
-      <h2>${escapeHTML(r.title || "Untitled case study")}</h2>
-      ${r.client_name ? `<div class="meta">Client: ${escapeHTML(r.client_name)}</div>` : ""}
-      ${r.description ? `<p>${escapeHTML(r.description)}</p>` : ""}
+      <div>${badge}
+        <span class="tag">${escapeHTML(record.market)}</span>
+        <span class="tag">${escapeHTML(langLabel(record.language))}</span>
+      </div>
+      <h2>${escapeHTML(record.title || "Untitled case study")}</h2>
+      ${record.client_name ? `<div class="meta">Client: ${escapeHTML(record.client_name)}</div>` : ""}
+      ${record.description ? `<p>${escapeHTML(record.description)}</p>` : ""}
+      ${topics.length ? `<div>${topics.map(t => `<span class="tag">${escapeHTML(t)}</span>`).join("")}</div>` : ""}
       ${categories.length ? `<div>${categories.map(c => `<span class="tag">${escapeHTML(c)}</span>`).join("")}</div>` : ""}
-      <p class="meta">Publication date: ${escapeHTML(r.published_date || "Not available")}</p>
-      ${source ? `<a class="open" href="${escapeHTML(source)}" target="_blank" rel="noopener noreferrer">View original case study ↗</a>` : ""}
+      <p class="meta">
+        Publication date: ${escapeHTML(record.published_date || "Not available")}
+        ${activeView !== "ALL"
+          ? ` · Added to feed: ${escapeHTML(detected)} · Last change: ${escapeHTML(changed)}`
+          : ""}
+      </p>
+      ${source
+        ? `<a class="open" href="${escapeHTML(source)}" target="_blank" rel="noopener noreferrer">View original case study ↗</a>`
+        : ""}
     </article>`;
   }).join("");
 }
 
 async function init() {
   try {
-    const response = await fetch("./data/current.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`Could not load data (${response.status})`);
+    const [currentResponse, feedResponse] = await Promise.all([
+      fetch("./data/current.json", { cache: "no-store" }),
+      fetch("./data/changes.json", { cache: "no-store" })
+    ]);
 
-    const data = await response.json();
-    if (!Array.isArray(data)) throw new Error("Expected current.json to contain a JSON array");
+    if (!currentResponse.ok) {
+      throw new Error(`Could not load case studies (${currentResponse.status})`);
+    }
+    if (!feedResponse.ok) {
+      throw new Error(`Could not load the change feed (${feedResponse.status})`);
+    }
 
-    records = data;
-    fillSelect("market", uniqueValues("market"));
-    fillSelect("language", uniqueValues("language"));
-    fillSelect("category", uniqueValues("categories"));
+    const currentData = await currentResponse.json();
+    const feedData = await feedResponse.json();
 
-    ["search", "market", "language", "category", "status", "sort"]
+    if (!Array.isArray(currentData)) {
+      throw new Error("Expected current.json to contain a JSON array");
+    }
+
+    records = currentData;
+    feed = Array.isArray(feedData.changes) ? feedData.changes : [];
+
+    fillSelect("market", uniqueValues(records.map(r => r.market)));
+    fillSelect("language", uniqueValues(records.map(r => r.language)), langLabel);
+    fillSelect("topic", uniqueValues(records.flatMap(topicsFor)));
+
+    document.querySelectorAll(".view-btn").forEach(button => {
+      button.addEventListener("click", () => {
+        activeView = button.dataset.view;
+        document.querySelectorAll(".view-btn").forEach(b =>
+          b.setAttribute("aria-pressed", String(b === button))
+        );
+        $("status").value = "";
+        render();
+      });
+    });
+
+    $("clearFeed").addEventListener("click", () => {
+      const active = feedRecords();
+
+      if (!active.length) {
+        alert("There are no visible feed items to clear on this browser.");
+        return;
+      }
+
+      if (!confirm(
+        `Hide ${active.length} new/updated feed items on this browser? ` +
+        "This will not delete them from the shared feed or full library."
+      )) return;
+
+      const hidden = hiddenFeedKeys();
+      active.forEach(record => hidden.add(recordKey(record)));
+      localStorage.setItem("caseStudyRadarHiddenFeed", JSON.stringify([...hidden]));
+      render();
+    });
+
+    ["search", "market", "language", "topic", "status", "sort"]
       .forEach(id => $(id).addEventListener(
         id === "search" ? "input" : "change", render
       ));
@@ -237,7 +363,7 @@ async function init() {
   } catch (error) {
     $("summary").textContent = "Unable to load case studies.";
     $("results").innerHTML =
-      `<div class="error">${escapeHTML(error.message)}. Check that data/current.json is published alongside this page.</div>`;
+      `<div class="error">${escapeHTML(error.message)}. Check that data/current.json and data/changes.json are published alongside this page.</div>`;
   }
 }
 
