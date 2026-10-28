@@ -151,16 +151,24 @@ def run():
 
                     old=history.get(url)
 
-                    r["status"] = (
-                        "NEW"
-                        if old is None
-                        else (
+                   if old is None:
+                        r["status"] = "NEW"
+                    else:
+                        changed_fields = [
+                             "title",
+                             "description",
+                             "published_date",
+                             "categories",
+                        ]
+
+                        r["status"] = (
                             "UPDATED"
-                            if old.get("content_hash")
-                            != r["content_hash"]
+                            if any(
+                                old.get(field, "") != r.get(field, "")
+                                for field in changed_fields
+                            )
                             else "EXISTING"
-                        )
-                    )
+                     )
 
                     current[url]=r
                     accepted+=1
