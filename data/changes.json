@@ -1,16 +1,39 @@
-
 {
   "summary": {
-    "run_at": "2026-10-28T08:34:32.757443+00:00",
+    "run_at": "2026-10-28T12:55:20.133163+00:00",
     "sources": 11,
-    "discovered": 563,
-    "new": 0,
+    "discovered": 564,
+    "new": 1,
     "updated": 0,
     "existing": 563,
     "errors": 0
   },
-  "changes": [],
+  "changes": [
+    {
+      "type": "NEW",
+      "market": "Italy",
+      "detected_at": "2026-10-28T12:55:20.133163+00:00",
+      "last_changed_at": "2026-10-28T12:55:20.133163+00:00",
+      "record": {
+        "market": "Italy",
+        "source_id": "italy",
+        "source_domain": "soprasteria.it",
+        "source_url": "https://www.soprasteria.it/chi-siamo/storie-di-successo",
+        "language": "it",
+        "title": "Conversational Analytics: una nuova esperienza di accesso ai dati per Italiaonline",
+        "description": "Italiaonline , AI digital company italiana, tra i principali operatori italiani nel digital marketing, nell’advertising e nella comunicazione online, si è trovata di fronte a una sfida sempre più diffusa nelle organizzazioni data-driven: trasformare un vasto patrimonio informativo in uno strumento maggiormente accessibile al business. L’esigenza non era raccogliere nuovi dati, ma consentire a figure manageriali e responsabili di funzione di interrogare le informazioni presenti nei sistemi in linguaggio naturale utilizzando il lessico aziendale, ottenendo risposte coerenti con la terminologia, i KPI e le regole di business dell’organizzazione. L’obiettivo era democratizzare l’accesso ai dati, riducendo la dipendenza da competenze tecniche e rendendo più semplice, veloce e intuitiva l’analisi delle informazioni.",
+        "url": "https://www.soprasteria.it/chi-siamo/storie-di-successo/conversational-analytics--una-nuova-esperienza-di-accesso-ai-dati-per-italiaonline",
+        "canonical_url": "https://www.soprasteria.it/chi-siamo/storie-di-successo/conversational-analytics--una-nuova-esperienza-di-accesso-ai-dati-per-italiaonline",
+        "categories": [],
+        "published_date": "",
+        "client_name": "Conversational Analytics",
+        "first_seen": "2026-10-28T12:55:20.133163+00:00",
+        "last_seen": "2026-10-28T12:55:20.133163+00:00",
+        "content_hash": "77cc862d1b0bf6f40fe031c3633f65709c74c69b3a0ac2f06e057c4764f43b0b",
+        "status": "NEW"
+      }
+    }
+  ],
   "errors": [],
-  "feed_updated_at": "2026-10-28T12:00:00+00:00",
-  "note": "Historical feed cleared. Tracking verified new additions and updates going forward."
+  "feed_updated_at": "2026-10-28T12:55:20.133163+00:00"
 }
