@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Case Study Radar</title>
+<style>
+:root {
+  font-family: Arial, sans-serif;
+  color: #202938;
+  background: #f5f7fa;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+header {
+  background: #142d4e;
+  color: white;
+  padding: 28px max(20px, calc((100% - 1200px)/2));
+}
+header h1 { margin: 0 0 8px; font-size: 28px; }
+header p { margin: 0; color: #dce6f3; }
+main { max-width: 1200px; margin: 24px auto; padding: 0 18px; }
+.filters {
+  background: white; border: 1px solid #e0e5ec;
+  border-radius: 12px; padding: 16px;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 12px;
+}
+input, select {
+  width: 100%; min-width: 0; padding: 11px;
+  border: 1px solid #ccd4df; border-radius: 7px;
+  background: white; font-size: 14px;
+}
+.summary { margin: 18px 0; color: #566579; font-size: 14px; }
+.cards { display: grid; gap: 14px; }
+.card {
+  background: white; border: 1px solid #e0e5ec;
+  border-radius: 12px; padding: 20px;
+}
+.card h2 { margin: 10px 0; font-size: 19px; line-height: 1.4; }
+.card p { line-height: 1.6; color: #465569; }
+.meta { color: #66758a; font-size: 13px; }
+.tag {
+  display: inline-block; padding: 4px 8px;
+  border-radius: 5px; background: #edf2f8;
+  font-size: 12px; margin-right: 6px;
+}
+.tag.NEW { background: #e2f7e9; color: #176638; }
+.tag.UPDATED { background: #fff0d7; color: #875500; }
+a { color: #1459a6; }
+.open { font-weight: bold; text-decoration: none; }
+.empty, .error {
+  background: white; border-radius: 10px; padding: 24px;
+}
+footer { text-align: center; padding: 30px; color: #718096; font-size: 12px; }
+@media(max-width:750px) {
+  .filters { grid-template-columns: 1fr 1fr; }
+  .filters input { grid-column: 1 / -1; }
+}
+@media(max-width:450px) {
+  .filters { grid-template-columns: 1fr; }
+  .filters input { grid-column: auto; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Case Study Radar</h1>
+  <p>Discover Sopra Steria case studies across markets.</p>
+</header>
+
+<main>
+  <section class="filters" aria-label="Search and filters">
+    <input id="search" type="search"
+      placeholder="Search titles, clients and descriptions…"
+      aria-label="Search case studies">
+    <select id="market" aria-label="Filter by market">
+      <option value="">All markets</option>
+    </select>
+    <select id="language" aria-label="Filter by language">
+      <option value="">All languages</option>
+    </select>
+    <select id="category" aria-label="Filter by category">
+      <option value="">All categories</option>
+    </select>
+    <select id="status" aria-label="Filter by status">
+      <option value="">All statuses</option>
+      <option value="NEW">New</option>
+      <option value="UPDATED">Updated</option>
+      <option value="EXISTING">Existing</option>
+    </select>
+    <select id="sort" aria-label="Sort results">
+      <option value="recent">Recently discovered</option>
+      <option value="published">Publication date</option>
+      <option value="title">Title A–Z</option>
+      <option value="client">Client A–Z</option>
+    </select>
+  </section>
+
+  <div class="summary" id="summary" aria-live="polite">
+    Loading case studies…
+  </div>
+  <section class="cards" id="results"></section>
+</main>
+
+<footer>
+  Case Study Radar · Source content remains in its original language.
+</footer>
+
+<script>
+const $ = id => document.getElementById(id);
+let records = [];
+
+function text(value) {
+  return value == null ? "" : String(value);
+}
+
+function escapeHTML(value) {
+  return text(value).replace(/[&<>"']/g, ch => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;",
+    '"': "&quot;", "'": "&#39;"
+  })[ch]);
+}
+
+function uniqueValues(field) {
+  return [...new Set(records.flatMap(r => {
+    const v = r[field];
+    return Array.isArray(v) ? v : (v ? [v] : []);
+  }).map(text).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b));
+}
+
+function fillSelect(id, values) {
+  const select = $(id);
+  for (const value of values) {
+    const option = document.createElement("option");
+    option.value = value;
+    option.textContent = value;
+    select.appendChild(option);
+  }
+}
+
+function validSourceURL(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" || url.protocol === "http:";
+  } catch {
+    return false;
+  }
+}
+
+function render() {
+  const query = $("search").value.trim().toLocaleLowerCase();
+  const market = $("market").value;
+  const language = $("language").value;
+  const category = $("category").value;
+  const status = $("status").value;
+
+  let filtered = records.filter(r => {
+    const searchable = [
+      r.title, r.description, r.client_name,
+      r.market, ...(Array.isArray(r.categories) ? r.categories : [])
+    ].map(text).join(" ").toLocaleLowerCase();
+
+    return (!query || searchable.includes(query))
+      && (!market || text(r.market) === market)
+      && (!language || text(r.language) === language)
+      && (!category || (Array.isArray(r.categories)
+        && r.categories.map(text).includes(category)))
+      && (!status || text(r.status) === status);
+  });
+
+  switch ($("sort").value) {
+    case "title":
+      filtered.sort((a,b) => text(a.title).localeCompare(text(b.title)));
+      break;
+    case "client":
+      filtered.sort((a,b) => text(a.client_name).localeCompare(text(b.client_name)));
+      break;
+    case "published":
+      filtered.sort((a,b) => text(b.published_date).localeCompare(text(a.published_date)));
+      break;
+    default:
+      filtered.sort((a,b) => text(b.last_seen).localeCompare(text(a.last_seen)));
+  }
+
+  $("summary").textContent =
+    `Showing ${filtered.length} of ${records.length} case studies`;
+
+  const results = $("results");
+
+  if (!filtered.length) {
+    results.innerHTML = '<div class="empty">No matching case studies. Try changing your search or filters.</div>';
+    return;
+  }
+
+  results.innerHTML = filtered.map(r => {
+    const categories = Array.isArray(r.categories) ? r.categories : [];
+    const source = validSourceURL(r.url) ? r.url : "";
+    const badge = ["NEW", "UPDATED", "EXISTING"].includes(r.status)
+      ? `<span class="tag ${escapeHTML(r.status)}">${escapeHTML(r.status)}</span>`
+      : "";
+
+    return `<article class="card">
+      <div>${badge}<span class="tag">${escapeHTML(r.market)}</span>
+      ${r.language ? `<span class="tag">${escapeHTML(r.language)}</span>` : ""}</div>
+      <h2>${escapeHTML(r.title || "Untitled case study")}</h2>
+      ${r.client_name ? `<div class="meta">Client: ${escapeHTML(r.client_name)}</div>` : ""}
+      ${r.description ? `<p>${escapeHTML(r.description)}</p>` : ""}
+      ${categories.length ? `<div>${categories.map(c => `<span class="tag">${escapeHTML(c)}</span>`).join("")}</div>` : ""}
+      <p class="meta">Publication date: ${escapeHTML(r.published_date || "Not available")}</p>
+      ${source ? `<a class="open" href="${escapeHTML(source)}" target="_blank" rel="noopener noreferrer">View original case study ↗</a>` : ""}
+    </article>`;
+  }).join("");
+}
+
+async function init() {
+  try {
+    const response = await fetch("./data/current.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`Could not load data (${response.status})`);
+
+    const data = await response.json();
+    if (!Array.isArray(data)) throw new Error("Expected current.json to contain a JSON array");
+
+    records = data;
+    fillSelect("market", uniqueValues("market"));
+    fillSelect("language", uniqueValues("language"));
+    fillSelect("category", uniqueValues("categories"));
+
+    ["search", "market", "language", "category", "status", "sort"]
+      .forEach(id => $(id).addEventListener(
+        id === "search" ? "input" : "change", render
+      ));
+
+    render();
+  } catch (error) {
+    $("summary").textContent = "Unable to load case studies.";
+    $("results").innerHTML =
+      `<div class="error">${escapeHTML(error.message)}. Check that data/current.json is published alongside this page.</div>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>
