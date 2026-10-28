@@ -1,102 +1,13 @@
 {
   "summary": {
-    "run_at": "2026-10-27T12:12:21.718079+00:00",
+    "run_at": "2026-10-28T03:28:45.917618+00:00",
     "sources": 11,
     "discovered": 563,
-    "new": 4,
+    "new": 0,
     "updated": 0,
-    "existing": 559,
+    "existing": 563,
     "errors": 0
   },
-  "changes": [
-    {
-      "type": "NEW",
-      "market": "Netherlands",
-      "record": {
-        "market": "Netherlands",
-        "source_id": "netherlands",
-        "source_domain": "soprasteria.nl",
-        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
-        "language": "nl",
-        "title": "Free to get lost in the moment",
-        "description": "On a warm summer evening, thousands of people stand together in a field, looking towards the stage.",
-        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/nl-free-to-get-lost-in-the-moment",
-        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/nl-free-to-get-lost-in-the-moment",
-        "categories": [],
-        "published_date": "2026-10-27",
-        "client_name": "",
-        "first_seen": "2026-10-27T12:12:21.718079+00:00",
-        "last_seen": "2026-10-27T12:12:21.718079+00:00",
-        "content_hash": "a30e6e7b2b4cd4f5a8e4f6db92eb7547c8c8b67475ee5625d53ef2edbbed0fc3",
-        "status": "NEW"
-      }
-    },
-    {
-      "type": "NEW",
-      "market": "Netherlands",
-      "record": {
-        "market": "Netherlands",
-        "source_id": "netherlands",
-        "source_domain": "soprasteria.nl",
-        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
-        "language": "nl",
-        "title": "The future of money has no age limit",
-        "description": "It's a bright Saturday morning. An older woman is out and about, walking through the city. She stops, takes out her phone and makes an online payment. Done. She puts her phone away and carries on with her day. That quiet confidence is easy to overlook. But every successful payment depends on a chain that has to work in a fraction of a second. An authorisation request travels through different systems. Balances are checked. The transaction is secured. A response comes back. The customer sees a green light. Behind it is an infrastructure that has to be reliable, secure and available. Sopra Steria operates that infrastructure for four banks, bringing software, application management, infrastructure, networks and cybersecurity together as one service. Four brands. One engine underneath. And most of the time, nobody notices it.",
-        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/nl-the-future-of-money-has-no-age-limit",
-        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/nl-the-future-of-money-has-no-age-limit",
-        "categories": [],
-        "published_date": "2026-10-27",
-        "client_name": "",
-        "first_seen": "2026-10-27T12:12:21.718079+00:00",
-        "last_seen": "2026-10-27T12:12:21.718079+00:00",
-        "content_hash": "788478fe2d34d3c9b1d5461c868e70fed7b203456b74910fc655d74a590b32fb",
-        "status": "NEW"
-      }
-    },
-    {
-      "type": "NEW",
-      "market": "Netherlands",
-      "record": {
-        "market": "Netherlands",
-        "source_id": "netherlands",
-        "source_domain": "soprasteria.nl",
-        "source_url": "https://www.soprasteria.nl/newsroom/success-stories",
-        "language": "nl",
-        "title": "Keeping water a source of joy",
-        "description": "Water is part of everyday life in Limburg. It is where people play, relax and spend time together. They should not have to worry about water levels, data models or the technology working behind the scenes. But for the people responsible for water management, there is always a question: Can we see what is coming in time to act?",
-        "url": "https://www.soprasteria.nl/newsroom/success-stories/details/nl-keeping-water-a-source-of-joy",
-        "canonical_url": "https://www.soprasteria.nl/newsroom/success-stories/details/nl-keeping-water-a-source-of-joy",
-        "categories": [],
-        "published_date": "2026-10-27",
-        "client_name": "",
-        "first_seen": "2026-10-27T12:12:21.718079+00:00",
-        "last_seen": "2026-10-27T12:12:21.718079+00:00",
-        "content_hash": "22a46c224261fe352b772c529f692652a2128f50bf9c790ec7de4b59384ca22f",
-        "status": "NEW"
-      }
-    },
-    {
-      "type": "NEW",
-      "market": "Norway",
-      "record": {
-        "market": "Norway",
-        "source_id": "norway",
-        "source_domain": "soprasteria.no",
-        "source_url": "https://www.soprasteria.no/prosjekter",
-        "language": "no",
-        "title": "Aker Solutions: Lærer roboter å oppdage avvik på plattform",
-        "description": "Hvordan kan en maskin trenes til å kjenne igjen hendelser som nesten aldri skjer?",
-        "url": "https://www.soprasteria.no/prosjekter/details/aker-solutions--lrer-roboter-a-oppdage-avvik-pa-plattform",
-        "canonical_url": "https://www.soprasteria.no/prosjekter/details/aker-solutions--lrer-roboter-a-oppdage-avvik-pa-plattform",
-        "categories": [],
-        "published_date": "2026-10-27",
-        "client_name": "Aker Solutions",
-        "first_seen": "2026-10-27T12:12:21.718079+00:00",
-        "last_seen": "2026-10-27T12:12:21.718079+00:00",
-        "content_hash": "9e1967ff313c4686853bd519905acddcecdb260397ed1812e1c5ed53d334a7c9",
-        "status": "NEW"
-      }
-    }
-  ],
+  "changes": [],
   "errors": []
 }
