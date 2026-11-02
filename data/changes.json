@@ -1,12 +1,12 @@
 {
   "summary": {
-    "run_at": "2026-11-01T13:25:10.880693+00:00",
+    "run_at": "2026-11-02T15:53:33.443862+00:00",
     "sources": 11,
-    "discovered": 13,
+    "discovered": 564,
     "new": 0,
     "updated": 0,
-    "existing": 13,
-    "errors": 10
+    "existing": 564,
+    "errors": 0
   },
   "changes": [
     {
@@ -34,67 +34,6 @@
       }
     }
   ],
-  "errors": [
-    {
-      "source": "uk",
-      "stage": "listing",
-      "url": "https://www.soprasteria.co.uk/insights/client-success-stories",
-      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.co.uk/insights/client-success-stories"
-    },
-    {
-      "source": "germany",
-      "stage": "listing",
-      "url": "https://www.soprasteria.de/newsroom/success-stories",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.de', port=443): Read timed out. (read timeout=30)"
-    },
-    {
-      "source": "belgium",
-      "stage": "listing",
-      "url": "https://www.soprasteria.be/newsroom/success-stories",
-      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.be/newsroom/success-stories"
-    },
-    {
-      "source": "denmark",
-      "stage": "listing",
-      "url": "https://www.soprasteria.dk/Referencer",
-      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.dk/Referencer"
-    },
-    {
-      "source": "italy",
-      "stage": "listing",
-      "url": "https://www.soprasteria.it/chi-siamo/storie-di-successo",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.it', port=443): Read timed out. (read timeout=30)"
-    },
-    {
-      "source": "luxembourg",
-      "stage": "listing",
-      "url": "https://www.soprasteria.lu/newsroom/success-stories",
-      "error": "HTTPSConnectionPool(host='www.soprasteria.lu', port=443): Read timed out. (read timeout=30)"
-    },
-    {
-      "source": "netherlands",
-      "stage": "listing",
-      "url": "https://www.soprasteria.nl/newsroom/success-stories",
-      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.nl/newsroom/success-stories"
-    },
-    {
-      "source": "france",
-      "stage": "listing",
-      "url": "https://www.soprasteria.fr/services/conseil/nos-client-stories",
-      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.fr/services/conseil/nos-client-stories"
-    },
-    {
-      "source": "india",
-      "stage": "listing",
-      "url": "https://www.soprasteria.in/insights#clientstories",
-      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.in/insights#clientstories"
-    },
-    {
-      "source": "norway",
-      "stage": "listing",
-      "url": "https://www.soprasteria.no/prosjekter",
-      "error": "502 Server Error: Bad Gateway for url: https://www.soprasteria.no/prosjekter"
-    }
-  ],
-  "feed_updated_at": "2026-11-01T13:25:10.880693+00:00"
+  "errors": [],
+  "feed_updated_at": "2026-11-02T15:53:33.443862+00:00"
 }
