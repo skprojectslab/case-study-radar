@@ -1,14 +1,38 @@
 {
   "summary": {
-    "run_at": "2026-11-03T14:14:55.895828+00:00",
+    "run_at": "2026-11-04T14:32:22.605522+00:00",
     "sources": 11,
-    "discovered": 564,
-    "new": 0,
+    "discovered": 565,
+    "new": 1,
     "updated": 0,
     "existing": 564,
     "errors": 0
   },
   "changes": [
+    {
+      "type": "NEW",
+      "market": "France",
+      "detected_at": "2026-11-04T14:32:22.605522+00:00",
+      "last_changed_at": "2026-11-04T14:32:22.605522+00:00",
+      "record": {
+        "market": "France",
+        "source_id": "france",
+        "source_domain": "soprasteria.fr",
+        "source_url": "https://www.soprasteria.fr/services/conseil/nos-client-stories",
+        "language": "fr",
+        "title": "Klépierre : faire de l’adoption un avantage compétitif durable",
+        "description": "Découvrez le retour d’expérience de Nicolas DAIMANT, Directeur de la Transformation Finance pour Klépierre, publié dans le magazine de l’USF à l’occasion de la convention USF 2026",
+        "url": "https://www.soprasteria.fr/espace-media/cas-client/details/klepierre---faire-de-l-adoption-un-avantage-competitif-durable",
+        "canonical_url": "https://www.soprasteria.fr/espace-media/cas-client/details/klepierre---faire-de-l-adoption-un-avantage-competitif-durable",
+        "categories": [],
+        "published_date": "2026-11-04",
+        "client_name": "Klépierre",
+        "first_seen": "2026-11-04T14:32:22.605522+00:00",
+        "last_seen": "2026-11-04T14:32:22.605522+00:00",
+        "content_hash": "ce3c489786f7e09cd7ee9c052141e7d261ed9ff1b428162e8d802e6065480b7c",
+        "status": "NEW"
+      }
+    },
     {
       "type": "NEW",
       "market": "Italy",
@@ -35,5 +59,5 @@
     }
   ],
   "errors": [],
-  "feed_updated_at": "2026-11-03T14:14:55.895828+00:00"
+  "feed_updated_at": "2026-11-04T14:32:22.605522+00:00"
 }
