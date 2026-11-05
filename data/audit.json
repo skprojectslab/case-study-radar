@@ -1,12 +1,12 @@
 {
-  "run_at": "2026-11-04T14:32:22.605522+00:00",
+  "run_at": "2026-11-05T14:40:14.391315+00:00",
   "summary": {
-    "run_at": "2026-11-04T14:32:22.605522+00:00",
+    "run_at": "2026-11-05T14:40:14.391315+00:00",
     "sources": 11,
     "discovered": 565,
-    "new": 1,
+    "new": 0,
     "updated": 0,
-    "existing": 564,
+    "existing": 565,
     "errors": 0
   },
   "by_market": {
@@ -54,9 +54,9 @@
     },
     "France": {
       "records": 35,
-      "new": 1,
+      "new": 0,
       "updated": 0,
-      "existing": 34
+      "existing": 35
     },
     "Sweden": {
       "records": 13,
