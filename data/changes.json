@@ -1,14 +1,38 @@
 {
   "summary": {
-    "run_at": "2026-11-23T18:09:33.679032+00:00",
+    "run_at": "2026-11-24T17:45:31.696381+00:00",
     "sources": 11,
-    "discovered": 568,
-    "new": 0,
+    "discovered": 569,
+    "new": 1,
     "updated": 0,
     "existing": 568,
     "errors": 0
   },
   "changes": [
+    {
+      "type": "NEW",
+      "market": "Germany",
+      "detected_at": "2026-11-24T17:45:31.696381+00:00",
+      "last_changed_at": "2026-11-24T17:45:31.696381+00:00",
+      "record": {
+        "market": "Germany",
+        "source_id": "germany",
+        "source_domain": "soprasteria.de",
+        "source_url": "https://www.soprasteria.de/newsroom/success-stories",
+        "language": "de",
+        "title": "Etwa 1.000 Notrufe am Tag. Die Leitstelle der Feuerwehr Frankfurt bewältigt sie mit IGNIS-Plus",
+        "description": "Etwa 1.000 Mal am Tag wählt jemand in Frankfurt die 112. Jeder dieser Notrufe landet im Einsatzleitsystem Ignis-Plus der Einsatzleitzentrale.",
+        "url": "https://www.soprasteria.de/newsroom/success-stories/details/etwa-1000-notrufe-am-tag-die-leitstelle-der-feuerwehr-frankfurt-disponiert-mit-ignis-plus",
+        "canonical_url": "https://www.soprasteria.de/newsroom/success-stories/details/etwa-1000-notrufe-am-tag-die-leitstelle-der-feuerwehr-frankfurt-disponiert-mit-ignis-plus",
+        "categories": [],
+        "published_date": "",
+        "client_name": "",
+        "first_seen": "2026-11-24T17:45:31.696381+00:00",
+        "last_seen": "2026-11-24T17:45:31.696381+00:00",
+        "content_hash": "1217f8a600fbfc02ed117a8f9b99ca36d6bb3cb341a0eac0906644d79379518a",
+        "status": "NEW"
+      }
+    },
     {
       "type": "UPDATED",
       "market": "Belgium",
@@ -275,5 +299,5 @@
     }
   ],
   "errors": [],
-  "feed_updated_at": "2026-11-23T18:09:33.679032+00:00"
+  "feed_updated_at": "2026-11-24T17:45:31.696381+00:00"
 }
