@@ -1,11 +1,11 @@
 {
   "summary": {
-    "run_at": "2026-11-24T17:45:31.696381+00:00",
+    "run_at": "2026-11-25T17:13:53.428916+00:00",
     "sources": 11,
     "discovered": 569,
-    "new": 1,
+    "new": 0,
     "updated": 0,
-    "existing": 568,
+    "existing": 569,
     "errors": 0
   },
   "changes": [
@@ -299,5 +299,5 @@
     }
   ],
   "errors": [],
-  "feed_updated_at": "2026-11-24T17:45:31.696381+00:00"
+  "feed_updated_at": "2026-11-25T17:13:53.428916+00:00"
 }
